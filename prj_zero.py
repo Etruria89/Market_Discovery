@@ -12,11 +12,11 @@ yf.pdr_override()
 start_time = datetime.datetime(2020, 1, 1)
 end_time = datetime.datetime.today()
 
-#VARIABILI PER CALCOLO MEDIA
+# Variables for averaginf
 window_short = 7
 window_long = 21
 
-#INIZIALIZZA VARIABILI
+# Variable initialization
 all_stocks = pdr.nasdaq_trader.get_nasdaq_symbols()
 stocks = all_stocks['NASDAQ Symbol']
 data = {}
@@ -25,28 +25,41 @@ tick = []
 _test = False
 _save = True
 
-#ATTIVA GRAFICI
+# plot trigger
 _plot = False
 
-#START TIMER
-start_it=time.time()
+# starting timer
+start_it = time.time()
 
-#DEFINE TICKERS
+# Extra info extraction
+info_arr = ["sector", "industry", "marketCap"]
+
+# Define tickers
 if _test:
-    tick=['AAPL','AMZN']
-else:    
-    for stk,stock in all_stocks.iterrows():
-        print('Check if eligible...',stk,stock['Security Name'],time.time()-start_it)
-        if stock['Financial Status']=='N' and stock['Listing Exchange']=='Q' and stock['ETF']==False:
-            ##try:
-            ##    if float(yf.Ticker(stk).info["earningsQuarterlyGrowth"] or 0) > 1:
-                    tick.append(stk)
-            ##except:
-            ##    pass
 
-#READ DATA
+    tick = ['AAPL', 'AMZN']
+
+else:
+
+
+    info_df = pd.DataFrame(columns=["tick"] + info_arr)
+
+    for stk, stock in all_stocks.iterrows():
+        print('Check if eligible...', stk, stock['Security Name'], time.time() - start_it)
+        if stock['Financial Status'] == 'N' and stock['Listing Exchange'] == 'Q' and stock['ETF'] == False:
+            tmp_stock = yf.Ticker(stk)
+            info_tmp = [stk]
+            for req_info in info_arr:
+                try:
+                    info_tmp.append(tmp_stock.info[req_info])
+                except:
+                    info_tmp.append("N.A.")
+            info_df.loc[-1] = info_tmp
+            tick.append(stk)
+
+# Read data
 if _save:
-    #READ DATA AND SAVE TO .csv
+    # read data and save to .csv
     df = yf.download(  # or pdr.get_data_yahoo(...
             tickers = tick,
             period = "5y",
@@ -60,7 +73,7 @@ if _save:
     print('end Reading',time.time()-start_it)
     df.to_csv('ticker.csv')
 else:
-    #READ FROM .csv
+    # Read from .csv
     df = pd.read_csv('ticker.csv', header=[0, 1])
     df.drop([0], axis=0, inplace=True)  # drop this row because it only has one column with Date in it
     df[('Unnamed: 0_level_0', 'Unnamed: 0_level_1')] = pd.to_datetime(df[('Unnamed: 0_level_0', 'Unnamed: 0_level_1')], format='%Y-%m-%d')  # convert the first column to a datetime
@@ -69,7 +82,7 @@ else:
 data={idx: gp.xs(idx, level=0, axis=1) for idx, gp in df.groupby(level=0, axis=1)}
 
 
-#START PROCESSING
+# Data processing
 for stk in tick:
     print('    Processing...',stk,all_stocks['Security Name'][stk],time.time()-start_it)
     if len(data[stk].index)>window_long:
