@@ -14,7 +14,7 @@ yf.pdr_override()
 start_time = datetime.datetime(2020, 1, 1)
 end_time = datetime.datetime.today()
 
-# Variables for averaginf
+# Variables for moving average
 window_short = 7
 window_long = 21
 
@@ -32,6 +32,7 @@ _save = False
 buy_rsi_th = 30
 sell_rsi_sell_th = 75
 sell_rsi_buy_th = 30
+list_filter_name = 'Revolut_Stocks_List.csv'
 
 # plot trigger
 _plot = False
@@ -92,7 +93,7 @@ data = {idx: gp.xs(idx, level=0, axis=1) for idx, gp in df.groupby(level=0, axis
 # Data processing
 if _filter_list:
     # Revo_DB
-    revo_db = pd.read_csv('Revolut_Stocks_List.csv', header=[0, 1])
+    revo_db = pd.read_csv(list_filter_name, header=[0, 1])
     revo_tick_lol = revo_db["Symbol"][:].values.tolist()
     tick = [item for sublist in revo_tick_lol for item in sublist]
 
