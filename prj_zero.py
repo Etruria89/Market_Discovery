@@ -192,11 +192,15 @@ print('end Processing', time.time()-start_it)
 print(table)
 
 #TO DO
-# Riduzione numero di azioni
-# Salvataggio e lettura lista
-# Implementazione altri indicatori e strategie
-# Aggiunta ultimo dato da realtime
-# salvare dati ed aggiungere solo ultimo giorno
-# RSI (2021/05/16 aggiunto
-# Invio Mail
+# Explore talib
+# Clean the structure of the script adding functions
+# Reduce number of stocks (Partially done (Revolut example) via list of labels in  csv file)
+# Salvataggio e lettura lista (Salvataggio messo)
+# Add other indicators
+# realtime data add for the current day if market not closed
+# read database and add missing days
+# RSI (2021/05/16 added)
+# Include NYSE stocks
+# Change of amount of money with buy/sell actions to be added
+# Send email
 
