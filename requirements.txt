@@ -3,3 +3,5 @@ pandas_datareader
 numpy
 matplotlib
 yfinance
+os
+email

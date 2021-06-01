@@ -15,6 +15,7 @@ import time
 import yfinance as yf
 from tabulate import tabulate
 import smtplib
+import os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 yf.pdr_override()
@@ -26,21 +27,22 @@ end_time=datetime.datetime.today()
 #VARIABILI PER CALCOLO MEDIA
 _signal = 'RSI' # 'mean','RSI'
 
-window_short=7
-window_long=21
+window_short = 7
+window_long = 21
 sell_rsi_sell_th = 75
 sell_rsi_buy_th = 30
 
 #INIZIALIZZA VARIABILI
 all_stocks=pdr.nasdaq_trader.get_nasdaq_symbols()
 stocks=all_stocks['NASDAQ Symbol']
-data={}
-table={}
-tick=[]
-_test=True
-_read=True
-_mail=False
+data = {}
+table = {}
+tick = []
+_test = True
+_read = True
+_mail = True
 _filter_list = False
+email_txt = "email_info_test.txt" # (the file should be stored in the same folder of this script)
 list_filter_name = 'Revolut_Stocks_List.csv'
 
 #ATTIVA GRAFICI
@@ -51,6 +53,7 @@ start_it=time.time()
 
 # Extra info extraction
 info_arr = ["sector", "industry", "marketCap"]
+pwd = os.getcwd()
 
 #DEFINE TICKERS
 if _test:
@@ -88,7 +91,7 @@ else:
                 pass
 
 #READ DATA
-print('Start Reading',time.time()-start_it)
+print('Start Reading', time.time()-start_it)
 if _read:
     #READ DATA AND SAVE TO .csv
     df = yf.download(  # or pdr.get_data_yahoo(...
@@ -120,7 +123,7 @@ if _filter_list:
 
 #START PROCESSING
 for stk in tick:
-    print('    Processing...',stk,all_stocks['Security Name'][stk],time.time()-start_it)
+    print('    Processing...', stk, all_stocks['Security Name'][stk], time.time()-start_it)
     if len(data[stk].index)>window_long:
         #VARIAZIONE PERCENTUALE
         data[stk]['diff_p']=data[stk]['Close'].pct_change()
@@ -241,8 +244,29 @@ print(tabulate([table[stk].values() for stk in table], headers = ['Symbol','Name
 
 #SEND A MAIL
 if _mail:
+    # read email information
+    file_path = pwd + '\\' + email_txt
+    with open(file_path, 'r') as file:
+        # Read the file line by line
+        data_str = file.readlines()
+        # Look for the string where you can get the relevant info
+        from_ph = "From:"
+        pwd_ph = "Pwd:"
+        to_ph = "To:"
+        iterable = iter(data_str)
+        for line in iterable:
+            if line.__contains__(from_ph):
+                from_name = line.replace(from_ph, "").replace(" ", "")
+                from_name = from_name[:-1]
+            elif line.__contains__(pwd_ph):
+                from_pwd = line.replace(pwd_ph, "").replace(" ", "")
+                from_pwd = from_pwd[:-1]
+            elif line.__contains__(to_ph):
+                to_names = line.replace(to_ph, "").replace(" ", "")
+                to_names = to_names.split(",")
+
+        # Email generation
     msg = MIMEMultipart()
-    mail_info = READER_HERE
     from_info = from_name
     pwd = from_pwd
     msg['From'] = from_name
@@ -260,9 +284,8 @@ if _mail:
     # re-identify ourselves as an encrypted connection
     mailserver.ehlo()
     mailserver.login(from_info, from_pwd)
-    
-    mailserver.sendmail(to_names,msg.as_string())
-    
+    for names in to_names:
+        mailserver.sendmail(to_names,msg.as_string())
     mailserver.quit()
 
 
