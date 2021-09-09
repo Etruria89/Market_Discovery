@@ -1,10 +1,10 @@
-# -*- coding: utf-8 -*-
 """
-Spyder Editor
+This is a python script to extract the stock market data from yahoo finance and to process them to predict the
+evolution of the stock price.
+This is not a finance tool!
 
-This is a temporary script fi
 """
-
+#-----------------------------------------------------------------------------------------------------------------------
 #IMPORT MODULES
 import pandas as pd
 import pandas_datareader as pdr
@@ -14,67 +14,71 @@ import matplotlib.pyplot as plt
 import time
 import yfinance as yf
 from tabulate import tabulate
-import smtplib
-import os
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-yf.pdr_override()
+from utils import *
+#-----------------------------------------------------------------------------------------------------------------------
 
-#PERIODO DI OSSERVAZIONE
-start_time=datetime.datetime(2020, 1, 1)
-end_time=datetime.datetime.today()
+#-----------------------------------------------------------------------------------------------------------------------
+# INPUT
+#-----------------------------------------------------------------------------------------------------------------------
+# Period to be inspected
+start_time = datetime.datetime(2019, 1, 1).strftime("%Y-%m-%d")
+end_time = datetime.datetime.today().strftime("%Y-%m-%d")
 
-#VARIABILI PER CALCOLO MEDIA
-_signal = 'RSI' # 'mean','RSI'
+# Strategy parameters
+_signal = 'RSI' # 'mean', 'RSI'
 
 window_short = 7
 window_long = 21
 sell_rsi_sell_th = 75
 sell_rsi_buy_th = 30
 
-#INIZIALIZZA VARIABILI
-all_stocks=pdr.nasdaq_trader.get_nasdaq_symbols()
-stocks=all_stocks['NASDAQ Symbol']
+# Variable initialization
+all_stocks = pdr.nasdaq_trader.get_nasdaq_symbols()
+stocks = all_stocks['NASDAQ Symbol']
+
+# Testing flag to run the script on a reduced list of tickers
+_test = True
+# Reduced list of tickers used in the run
+tick_list = ['AAPL', 'AMZN', 'SPLK', 'CRM', 'BPMC', 'EKSO']
+
+_read = True
+# Flag to send the email at the end of the run
+_mail = True
+
+_filter_list = False
+
+
+# Plot flag
+_plot = True
+
+
+email_txt = "email_info.txt" # (the file should be stored in the same folder of this script)
+list_filter_name = 'Revolut_Stocks_List.csv'
+
+
+# Initialization of list and dictionaries
 data = {}
 table = {}
 tick = []
-_test = True
-_read = True
-_mail = True
-_filter_list = False
-email_txt = "email_info_test.txt" # (the file should be stored in the same folder of this script)
-list_filter_name = 'Revolut_Stocks_List.csv'
-
-#ATTIVA GRAFICI
-_plot=False
 
 #START TIMER
-start_it=time.time()
+start_it = time.time()
 
 # Extra info extraction
 info_arr = ["sector", "industry", "marketCap"]
-pwd = os.getcwd()
+
+yf.pdr_override()
+
 
 #DEFINE TICKERS
 if _test:
-    #tick=['AAPL','AMZN','SPLK','CRM','BPMC','EKSO']
-    tick=['AAPL','ADBE','ADI','ADP','ADSK','AEP','ALGN','ALXN','AMAT','AMD',
-          'AMGN','AMZN','ANSS','ASML','ATVI','AVGO','BIDU','BIIB','BKNG',
-          'CDNS','CDW','CERN', 'CHKP','CHTR','CMCSA','COST','CPRT','CSCO',
-          'CSX','CTAS','CTSH','DLTR','DOCU','DXCM','EA','EBAY','EXC','FAST',
-          'FB','FISV','FOX','FOXA','GILD','GOOG','GOOGL','IDXX','ILMN','INCY',
-          'INTC','INTU','ISRG','JD','KDP','KHC','KLAC','LRCX','LULU','MAR',
-          'MCHP','MDLZ','MELI','MNST','MRNA','MRVL','MSFT','MTCH','MU','MXIM',
-          'NFLX','NTES','NVDA','NXPI','OKTA','ORLY','PAYX','PCAR','PDD','PEP',
-          'PTON','PYPL','QCOM','REGN','ROST','SBUX','SGEN','SIRI','SNPS',
-          'SPLK','SWKS','TCOM','TEAM','TMUS','TSLA','TXN','VRSK','VRSN',
-          'VRTX','WBA','WDAY','XEL','XLNX','ZM']
+    tick = tick_list
 
 else:    
     info_df = pd.DataFrame(columns=["tick"] + info_arr)
-    for stk,stock in all_stocks.iterrows():
-        print('Check if eligible...',stk,stock['Security Name'],time.time()-start_it)
-        if stock['Financial Status']=='N' and stock['Listing Exchange']=='Q' and stock['ETF']==False:
+    for stk, stock in all_stocks.iterrows():
+        print('Check if eligible...', stk, stock['Security Name'], time.time()-start_it)
+        if stock['Financial Status'] == 'N' and stock['Listing Exchange'] == 'Q' and stock['ETF'] == False:
             try:
                 #if float(yf.Ticker(stk).info["earningsQuarterlyGrowth"] or 0) > 1:
                 if "Common Stock" in stock['Security Name']:
@@ -90,21 +94,25 @@ else:
             except:
                 pass
 
-#READ DATA
+# Read data
 print('Start Reading', time.time()-start_it)
+
 if _read:
+
     #READ DATA AND SAVE TO .csv
-    df = yf.download(  # or pdr.get_data_yahoo(...
-            tickers = tick,
-            period = "5y",
-            interval = "1d",
-            group_by = 'ticker',
-            auto_adjust = True,
-            prepost = True,
-            threads = True,
-            proxy = None
+    df = yf.download(
+            tickers=tick,
+            #period="5y",
+            start=start_time,
+            end=end_time,
+            interval="1d",
+            group_by='ticker',
+            auto_adjust=True,
+            prepost=True,
+            threads=True,
+            proxy=None
         )
-    df.to_csv('ticker.csv')
+    df.to_csv(database_name)
 else:
     #READ FROM .csv
     df = pd.read_csv('ticker.csv', header=[0, 1])
@@ -124,9 +132,9 @@ if _filter_list:
 #START PROCESSING
 for stk in tick:
     print('    Processing...', stk, all_stocks['Security Name'][stk], time.time()-start_it)
-    if len(data[stk].index)>window_long:
+    if len(data[stk].index) > window_long:
         #VARIAZIONE PERCENTUALE
-        data[stk]['diff_p']=data[stk]['Close'].pct_change()
+        data[stk]['diff_p'] = data[stk]['Close'].pct_change()
         delta = data[stk]['diff_p']
 
         # INDICATORI
@@ -142,6 +150,8 @@ for stk in tick:
         RS_down = down_days.rolling(window_long).mean()
         data[stk]['rsi'] = 100.0 - 100.0 / (1.0 + RS_up / RS_down)
 
+        # Check of the sectors
+
         # VOLATILITA'
         #data[stk]['vol_7']= data[stk]['diff_p'].rolling(7).std() * np.sqrt(7) 
         #data[stk]['vol_14']= data[stk]['diff_p'].rolling(14).std() * np.sqrt(14) 
@@ -152,20 +162,20 @@ for stk in tick:
         #STRATEGIA
         data[stk]['signal']=0.0
         if _signal=='mean':
-            data[stk]['signal'][window_long:]=np.where(data[stk]['mean_short'][window_long:]>data[stk]['mean_long'][window_long:],1.0,0.0)
+            data[stk]['signal'][window_long:] = np.where(data[stk]['mean_short'][window_long:]>data[stk]['mean_long'][window_long:],1.0,0.0)
             #data[stk]['positions'] = data[stk]['signal'].diff()
         elif _signal=='RSI':
             #data[stk]['signal_sell'] = (data[stk]['rsi'] > sell_rsi_sell_th) & (data[stk]['rsi'].shift(1) <= sell_rsi_sell_th)
             #data[stk]['signal_buy'] = (data[stk]['rsi'] < sell_rsi_buy_th) & (data[stk]['rsi'].shift(1) >= sell_rsi_buy_th)
-            data[stk]['signal']=np.where((data[stk]['rsi'] < sell_rsi_buy_th),1,np.nan)
-            data[stk]['signal']=np.where((data[stk]['rsi'] > sell_rsi_sell_th),0,data[stk]['signal'])
-            data[stk]['signal'].iloc[0]=0
+            data[stk]['signal'] = np.where((data[stk]['rsi'] < sell_rsi_buy_th),1,np.nan)
+            data[stk]['signal'] = np.where((data[stk]['rsi'] > sell_rsi_sell_th),0,data[stk]['signal'])
+            data[stk]['signal'].iloc[0] = 0
             data[stk]['signal'].ffill(inplace=True)
             #data[stk]['positions'] = data[stk]['signal_sell'].astype(int) - data[stk]['signal_buy'].astype(int)
         data[stk]['positions'] = data[stk]['signal'].diff()
          
         #EARNINGS
-        data[stk]['portfolio']=1*data[stk]['signal'].shift(1)
+        data[stk]['portfolio'] = 1 * data[stk]['signal'].shift(1)
         #data[stk]['portfolio_value']=data[stk]['portfolio'].multiply(data[stk]['Adj Close'])
         data[stk]['portfolio_return']=data[stk]['portfolio'].multiply(data[stk]['diff_p']).cumsum()
 
@@ -203,7 +213,7 @@ for stk in tick:
             # Plot the closing price
             data[stk]['Close'][-100:].plot(ax=ax1, color='r', lw=2.)
             # Plot the short and long moving averages
-            data[stk][['mean_short','mean_long']][-100:].plot(ax=ax1, lw=2.)
+            data[stk][['mean_short', 'mean_long']][-100:].plot(ax=ax1, lw=2.)
             # Add the title
             plt.title(stk + " MAs")
             #if _signal=='mean':
@@ -240,63 +250,23 @@ for stk in tick:
         
 
 print('end Processing',time.time()-start_it,'\n')
-print(tabulate([table[stk].values() for stk in table], headers = ['Symbol','Name','What To Do','Overall_Return','n_trades','avg_day_trade','succ_trades']))
+print(tabulate([table[stk].values() for stk in table], headers = ['Symbol', 'Name', 'What To Do', 'Overall_Return', 'n_trades', 'avg_day_trade', 'succ_trades']))
 
 #SEND A MAIL
 if _mail:
-    # read email information
-    file_path = pwd + '\\' + email_txt
-    with open(file_path, 'r') as file:
-        # Read the file line by line
-        data_str = file.readlines()
-        # Look for the string where you can get the relevant info
-        from_ph = "From:"
-        pwd_ph = "Pwd:"
-        to_ph = "To:"
-        iterable = iter(data_str)
-        for line in iterable:
-            if line.__contains__(from_ph):
-                from_name = line.replace(from_ph, "").replace(" ", "")
-                from_name = from_name[:-1]
-            elif line.__contains__(pwd_ph):
-                from_pwd = line.replace(pwd_ph, "").replace(" ", "")
-                from_pwd = from_pwd[:-1]
-            elif line.__contains__(to_ph):
-                to_names = line.replace(to_ph, "").replace(" ", "")
-                to_names = to_names.split(",")
 
-        # Email generation
-    msg = MIMEMultipart()
-    from_info = from_name
-    pwd = from_pwd
-    msg['From'] = from_name
-    msg['To'] = to_names
-    msg['Subject'] = 'simple email in python'
-    #message = tabulate([table[stk].values() for stk in table], headers = ['Symbol','Name','What To Do'])
-    message = tabulate([table[stk].values() for stk in table], headers = ['Symbol','Name','What To Do','Overall_Return','n_trades','avg_day_trade','succ_trades'])
-    msg.attach(MIMEText(message))
-    
-    mailserver = smtplib.SMTP('smtp.gmail.com',587)
-    # identify ourselves to smtp gmail client
-    mailserver.ehlo()
-    # secure our email with tls encryption
-    mailserver.starttls()
-    # re-identify ourselves as an encrypted connection
-    mailserver.ehlo()
-    mailserver.login(from_info, from_pwd)
-    for names in to_names:
-        mailserver.sendmail(to_names,msg.as_string())
-    mailserver.quit()
+    report_db = tabulate([table[stk].values() for stk in table], headers = ['Symbol', 'Name', 'What To Do', 'Overall_Return', 'n_trades', 'avg_day_trade', 'succ_trades'])
+    mail_sender(email_txt, report_db)
 
 
-#TO DO
+#TODO ======= leaving for 3/Oct/2017 =======
 # Reduce number of stocks (Partially done (Revolut example) via list of labels in  csv file)
 # Explore talib
 # Clean the structure of the script adding functions
-#   Salvataggio e lettura lista
+# Salvataggio e lettura lista
 # Include NYSE stocks
-# Implementazione altri indicatori e strategie
-# Aggiunta ultimo dato da realtime
+# Implement new strategie and approaches
+# Add realtime last data
 # read database and add missing days
 # Add other indicators
 # realtime data add for the current day if market not closed
@@ -304,8 +274,8 @@ if _mail:
 
 
 #PLOT
-#data['AAPL'][['Adj Close','mean_short', 'mean_long','signal']].plot(grid=True)
-#data['AMZN'][['Adj Close','mean_short', 'mean_long','signal']].plot(grid=True)
+#data['AAPL'][['Adj Close', 'mean_short', 'mean_long', 'signal']].plot(grid=True)
+#data['AMZN'][['Adj Close', 'mean_short', 'mean_long', 'signal']].plot(grid=True)
 #pd.plotting.scatter_matrix(data['AAPL'][['diff_p']], diagonal='kde', alpha=0.1,figsize=(12,12))
 
 ##start_it=time.time()
