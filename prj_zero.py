@@ -15,11 +15,34 @@ import time
 import yfinance as yf
 from tabulate import tabulate
 from utils import *
-#-----------------------------------------------------------------------------------------------------------------------
 
-#-----------------------------------------------------------------------------------------------------------------------
+# ----------
 # INPUT
-#-----------------------------------------------------------------------------------------------------------------------
+# ----------
+
+# Testing flag to run the script on a reduced list of tickers
+_test = True
+# Market of interest (active if _test is false)
+stock_of_interest = 'NASDAQ Symbol'
+# Reduced list of tickers used in the run (active if _test is true)
+tick_list = ['AAPL', 'AMZN', 'SPLK', 'CRM', 'BPMC', 'EKSO']
+
+
+# ===
+_read = True
+
+database_name = 'day_data.csv'
+email_txt = "email_info.txt" # (the file should be stored in the same folder of this script)
+list_filter_name = 'Revolut_Stocks_List.csv'
+# Flag to send the email at the end of the run
+_mail = True
+
+_filter_list = False
+
+# Plot flag
+_plot = True
+
+
 # Period to be inspected
 start_time = datetime.datetime(2019, 1, 1).strftime("%Y-%m-%d")
 end_time = datetime.datetime.today().strftime("%Y-%m-%d")
@@ -32,49 +55,44 @@ window_long = 21
 sell_rsi_sell_th = 75
 sell_rsi_buy_th = 30
 
-# Variable initialization
-all_stocks = pdr.nasdaq_trader.get_nasdaq_symbols()
-stocks = all_stocks['NASDAQ Symbol']
-
-# Testing flag to run the script on a reduced list of tickers
-_test = True
-# Reduced list of tickers used in the run
-tick_list = ['AAPL', 'AMZN', 'SPLK', 'CRM', 'BPMC', 'EKSO']
-
-_read = True
-# Flag to send the email at the end of the run
-_mail = True
-
-_filter_list = False
 
 
-# Plot flag
-_plot = True
+
 
 
 email_txt = "email_info.txt" # (the file should be stored in the same folder of this script)
 list_filter_name = 'Revolut_Stocks_List.csv'
 
+# Extra info extraction
+info_arr = ["sector", "industry", "marketCap"]
 
-# Initialization of list and dictionaries
+
+# ----------
+# CORE
+# ----------
+
+# Timer starter
+start_it = time.time()
+
+# Lists and dictionaries initialization
 data = {}
 table = {}
 tick = []
 
-#START TIMER
-start_it = time.time()
+# Variable initialization
+all_stocks = pdr.nasdaq_trader.get_nasdaq_symbols()
+stocks = all_stocks[stock_of_interest]
 
-# Extra info extraction
-info_arr = ["sector", "industry", "marketCap"]
-
+# Download yf database
 yf.pdr_override()
 
-
-#DEFINE TICKERS
+# Define tickers of interest
 if _test:
+
     tick = tick_list
 
-else:    
+else:
+
     info_df = pd.DataFrame(columns=["tick"] + info_arr)
     for stk, stock in all_stocks.iterrows():
         print('Check if eligible...', stk, stock['Security Name'], time.time()-start_it)
@@ -113,6 +131,7 @@ if _read:
             proxy=None
         )
     df.to_csv(database_name)
+
 else:
     #READ FROM .csv
     df = pd.read_csv('ticker.csv', header=[0, 1])
@@ -230,7 +249,7 @@ for stk in tick:
                 # Plot RSI
                 fig_rsi = plt.figure("RSI") # RSI
                 ax_rsi = fig_rsi.add_subplot(111, ylabel='RSI [%]')
-                data[stk][['rsi']].plot(ax=ax_rsi)
+                data[stk][['rsi']].plot(ax=ax_rsi, lw=2.)
                 # Add the title
                 plt.title(stk + " RSI plot")
                 # Plot the buy signals
