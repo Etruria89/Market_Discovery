@@ -321,12 +321,12 @@ if _backtesting:
         print(stk)
         end_cash = backtesting_run(data[stk], start_cash, RSI_fast_param, RSI_slow_param)
 
-        portfolio_performance.append((end_cash - start_cash) / start_cash)
+        portfolio_performance.append((end_cash - start_cash) / start_cash * 100)
 
     # Display a barchart containing the relevant information
     tick_id = range(len(tick))
     plt.bar(tick_id, portfolio_performance, align='center')
-    plt.xticks(tick_id, tick)
+    plt.xticks(tick_id, tick), plt.ylabel("Portfolio % change [-]")
     plt.show()
 # ------------------
 # END BACK-TESTING

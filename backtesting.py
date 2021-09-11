@@ -62,7 +62,7 @@ def backtesting_run(dataframe, start_cash, RSI_fast_param, RSI_slow_param):
     print('Final Portfolio Value: ${}'.format(end_portfolio_value))
 
     # Finally plot the end results
-    #cerebro.plot(style='candlestick')
+    cerebro.plot(style='candlestick')
 
     return end_portfolio_value
 
