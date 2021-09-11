@@ -31,7 +31,7 @@ _test = True
 # Market of interest (active if _test is false)
 stock_of_interest = 'NASDAQ Symbol'
 # Reduced list of tickers used in the run (active if _test is true)
-tick_list = ['AAPL', 'AMZN'] #, 'SPLK', 'CRM', 'BPMC', 'EKSO']
+tick_list = ['AAPL', 'AMZN', 'SPLK'] #, 'SPLK', 'CRM', 'BPMC', 'EKSO']
 
 # ===
 _read = True
@@ -48,9 +48,12 @@ list_filter_name = 'Revolut_Stocks_List.csv'
 # Backtest flag
 _backtest = True
 start_cash = 10000
-# RSI parameteers for backtesting: [period, lower threshold, upper threshold]
+# RSI parameters for back-testing: [period, [lower threshold list], [upper threshold list]]
 RSI_fast_param = [7, [15, 20, 25, 30, 35, 40], [70]]
 RSI_slow_param = [21, [40], [65, 70, 75, 80, 90]]
+# MA parameters for back-testing:
+MA_fast_param = [50]
+MA_slow_param = [100]
 # Stop loss condition
 stop_loss_th = 0.05
 
@@ -340,7 +343,9 @@ if _backtesting:
                 RSI_slow_param_test = [RSI_slow_param[0], RSI_slow_th_combo[0], RSI_slow_th_combo[1]]
 
                 end_cash = backtesting_run(data[stk], start_cash,
-                                           RSI_fast_param_test, RSI_slow_param_test, stop_loss_th)
+                                           RSI_fast_param_test, RSI_slow_param_test,
+                                           MA_fast_param[0], MA_slow_param[0],
+                                           stop_loss_th)
 
                 portfolio_performance.append((end_cash - start_cash) / start_cash * 100)
 

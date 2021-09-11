@@ -7,7 +7,7 @@ import backtrader as bt             # for backtesting the strategies
 import numpy as np
 import matplotlib.pyplot as plt     # to plot results heatmaps
 
-def backtesting_run(dataframe, start_cash, RSI_fast_param, RSI_slow_param, stop_loss_threshold):
+def backtesting_run(dataframe, start_cash, RSI_fast_param, RSI_slow_param, MA_fast_param, MA_slow_param, stop_loss_threshold):
     """
     Backtesting function.
 
@@ -17,10 +17,13 @@ def backtesting_run(dataframe, start_cash, RSI_fast_param, RSI_slow_param, stop_
     Args:
         dataframe = (pandas.db) formatted pandas db containing the values needed to perform the back-testing
         start_cash = (float) Amount of cash considered at the beginning of the simulation
-        RSI_fast_param = [int, float, float] RSI parameters used in the back-testing phase: RSI period, lower buy
-                                             threshold, upper sell threshold
-        RSI_fast_param = [int, float, float] RSI parameters used in the back-testing phase: RSI period, lower buy
-                                     threshold, upper sell threshold
+        RSI_fast_param = [int, [float list], [float list]] RSI parameters used in the back-testing phase: RSI period,
+                                             lower buy thresholds list, upper sell thresholds list
+        RSI_fast_param = [int, [float list], [float list]] RSI parameters used in the back-testing phase: RSI period,
+                                     lower buy thresholds list, upper sell thresholds list
+        MA_fast_param = [int, ...] MA parameters used in the back-testing phase: MA period, ...
+        MA_slow_param = [int, ...] MA parameters used in the back-testing phase: MA period, ...
+        stop_loss_threshold = (float) stop loss threshod to anticipate the sell signal
     Return:
         end_portfolio_value = (float) final portfolio value
 
@@ -31,14 +34,13 @@ def backtesting_run(dataframe, start_cash, RSI_fast_param, RSI_slow_param, stop_
 
     # Unroll the input
         #RSI fast params
-    RSI_fast_period = RSI_fast_param[0]
-    RSI_fast_lower_th = RSI_fast_param[1]
-    RSI_fast_upper_th = RSI_fast_param[2]
+    RSI_fast_period, RSI_fast_lower_th, RSI_fast_upper_th = RSI_fast_param
         #RSI slow params
-    RSI_slow_period = RSI_slow_param[0]
-    RSI_slow_lower_th = RSI_slow_param[1]
-    RSI_slow_upper_th = RSI_slow_param[2]
-
+    RSI_slow_period, RSI_slow_lower_th, RSI_slow_upper_th   = RSI_slow_param
+        #MA fast param
+    MA_fast_period = MA_fast_param
+        #MA slow param
+    MA_slow_period = MA_slow_param
         # Stop loss threshold
     stop_loss_th = stop_loss_threshold
 
@@ -50,6 +52,7 @@ def backtesting_run(dataframe, start_cash, RSI_fast_param, RSI_slow_param, stop_
     cerebro.addstrategy(rsiStrategy,
                     RSI_fast_period=RSI_fast_period, RSI_fast_low_th=RSI_fast_lower_th, RSI_fast_up_th=RSI_fast_upper_th,
                     RSI_slow_period=RSI_slow_period, RSI_slow_low_th=RSI_slow_lower_th, RSI_slow_up_th=RSI_slow_upper_th,
+                    MA_fast_period=MA_fast_period, MA_slow_period=MA_slow_period,
                     stop_loss_th=stop_loss_th)
 
     # Set your desired initial portfolio value
@@ -63,7 +66,6 @@ def backtesting_run(dataframe, start_cash, RSI_fast_param, RSI_slow_param, stop_
     # Get final portfolio Value
     end_portfolio_value = cerebro.broker.getvalue()
 
-
     # Print out the final result
     print('Final Portfolio Value: ${}'.format(end_portfolio_value))
 
@@ -71,7 +73,6 @@ def backtesting_run(dataframe, start_cash, RSI_fast_param, RSI_slow_param, stop_
     #cerebro.plot(style='candlestick')
 
     return end_portfolio_value
-
 
 def map_plot_3d(stock_name, db, label_names):
 
@@ -104,24 +105,39 @@ class rsiStrategy(bt.Strategy):
 
     def __init__(self, RSI_fast_period = 7 , RSI_fast_low_th = 20, RSI_fast_up_th = 70,
                     RSI_slow_period = 21, RSI_slow_low_th = 40, RSI_slow_up_th = 80,
+                    MA_fast_period = 50, MA_slow_period = 100,
                     stop_loss_th = 1.00):
 
-        # Initialize the parameters
+        # Initialize strategy the parameters
+            # RSI
         self.RSI_fast_period = RSI_fast_period
         self.RSI_fast_low_th = RSI_fast_low_th
         self.RSI_fast_up_th = RSI_fast_up_th
         self.RSI_slow_period = RSI_slow_period
         self.RSI_slow_low_th = RSI_slow_low_th
         self.RSI_slow_up_th = RSI_slow_up_th
+            # MA
+        self.MA_fast_period = MA_fast_period
+        self.MA_slow_period = MA_slow_period
+            # Stop loss
         self.stop_loss_percentage = stop_loss_th
-        print(self.stop_loss_percentage)
+
         # Define the strategies
+            # RSI strategies
         self.rsi_fast = bt.indicators.RelativeStrengthIndex(self.data.close, period=self.RSI_fast_period)
         self.rsi_slow = bt.indicators.RelativeStrengthIndex(self.data.close, period=self.RSI_slow_period)
+            # MA slope strategies
+        self.ma_fast = bt.indicators.SimpleMovingAverage(self.data.close, period=self.MA_fast_period)
+        self.ma_slow = bt.indicators.SimpleMovingAverage(self.data.close, period=self.MA_slow_period)
 
-        print(RSI_fast_period, RSI_fast_low_th, RSI_slow_up_th)
+        #print(RSI_fast_period, RSI_fast_low_th, RSI_slow_up_th)
 
     def next(self):
+
+        # Evaluate the moving average slope
+        slope_check = []
+        ma_slope_fast = self.ma_fast[0] - self.ma_fast[-1]
+        ma_slope_slow = self.ma_slow[0] - self.ma_slow[-1]
 
         # Buy Conditions
         if not self.position:
