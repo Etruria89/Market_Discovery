@@ -16,6 +16,7 @@ import yfinance as yf
 from tabulate import tabulate
 from utils import *
 from backtesting import *
+import itertools
 
 # ----------
 # INPUT
@@ -30,7 +31,7 @@ _test = True
 # Market of interest (active if _test is false)
 stock_of_interest = 'NASDAQ Symbol'
 # Reduced list of tickers used in the run (active if _test is true)
-tick_list = ['AAPL', 'AMZN', 'SPLK', 'CRM', 'BPMC', 'EKSO']
+tick_list = ['AAPL', 'AMZN'] #, 'SPLK', 'CRM', 'BPMC', 'EKSO']
 
 # ===
 _read = True
@@ -48,8 +49,15 @@ list_filter_name = 'Revolut_Stocks_List.csv'
 _backtest = True
 start_cash = 10000
 # RSI parameteers for backtesting: [period, lower threshold, upper threshold]
-RSI_fast_param = [7, 20, 75]
-RSI_slow_param = [21, 40, 80]
+RSI_fast_param = [7, [15, 20, 25, 30, 35, 40], [70]]
+RSI_slow_param = [21, [40], [65, 70, 75, 80, 90]]
+# Stop loss condition
+stop_loss_th = 0.05
+
+#Default values:
+# RSI_fast_period = 7, RSI_fast_low_th = 20, RSI_fast_up_th = 70,
+# RSI_slow_period = 21, RSI_slow_low_th = 40, RSI_slow_up_th = 80,
+# stop_loss_th = 1.00 (stop loss disabled)):
 
 # Plot flag
 _plot = False
@@ -312,22 +320,44 @@ if _suggesting:
 
 if _backtesting:
 
-    # Create an empty list to store the percencange change of your portfolio
-    portfolio_performance = []
-
     # loop over each tick and perform a back-testing task
     for stk in tick:
 
         print(stk)
-        end_cash = backtesting_run(data[stk], start_cash, RSI_fast_param, RSI_slow_param)
 
-        portfolio_performance.append((end_cash - start_cash) / start_cash * 100)
+        # Initialize a portfolio performance list for this tick
+        portfolio_performance = []
 
-    # Display a barchart containing the relevant information
-    tick_id = range(len(tick))
-    plt.bar(tick_id, portfolio_performance, align='center')
-    plt.xticks(tick_id, tick), plt.ylabel("Portfolio % change [-]")
-    plt.show()
+        # Prepare list of tuples with all possible combination for RSI fast and slow parameters
+        RSI_fast_combinations = list(itertools.product(RSI_fast_param[1], RSI_fast_param[2]))
+        RSI_slow_combinations = list(itertools.product(RSI_slow_param[1], RSI_slow_param[2]))
+
+        # loop over all the possible combination of RSI threshold given
+        for RSI_fast_th_combo in RSI_fast_combinations:
+            for RSI_slow_th_combo in RSI_slow_combinations:
+
+                RSI_fast_param_test = [RSI_fast_param[0], RSI_fast_th_combo[0], RSI_fast_th_combo[1]]
+                RSI_slow_param_test = [RSI_slow_param[0], RSI_slow_th_combo[0], RSI_slow_th_combo[1]]
+
+                end_cash = backtesting_run(data[stk], start_cash,
+                                           RSI_fast_param_test, RSI_slow_param_test, stop_loss_th)
+
+                portfolio_performance.append((end_cash - start_cash) / start_cash * 100)
+
+        # Performance sensitivity plot
+        combinations_output = list(itertools.product(RSI_fast_param[1], RSI_slow_param[2]))
+        x_data = [i[0] for i in combinations_output]
+        y_data = [j[1] for j in combinations_output]
+        column_names = ['RSI_fast_low_th', 'RSI_slow_high_th', 'Performance']
+        RSI_fast_sensitivity_db = pd.DataFrame(list(zip(x_data, y_data, portfolio_performance)),
+                                    columns =column_names)
+        map_plot_3d(stk, RSI_fast_sensitivity_db, column_names)
+
+        # Display a barchart containing the relevant information
+        # tick_id = range(len(tick))
+        # plt.bar(tick_id, portfolio_performance, align='center')
+        # plt.xticks(tick_id, tick), plt.ylabel("Portfolio % change [-]")
+        # plt.show()
 # ------------------
 # END BACK-TESTING
 # ------------------
@@ -348,6 +378,7 @@ if _mail:
 #TODO ======= leaving for 3/Oct/2017 =======
 # Reduce number of stocks (Partially done (Revolut example) via list of labels in  csv file)
 # Explore talib
+# Check why single tick crashes
 # Clean the structure of the script adding functions
 # Salvataggio e lettura lista
 # Include NYSE stocks
