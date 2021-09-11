@@ -10,7 +10,7 @@ import os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-def mail_sender(email_txt, data_send_db):
+def mail_sender(email_txt, text_send_db, date):
     """
     Mail sender function.
 
@@ -20,6 +20,8 @@ def mail_sender(email_txt, data_send_db):
 
     Args:
         email_txt = (str) filename of the file containing the sender email, its password and the receivers emails
+        text_send_db = ()
+        date = (str) containing the string of the today date to send fancy emails
     Return:
         Mail in inboxes of receivers
 
@@ -57,9 +59,7 @@ def mail_sender(email_txt, data_send_db):
     msg['From'] = from_name
     msg['To'] = to_names
     msg['Subject'] = 'simple email in python'
-    # message = tabulate([table[stk].values() for stk in table], headers = ['Symbol', 'Name', 'What To Do'])
-    message = data_send_db
-    msg.attach(MIMEText(message))
+
 
     mailserver = smtplib.SMTP('smtp.gmail.com', 587)
     # identify ourselves to smtp gmail client
@@ -71,6 +71,13 @@ def mail_sender(email_txt, data_send_db):
     mailserver.login(from_info, from_pwd)
 
     for names in to_names:
-        mailserver.sendmail(from_name, names, data_send_db)
+
+        msg = text_send_db
+        from_ = from_name
+        to_ = names
+        subject = '\U0001F680 Market Report: ' + date
+        fmt = 'From: {}\r\nTo: {}\r\nSubject: {}\r\n{}'
+
+        mailserver.sendmail(to_, from_, fmt.format(to_, from_, subject, msg).encode('utf-8'))
 
     mailserver.quit()

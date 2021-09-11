@@ -1,5 +1,6 @@
 email_info.txt
 ticker.csv
+day_data.csv
 /.__pycache__
 /.idea
 /venv
