@@ -8,6 +8,7 @@ This is not a finance tool!
 #IMPORT MODULES
 import pandas as pd
 import pandas_datareader as pdr
+import pandas_datareader.data as web
 import datetime
 import numpy as np
 import matplotlib.pyplot as plt
@@ -23,30 +24,34 @@ import itertools
 # ----------
 
 # Select the activity you want to perform
-_backtesting = True
+_backtesting = False
 _suggesting = False
 
 # Testing flag to run the script on a reduced list of tickers
-_test = True
+_test = False
 # Market of interest (active if _test is false)
 stock_of_interest = 'NASDAQ Symbol'
 # Reduced list of tickers used in the run (active if _test is true)
-tick_list = ['AAPL', 'AMZN', 'SPLK'] #, 'SPLK', 'CRM', 'BPMC', 'EKSO']
+tick_list = ['AAPL', 'AMZN', 'SPLK', 'CRM', 'BPMC', 'EKSO']
 
 # ===
-_read = True
+_download = True
 database_name = 'day_data.csv'
+
+_update_summary = False                                         # If true, the summary database is fully updated
+                                                                # otherwise only missing entries are added
+summary_entries = ["sector", "industry", "marketCap","beta"]    # Summary info to be downloaded
+summary_database_name = 'summary_data.csv'
 
 # Flag to send the email at the end of the run
 _mail = False
 email_txt = "email_info.txt" # (the file should be stored in the same folder of this script)
 
-_read = True
 _filter_list = False
 list_filter_name = 'Revolut_Stocks_List.csv'
 
 # Backtest flag
-_backtest = True
+_backtest = False
 start_cash = 10000
 # RSI parameters for back-testing: [period, [lower threshold list], [upper threshold list]]
 RSI_fast_param = [7, [15, 20, 25, 30, 35, 40], [70]]
@@ -77,8 +82,6 @@ window_long = 21
 sell_rsi_sell_th = 75
 sell_rsi_buy_th = 30
 
-# Extra info extraction
-info_arr = ["sector", "industry", "marketCap"]
 
 # ----------
 # CORE
@@ -99,37 +102,62 @@ stocks = all_stocks[stock_of_interest]
 # Download yf database
 yf.pdr_override()
 
-# Define tickers of interest
+# Define tickers of interest and prepare/read summary database
 if _test:
 
     tick = tick_list
 
 else:
 
-    info_df = pd.DataFrame(columns=["tick"] + info_arr)
+    # Create the complete tick list
+    for symbol in all_stocks.iterrows():
+        # Create symbol list
+        symbol_list = list(symbol)
+        print('Check if eligible...', symbol_list[0], symbol_list[1]['Security Name'], time.time() - start_it)
+        # Append all the ticks
+        tick.append(symbol[0])
 
-    for stk, stock in all_stocks.iterrows():
-        print('Check if eligible...', stk, stock['Security Name'], time.time()-start_it)
-        if stock['Financial Status'] == 'N' and stock['Listing Exchange'] == 'Q' and stock['ETF'] == False:
-            try:
-                #if float(yf.Ticker(stk).info["earningsQuarterlyGrowth"] or 0) > 1:
-                if "Common Stock" in stock['Security Name']:
-                    #tmp_stock = yf.Ticker(stk)
-                    #info_tmp = [stk]
-                    #for req_info in info_arr:
-                    #   try:
-                    #       info_tmp.append(tmp_stock.info[req_info])
-                    #   except:
-                    #       info_tmp.append("N.A.")
-                    #info_df.loc[-1] = info_tmp
-                    tick.append(stk)
-            except:
-                pass
+    # Analyse the summary database
+        # If the summary database exists in the script folder it reads it
+    if os.path.isfile(summary_database_name) and _update_summary == False:
+        # Read the db with the stock info
+        stock_info_db = pd.read_csv(summary_database_name, header=[0, 1])
+        tickers_in_summary = stock_info_db['Stock']
+        # Otherwise initialize the stock info database and the ticker summary list
+    else:
+        stock_info_db = pd.DataFrame(columns=['Stock', 'Industry', 'Sector', 'Beta', 'MarketCap'])
+        tickers_in_summary = []
 
-# Read data
+        for symbol in all_stocks.iterrows():
+
+            # Create the info dataframe
+            if (symbol_list[1]['Financial Status'] == 'N' or str(symbol_list[1]['Financial Status']) == 'nan')\
+                    and (symbol_list[1]['Listing Exchange'] == 'Q' or symbol_list[1]['Listing Exchange'] == 'N')  \
+                    and symbol_list[1]['ETF'] == False and "Common Stock" in symbol_list[1]['Security Name']\
+                    and not symbol[0] in tickers_in_summary:
+
+                tmp_stock = yf.Ticker(symbol[0])
+                info_tmp = [symbol[0]]
+                try:
+                    info = tmp_stock.info
+                    industry = info.get('industry')
+                    print(industry)
+                    beta = info.get('beta')
+                    sector = info.get('sector')
+                    marketcap = info.get('marketCap')
+                    stock_info_db = stock_info_db.append({'Stock': symbol[0], 'Industry': industry, 'Beta': beta,
+                                                          'Sector': sector, 'MarketCap': marketcap},
+                                             ignore_index=True)
+                except:
+                    # Ignore entry without value
+                    pass
+            # Write the stock info database
+            stock_info_db.to_csv(summary_database_name)
+
+# Read historical data for each stock
 print('Start Reading', time.time()-start_it)
 
-if _read:
+if _download:
 
     # READ DATA AND SAVE TO .csv
     df = yf.download(
@@ -149,7 +177,7 @@ if _read:
 else:
 
     # READ FROM .csv
-    df = pd.read_csv('ticker.csv', header=[0, 1])
+    df = pd.read_csv(database_name, header=[0, 1])
     df.drop([0], axis=0, inplace=True)  # drop this row because it only has one column with Date in it
     df[('Unnamed: 0_level_0', 'Unnamed: 0_level_1')] = pd.to_datetime(df[('Unnamed: 0_level_0', 'Unnamed: 0_level_1')], format='%Y-%m-%d')  # convert the first column to a datetime
     df.set_index(('Unnamed: 0_level_0', 'Unnamed: 0_level_1'), inplace=True)  # set the first column as the index
@@ -173,12 +201,9 @@ if _filter_list:
 # START PROCESSING
 # ----------------
 if _suggesting:
+
     for stk in tick:
         print('    Processing...', stk, all_stocks['Security Name'][stk], time.time()-start_it)
-
-
-
-
 
 
         if len(data[stk].index) > window_long:
