@@ -10,37 +10,45 @@ import pandas as pd
 import pandas_datareader as pdr
 import pandas_datareader.data as web
 import datetime
+import csv
 import numpy as np
 import matplotlib.pyplot as plt
 import time
 import yfinance as yf
 from tabulate import tabulate
+from pytickersymbols import PyTickerSymbols
 from utils import *
 from backtesting import *
 import itertools
+from sector_selector import *
 
 # ----------
 # INPUT
 # ----------
 
 # Select the activity you want to perform
-_backtesting = False
+_backtesting = True
 _suggesting = False
 
 # Testing flag to run the script on a reduced list of tickers
-_test = False
+_test = True
+
 # Market of interest (active if _test is false)
 stock_of_interest = 'NASDAQ Symbol'
 # Reduced list of tickers used in the run (active if _test is true)
-tick_list = ['AAPL', 'AMZN', 'SPLK', 'CRM', 'BPMC', 'EKSO']
+stock_data = PyTickerSymbols()
+tick_list = ['AAPL', 'AMZN', 'ADSK']
+pysymbol = False
+tick_list_pysym = stock_data.get_yahoo_ticker_symbols_by_index("NASDAQ 100")
 
 # ===
 _download = True
 database_name = 'day_data.csv'
 
-_update_summary = False                                         # If true, the summary database is fully updated
+_update_summary = False                                          # If true, the summary database is fully updated
                                                                 # otherwise only missing entries are added
-summary_entries = ["sector", "industry", "marketCap","beta"]    # Summary info to be downloaded
+_append_summary = False                                         # Set to true if you want to append missing tick only
+summary_entries = ["sector", "industry", "marketCap", "beta"]   # Summary info to be downloaded
 summary_database_name = 'summary_data.csv'
 
 # Flag to send the email at the end of the run
@@ -50,17 +58,22 @@ email_txt = "email_info.txt" # (the file should be stored in the same folder of 
 _filter_list = False
 list_filter_name = 'Revolut_Stocks_List.csv'
 
-# Backtest flag
-_backtest = False
+# Backtest parameters
 start_cash = 10000
 # RSI parameters for back-testing: [period, [lower threshold list], [upper threshold list]]
-RSI_fast_param = [7, [15, 20, 25, 30, 35, 40], [70]]
-RSI_slow_param = [21, [40], [65, 70, 75, 80, 90]]
+RSI_fast_low_th_csv = "RSI_fast_low_th_csv.txt"
+RSI_slow_up_th_csv = "RSI_slow_up_th_csv.txt"
+RSI_fast_low_th = read_csv_input(RSI_fast_low_th_csv)
+RSI_slow_up_th = read_csv_input(RSI_slow_up_th_csv)
+RSI_fast_param = [7, RSI_fast_low_th, [75]]
+RSI_slow_param = [21, [40], RSI_slow_up_th]
 # MA parameters for back-testing:
 MA_fast_param = [50]
 MA_slow_param = [100]
 # Stop loss condition
 stop_loss_th = 0.05
+# Output table print
+sensitivity_print_name = "Sensitivity_print.csv"
 
 #Default values:
 # RSI_fast_period = 7, RSI_fast_low_th = 20, RSI_fast_up_th = 70,
@@ -71,8 +84,9 @@ stop_loss_th = 0.05
 _plot = False
 
 # Period to be inspected
-start_time = datetime.datetime(2016, 1, 1).strftime("%Y-%m-%d")
+start_time = datetime.datetime(2020, 4, 20).strftime("%Y-%m-%d")
 end_time = datetime.datetime.today().strftime("%Y-%m-%d")
+
 
 # Strategy parameters
 _signal = 'RSI' # 'mean', 'RSI'
@@ -81,7 +95,6 @@ window_short = 7
 window_long = 21
 sell_rsi_sell_th = 75
 sell_rsi_buy_th = 30
-
 
 # ----------
 # CORE
@@ -102,10 +115,21 @@ stocks = all_stocks[stock_of_interest]
 # Download yf database
 yf.pdr_override()
 
+# Debug stock selector
+#top_tick_finder(summary_database_name)
+
 # Define tickers of interest and prepare/read summary database
 if _test:
 
-    tick = tick_list
+    # Process the tick list (this treatment is neeeded if the ticklist is from pytickersymbols)
+    if pysymbol:
+        tick = []
+        for tick_block in tick_list_pysym:
+            for string in tick_block:
+                if ('.' not in string):
+                    tick.append(string)
+    else:
+        tick = tick_list
 
 else:
 
@@ -125,9 +149,28 @@ else:
         tickers_in_summary = stock_info_db['Stock']
         # Otherwise initialize the stock info database and the ticker summary list
     else:
+
+        # Initialize a new summary db
         stock_info_db = pd.DataFrame(columns=['Stock', 'Industry', 'Sector', 'Beta', 'MarketCap'])
+        # Initializa an empty tickers array
         tickers_in_summary = []
 
+        # But if you want just add new tick to a slow run read the old db and create a variable with the ticks that have
+        # been already done
+        if _append_summary:
+            with open(summary_database_name, encoding="utf8") as csv_file:
+                csv_reader = csv.reader(csv_file, delimiter=',')
+                line_count = 0
+                for row in csv_reader:
+                    if line_count > 0:
+                        stock_info_db = stock_info_db.append({'Stock': row[1], 'Industry': row[2], 'Sector': row[3],
+                                                          'Beta': row[4], 'MarketCap': row[5]},
+                                                         ignore_index=True)
+                    line_count += 1
+            tickers_in_summary = stock_info_db['Stock'].values
+
+        # Counter to print the summary
+        count_summary = 1
         for symbol in all_stocks.iterrows():
 
             # Create the info dataframe
@@ -139,15 +182,29 @@ else:
                 tmp_stock = yf.Ticker(symbol[0])
                 info_tmp = [symbol[0]]
                 try:
+
                     info = tmp_stock.info
                     industry = info.get('industry')
                     print(industry)
                     beta = info.get('beta')
                     sector = info.get('sector')
                     marketcap = info.get('marketCap')
-                    stock_info_db = stock_info_db.append({'Stock': symbol[0], 'Industry': industry, 'Beta': beta,
+                    if marketcap is None and sector is None and beta is None and industry is None:
+                        stock_info_db = stock_info_db.append({'Stock': symbol[0], 'Industry': "N.A.", 'Beta': "N.A.",
+                                                              'Sector': "N.A.", 'MarketCap': "N.A."},
+                                                             ignore_index=True)
+                    else:
+                        stock_info_db = stock_info_db.append({'Stock': symbol[0], 'Industry': industry, 'Beta': beta,
                                                           'Sector': sector, 'MarketCap': marketcap},
                                              ignore_index=True)
+
+                        count_summary += 1
+                        if count_summary >= 3:
+                            print([symbol[0]])
+                            stock_info_db.to_csv(summary_database_name)
+                            print('We have reached the stock: ' + [symbol[0]] )
+                            count_summary = 1
+
                 except:
                     # Ignore entry without value
                     pass
@@ -156,6 +213,7 @@ else:
 
 # Read historical data for each stock
 print('Start Reading', time.time()-start_it)
+
 
 if _download:
 
@@ -345,12 +403,11 @@ if _suggesting:
 # ------------------
 # START BACK-TESTING
 # ------------------
-
+print(tick)
 if _backtesting:
 
     # loop over each tick and perform a back-testing task
     for stk in tick:
-
         print(stk)
 
         # Initialize a portfolio performance list for this tick
@@ -367,7 +424,7 @@ if _backtesting:
                 RSI_fast_param_test = [RSI_fast_param[0], RSI_fast_th_combo[0], RSI_fast_th_combo[1]]
                 RSI_slow_param_test = [RSI_slow_param[0], RSI_slow_th_combo[0], RSI_slow_th_combo[1]]
 
-                end_cash = backtesting_run(data[stk], start_cash,
+                end_cash = backtesting_run(data[stk][1:], start_cash,
                                            RSI_fast_param_test, RSI_slow_param_test,
                                            MA_fast_param[0], MA_slow_param[0],
                                            stop_loss_th)
@@ -382,6 +439,10 @@ if _backtesting:
         RSI_fast_sensitivity_db = pd.DataFrame(list(zip(x_data, y_data, portfolio_performance)),
                                     columns =column_names)
         map_plot_3d(stk, RSI_fast_sensitivity_db, column_names)
+
+        # Print output table for the optimiser
+        RSI_fast_sensitivity_db["Performance"].to_csv(sensitivity_print_name, index=False, header=False)
+
 
         # Display a barchart containing the relevant information
         # tick_id = range(len(tick))

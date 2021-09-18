@@ -7,6 +7,7 @@ analysis.
 
 import smtplib
 import os
+import csv
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -81,3 +82,30 @@ def mail_sender(email_txt, text_send_db, date):
         mailserver.sendmail(to_, from_, fmt.format(to_, from_, subject, msg).encode('utf-8'))
 
     mailserver.quit()
+
+
+def read_csv_input(txt_file):
+    """
+    Read csv function function.
+
+    This function reads a csv file
+    and returns the list with the read values
+    (generally used for th input)
+
+    Args:
+        email_txt = (str) name of the csv file to read
+    Return:
+        Mail in inboxes of receivers
+
+    """
+
+
+    with open(txt_file) as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        output_list = []
+
+        for row in csv_reader:
+            for x in row:
+                output_list.append(float(x))
+
+    return output_list
