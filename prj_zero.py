@@ -27,8 +27,8 @@ from sector_selector import *
 # ----------
 
 # Select the activity you want to perform
-_backtesting = True
-_suggesting = False
+_backtesting = False
+_suggesting = True
 
 # Testing flag to run the script on a reduced list of tickers
 _test = True
@@ -38,7 +38,7 @@ stock_of_interest = 'NASDAQ Symbol'
 # Reduced list of tickers used in the run (active if _test is true)
 stock_data = PyTickerSymbols()
 tick_list = ['AAPL', 'AMZN', 'ADSK']
-pysymbol = False
+pysymbol = True
 tick_list_pysym = stock_data.get_yahoo_ticker_symbols_by_index("NASDAQ 100")
 
 # ===
@@ -63,6 +63,7 @@ start_cash = 10000
 # RSI parameters for back-testing: [period, [lower threshold list], [upper threshold list]]
 RSI_fast_low_th_csv = "RSI_fast_low_th_csv.txt"
 RSI_slow_up_th_csv = "RSI_slow_up_th_csv.txt"
+stop_loss_th_csv = "stop_loss_th_csv.txt"
 RSI_fast_low_th = read_csv_input(RSI_fast_low_th_csv)
 RSI_slow_up_th = read_csv_input(RSI_slow_up_th_csv)
 RSI_fast_param = [7, RSI_fast_low_th, [75]]
@@ -71,7 +72,7 @@ RSI_slow_param = [21, [40], RSI_slow_up_th]
 MA_fast_param = [50]
 MA_slow_param = [100]
 # Stop loss condition
-stop_loss_th = 0.05
+stop_loss_th = read_csv_input(stop_loss_th_csv)
 # Output table print
 sensitivity_print_name = "Sensitivity_print.csv"
 
@@ -123,13 +124,21 @@ if _test:
 
     # Process the tick list (this treatment is neeeded if the ticklist is from pytickersymbols)
     if pysymbol:
-        tick = []
+        tick_tmp = []
         for tick_block in tick_list_pysym:
             for string in tick_block:
                 if ('.' not in string):
-                    tick.append(string)
+                    tick_tmp.append(string)
     else:
-        tick = tick_list
+        tick_tmp = tick_list
+
+    # Remove tick not present in the whole stock database
+    tick = []
+    for stk in tick_tmp:
+        if stk in all_stocks.index[:]:
+            tick.append(stk)
+
+    tick.sort()
 
 else:
 
@@ -262,7 +271,6 @@ if _suggesting:
 
     for stk in tick:
         print('    Processing...', stk, all_stocks['Security Name'][stk], time.time()-start_it)
-
 
         if len(data[stk].index) > window_long:
 
@@ -442,7 +450,6 @@ if _backtesting:
 
         # Print output table for the optimiser
         RSI_fast_sensitivity_db["Performance"].to_csv(sensitivity_print_name, index=False, header=False)
-
 
         # Display a barchart containing the relevant information
         # tick_id = range(len(tick))
