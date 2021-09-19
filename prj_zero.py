@@ -62,12 +62,16 @@ list_filter_name = 'Revolut_Stocks_List.csv'
 start_cash = 10000.0
 # RSI parameters for back-testing: [period, [lower threshold list], [upper threshold list]]
 RSI_fast_low_th_csv = ".\\Input\\RSI_fast_low_th_csv.txt"
-RSI_slow_up_th_csv = ".\\Input\\RSI_slow_up_th_csv.txt"
+RSI_fast_high_th_csv = ".\\Input\\RSI_fast_high_th_csv.txt"
+RSI_slow_low_th_csv = ".\\Input\\RSI_slow_low_th_csv.txt"
+RSI_slow_high_th_csv = ".\\Input\\RSI_slow_high_th_csv.txt"
 stop_loss_th_csv = ".\\Input\\stop_loss_th_csv.txt"
 RSI_fast_low_th = read_csv_input(RSI_fast_low_th_csv)
-RSI_slow_up_th = read_csv_input(RSI_slow_up_th_csv)
-RSI_fast_param = [7, RSI_fast_low_th, [75]]
-RSI_slow_param = [21, [40], RSI_slow_up_th]
+RSI_fast_high_th = read_csv_input(RSI_fast_high_th_csv)
+RSI_slow_low_th = read_csv_input(RSI_slow_low_th_csv)
+RSI_slow_high_th = read_csv_input(RSI_slow_high_th_csv)
+RSI_fast_param = [7, RSI_fast_low_th, RSI_fast_high_th]
+RSI_slow_param = [21, RSI_slow_low_th, RSI_slow_high_th]
 # MA parameters for back-testing:
 MA_fast_param = [50]
 MA_slow_param = [100]
@@ -446,7 +450,7 @@ if _backtesting:
         column_names = ['RSI_fast_low_th', 'RSI_slow_high_th', 'Performance']
         RSI_fast_sensitivity_db = pd.DataFrame(list(zip(x_data, y_data, portfolio_performance)),
                                     columns =column_names)
-        map_plot_3d(stk, RSI_fast_sensitivity_db, column_names)
+        # map_plot_3d(stk, RSI_fast_sensitivity_db, column_names)
 
         # Print output table for the optimiser
         RSI_fast_sensitivity_db["Performance"].to_csv(sensitivity_print_name, index=False, header=False)
