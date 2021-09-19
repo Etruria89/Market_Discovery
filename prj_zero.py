@@ -27,8 +27,8 @@ from sector_selector import *
 # ----------
 
 # Select the activity you want to perform
-_backtesting = False
-_suggesting = True
+_backtesting = True
+_suggesting = False
 
 # Testing flag to run the script on a reduced list of tickers
 _test = True
@@ -59,11 +59,11 @@ _filter_list = False
 list_filter_name = 'Revolut_Stocks_List.csv'
 
 # Backtest parameters
-start_cash = 10000
+start_cash = 10000.0
 # RSI parameters for back-testing: [period, [lower threshold list], [upper threshold list]]
-RSI_fast_low_th_csv = "RSI_fast_low_th_csv.txt"
-RSI_slow_up_th_csv = "RSI_slow_up_th_csv.txt"
-stop_loss_th_csv = "stop_loss_th_csv.txt"
+RSI_fast_low_th_csv = ".\\Input\\RSI_fast_low_th_csv.txt"
+RSI_slow_up_th_csv = ".\\Input\\RSI_slow_up_th_csv.txt"
+stop_loss_th_csv = ".\\Input\\stop_loss_th_csv.txt"
 RSI_fast_low_th = read_csv_input(RSI_fast_low_th_csv)
 RSI_slow_up_th = read_csv_input(RSI_slow_up_th_csv)
 RSI_fast_param = [7, RSI_fast_low_th, [75]]
@@ -72,7 +72,7 @@ RSI_slow_param = [21, [40], RSI_slow_up_th]
 MA_fast_param = [50]
 MA_slow_param = [100]
 # Stop loss condition
-stop_loss_th = read_csv_input(stop_loss_th_csv)
+stop_loss_th = float(read_csv_input(stop_loss_th_csv)[0])
 # Output table print
 sensitivity_print_name = "Sensitivity_print.csv"
 
@@ -137,8 +137,6 @@ if _test:
     for stk in tick_tmp:
         if stk in all_stocks.index[:]:
             tick.append(stk)
-
-    tick.sort()
 
 else:
 
@@ -223,6 +221,8 @@ else:
 # Read historical data for each stock
 print('Start Reading', time.time()-start_it)
 
+# Sort the tick to improve the search in the output file/email
+tick.sort()
 
 if _download:
 
@@ -414,16 +414,16 @@ if _suggesting:
 print(tick)
 if _backtesting:
 
+    # Prepare list of tuples with all possible combination for RSI fast and slow parameters
+    RSI_fast_combinations = list(itertools.product(RSI_fast_param[1], RSI_fast_param[2]))
+    RSI_slow_combinations = list(itertools.product(RSI_slow_param[1], RSI_slow_param[2]))
+
     # loop over each tick and perform a back-testing task
     for stk in tick:
         print(stk)
 
         # Initialize a portfolio performance list for this tick
         portfolio_performance = []
-
-        # Prepare list of tuples with all possible combination for RSI fast and slow parameters
-        RSI_fast_combinations = list(itertools.product(RSI_fast_param[1], RSI_fast_param[2]))
-        RSI_slow_combinations = list(itertools.product(RSI_slow_param[1], RSI_slow_param[2]))
 
         # loop over all the possible combination of RSI threshold given
         for RSI_fast_th_combo in RSI_fast_combinations:

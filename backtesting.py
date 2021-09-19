@@ -46,6 +46,8 @@ def backtesting_run(dataframe, start_cash, RSI_fast_param, RSI_slow_param, MA_fa
 
     # Add data feed to Cerebro
     data = bt.feeds.PandasData(dataname=dataframe)
+    # Chet on close true
+    cerebro.broker.set_coc(True)
     cerebro.adddata(data)
 
     # Add strategy
@@ -70,7 +72,8 @@ def backtesting_run(dataframe, start_cash, RSI_fast_param, RSI_slow_param, MA_fa
     print('Final Portfolio Value: ${}'.format(end_portfolio_value))
 
     # Finally plot the end results
-    cerebro.plot(style='candlestick')
+    # cerebro.plot(style='candlestick')
+    # cerebro.plot(iplot=True, volume=False)
     return end_portfolio_value
 
 def map_plot_3d(stock_name, db, label_names):
@@ -102,10 +105,17 @@ def map_plot_3d(stock_name, db, label_names):
 
 class rsiStrategy(bt.Strategy):
 
+
     def __init__(self, RSI_fast_period = 7 , RSI_fast_low_th = 20, RSI_fast_up_th = 70,
                     RSI_slow_period = 21, RSI_slow_low_th = 40, RSI_slow_up_th = 80,
                     MA_fast_period = 50, MA_slow_period = 100,
                     stop_loss_th = 1.00):
+
+
+        # Initialize values
+        self.order = None
+        self.buy_signal = False
+        self.sell_signal = False
 
         # Initialize strategy the parameters
             # RSI
@@ -133,6 +143,7 @@ class rsiStrategy(bt.Strategy):
 
     def next(self):
 
+
         # Evaluate the moving average slope
         slope_check = []
         ma_slope_fast = self.ma_fast[0] - self.ma_fast[-1]
@@ -141,23 +152,35 @@ class rsiStrategy(bt.Strategy):
         # Buy Conditions
         if not self.position:
 
-            if (self.rsi_fast < self.RSI_fast_low_th and self.rsi_slow < self.RSI_slow_low_th):
-                self.buy(size=100)
+            if (self.rsi_fast[0] < self.RSI_fast_low_th) and (self.rsi_slow[0] < self.RSI_slow_low_th):
+                self.buy_signal = True
+
+            if self.buy_signal:
+                size = self.broker.get_cash() / self.data.close[0]
+                # Buy
+                self.buy(size=size, price = self.data.close[0])
                 self.buy_price = self.data.close[0]
-                # print("I buy at " + str(round(self.data.close[0],2)) + " $")
+                print("I buy at " + str(round(self.data.close[0], 2)) + " $")
+                # Normalize
+                self.buy_signal = False
 
         # Sell Conditions
         else:
 
-             # Sell on RSI high
-             if (self.rsi_fast > self.RSI_fast_up_th and self.rsi_slow > self.RSI_slow_up_th):
-                self.close(size=100)
+            # Sell on RSI high
+            if (self.rsi_fast[0] > self.RSI_fast_up_th and self.rsi_slow[0] > self.RSI_slow_up_th):
+                self.sell_signal = True
 
-             # Sell on stop loss
-             loss_gain = (self.data.close[0] - self.buy_price) / self.buy_price
-             if loss_gain < - self.stop_loss_percentage:
-                 self.close(size=100)
-                 #print("Sold thanks to stop loss")
-                 # print("I sell at " + str(round(self.data.close[0],2)) + " $")
+            # Sell on stop loss
+            loss_gain = (self.data.close[0] - self.buy_price) / self.buy_price
+            if loss_gain < (- self.stop_loss_percentage):
+                 self.sell_signal = True
+                 print("Sold thanks to stop loss")
 
-
+            if self.sell_signal:
+                size = self.broker.get_cash() / self.data.close[0]
+                # Buy
+                self.close()
+                print("I sell at " + str(round(self.data.close[0], 2)) + " $")
+                # Normalize
+                self.sell_signal = False

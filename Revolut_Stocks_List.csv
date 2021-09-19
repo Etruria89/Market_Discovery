@@ -1,913 +1,941 @@
-#,Company name,Symbol,Price (USD),Sector,Industry,Market,Provided by GlobeFunder.com,
-1,Agilent Technologies,A,$131.15,Health Technology,Medical Specialties,NYSE,,
-2,Alcoa,AA,$39.70,Non-Energy Minerals,Aluminum,NYSE,,
-3,Artius Acquisition Inc,AACQ,$9.85,Finance,Financial Conglomerates,NASDAQ,,
-4,American Airlines,AAL,$22.40,Transportation,Airlines,NASDAQ,,
-5,Advance Auto Parts,AAP,$202.81,Retail Trade,Specialty Stores,NYSE,,
-6,Apple,AAPL,$127.45,Electronic Technology,Telecommunications Equipment,NASDAQ,,
-7,AbbVie,ABBV,$116.43,Health Technology,Pharmaceuticals: Major,NYSE,,
-8,Ambev,ABEV,$3.31,Consumer Non-Durables,Beverages: Alcoholic,NYSE,,
-9,Airbnb Inc,ABNB,$141.20,Technology Services,Internet Software/Services,NASDAQ,,
-10,Abbott Labs,ABT,$118.31,Health Technology,Medical Specialties,NYSE,,
-11,ACE Convergence Acquisition Corp,ACEV,$9.96,Finance,Financial Conglomerates,NASDAQ,,
-12,Atlas Crest Investment Corp,ACIC,$9.87,Finance,Financial Conglomerates,NYSE,,
-13,Accenture PLC,ACN,$288.20,Technology Services,Information Technology Services,NYSE,,
-14,Arclight Clean Transition Corp,ACTC,$13.96,Finance,Financial Conglomerates,NASDAQ,,
-15,Adobe,ADBE,$486.56,Technology Services,Packaged Software,NASDAQ,,
-16,Analog Devices,ADI,$149.61,Electronic Technology,Semiconductors,NASDAQ,,
-17,Archer-Daniels-Midland,ADM,$67.66,Process Industries,Agricultural Commodities/Milling,NYSE,,
-18,Automatic Data Processing,ADP,$194.64,Technology Services,Data Processing Services,NASDAQ,,
-19,Autodesk,ADSK,$277.63,Technology Services,Packaged Software,NASDAQ,,
-20,American Eagle Outfitters,AEO,$36.56,Retail Trade,Apparel/Footwear Retail,NYSE,,
-21,American Electric Power,AEP,$86.76,Utilities,Electric Utilities,NASDAQ,,
-22,The AES Corporation,AES,$25.37,Utilities,Electric Utilities,NYSE,,
-23,Aflac,AFL,$56.46,Finance,Life/Health Insurance,NYSE,,
-24,Affirm Holdings,AFRM,$54.00,Technology Services,Internet Software/Services,NASDAQ,,
-25,First Majestic Silver Corp,AG,$16.00,Non-Energy Minerals,Precious Metals,NYSE,,
-26,Agilon Health,AGL,$29.96,Health Services,Medical/Nursing Services,NYSE,,
-27,AGNC Investment,AGNC,$18.18,Finance,Real Estate Investment Trusts,NASDAQ,,
-28,C3.ai Inc,AI,$51.94,Technology Services,Packaged Software,NYSE,,
-29,AIG,AIG,$51.90,Finance,Multi-Line Insurance,NYSE,,
-30,Ajax I,AJAX,$9.91,Finance,Financial Conglomerates,NYSE,,
-31,Akamai Technologies,AKAM,$113.16,Technology Services,Internet Software/Services,NASDAQ,,
-32,Air Lease Corporation,AL,$46.38,Finance,Finance/Rental/Leasing,NYSE,,
-33,Albemarle Corporation,ALB,$163.81,Process Industries,Chemicals: Specialty,NYSE,,
-34,Align Technology,ALGN,$569.04,Health Technology,Medical Specialties,NASDAQ,,
-35,Allstate,ALL,$139.26,Finance,Property/Casualty Insurance,NYSE,,
-36,Allot Communications,ALLT,$17.08,Electronic Technology,Computer Communications,NASDAQ,,
-37,Ally Financial,ALLY,$54.00,Finance,Regional Banks,NYSE,,
-38,Alexion Pharmaceuticals,ALXN,$173.49,Health Technology,Biotechnology,NASDAQ,,
-39,Antero Midstream Partners LP,AM,$9.69,Industrial Services,Oil & Gas Pipelines,NYSE,,
-40,Applied Materials,AMAT,$124.83,Producer Manufacturing,Industrial Machinery,NASDAQ,,
-41,AMC,AMC,$12.98,Consumer Services,Movies/Entertainment,NYSE,,
-42,Advanced Micro Devices,AMD,$74.59,Electronic Technology,Semiconductors,NASDAQ,,
-43,Ametek,AME,$134.34,Producer Manufacturing,Electrical Products,NYSE,,
-44,Amgen,AMGN,$251.38,Health Technology,Biotechnology,NASDAQ,,
-45,American Homes 4 Rent,AMH,$37.31,Finance,Real Estate Investment Trusts,NYSE,,
-46,Ameresco,AMRC,$49.71,Industrial Services,Engineering & Construction,NYSE,,
-47,Amneal Pharmaceuticals,AMRX,$5.64,Health Technology,Pharmaceuticals: Major,NYSE,,
-48,American Tower,AMT,$246.76,Finance,Real Estate Investment Trusts,NYSE,,
-49,Amazon,AMZN,"$3,222.90",Retail Trade,Internet Retail,NASDAQ,,
-50,Arista Networks,ANET,$326.38,Electronic Technology,Computer Communications,NYSE,,
-51,Abercrombie & Fitch,ANF,$41.29,Retail Trade,Apparel/Footwear Retail,NYSE,,
-52,ANGI Homeservices,ANGI,$13.06,Technology Services,Internet Software/Services,NASDAQ,,
-53,Ansys,ANSS,$326.47,Technology Services,Packaged Software,NASDAQ,,
-54,Anthem,ANTM,$393.93,Health Services,Managed Health Care,NYSE,,
-55,AO Smith,AOS,$71.77,Producer Manufacturing,Building Products,NYSE,,
-56,Apache,APA,$21.56,Energy Minerals,Oil & Gas Production,NASDAQ,,
-57,Air Products and Chemicals,APD,$301.05,Process Industries,Chemicals: Specialty,NYSE,,
-58,Amphenol,APH,$66.36,Electronic Technology,Electronic Components,NYSE,,
-59,AppLovin Corp,APP,$57.26,Technology Services,Packaged Software,NASDAQ,,
-60,Appian Corporation,APPN,$83.26,Technology Services,Packaged Software,NASDAQ,,
-61,Digital Turbine,APPS,$59.11,Technology Services,Internet Software/Services,NASDAQ,,
-62,Apollo Strategic Growth Capital,APSG,$9.80,Finance,Finance/Rental/Leasing,NYSE,,
-63,Apex Technology Acquisition Corp,APXT,$10.04,Finance,Financial Conglomerates,NASDAQ,,
-64,Antero Resources Corporation,AR,$11.84,Energy Minerals,Oil & Gas Production,NYSE,,
-65,Ares Capital,ARCC,$18.91,Finance,Investment Managers,NASDAQ,,
-66,Arcturus Therapeutics Holdings Inc,ARCT,$28.86,Health Technology,Pharmaceuticals: Major,NASDAQ,,
-67,Apollo Commercial Real Estate Finance,ARI,$15.20,Finance,Real Estate Investment Trusts,NYSE,,
-68,Aramark,ARMK,$39.10,Consumer Services,Restaurants,NYSE,,
-69,Arconic,ARNC,$35.96,Non-Energy Minerals,Aluminum,NYSE,,
-70,ARMOUR Residential,ARR,$12.02,Finance,Real Estate Investment Trusts,NYSE,,
-71,Arrival Group,ARVL,$18.29,Consumer Durables,Motor Vehicles,NASDAQ,,
-72,Asana Inc,ASAN,$29.41,Technology Services,Packaged Software,NYSE,,
-73,ASML Holding,ASML,$647.76,Producer Manufacturing,Industrial Machinery,NASDAQ,,
-74,Autohome,ATHM,$90.66,Technology Services,Internet Software/Services,NYSE,,
-75,AptarGroup,ATR,$153.54,Process Industries,Containers/Packaging,NYSE,,
-76,Altice USA,ATUS,$37.83,Consumer Services,Cable/Satellite TV,NYSE,,
-77,Activision Blizzard,ATVI,$93.35,Consumer Durables,Recreational Products,NASDAQ,,
-78,AngloGold Ashanti,AU,$23.71,Non-Energy Minerals,Precious Metals,NYSE,,
-79,Yamana Gold,AUY,$5.12,Non-Energy Minerals,Precious Metals,NYSE,,
-80,AvalonBay Communities,AVB,$197.96,Finance,Real Estate Investment Trusts,NYSE,,
-81,Broadcom,AVGO,$441.62,Electronic Technology,Semiconductors,NASDAQ,,
-82,Avalara,AVLR,$122.94,Technology Services,Packaged Software,NYSE,,
-83,American Axle & Manufacturing,AXL,$10.63,Producer Manufacturing,Auto Parts: OEM,NYSE,,
-84,Axon Enterprise Inc,AXON,$132.76,Electronic Technology,Aerospace & Defense,NASDAQ,,
-85,American Express,AXP,$157.15,Finance,Finance/Rental/Leasing,NYSE,,
-86,Axalta Coating Systems,AXTA,$32.64,Process Industries,Industrial Specialties,NYSE,,
-87,Atlantica Sustainable Infrastructure,AY,$35.44,Utilities,Alternative Power Generation,NASDAQ,,
-88,Alteryx,AYX,$77.06,Technology Services,Packaged Software,NYSE,,
-89,AstraZeneca PLC,AZN,$55.21,Health Technology,Pharmaceuticals: Major,NASDAQ,,
-90,AutoZone,AZO,"$1,527.58",Retail Trade,Specialty Stores,NYSE,,
-91,Boeing,BA,$228.47,Electronic Technology,Aerospace & Defense,NYSE,,
-92,Alibaba,BABA,$209.51,Retail Trade,Internet Retail,NYSE,,
-93,Bank of America,BAC,$42.36,Finance,Major Banks,NYSE,,
-94,Booz Allen Hamilton,BAH,$83.15,Commercial Services,Miscellaneous Commercial Services,NYSE,,
-95,Brookfield Asset Management Inc.,BAM,$48.38,Finance,Investment Managers,NYSE,,
-96,Credicorp,BAP,$145.78,Finance,Regional Banks,NYSE,,
-97,Baxter,BAX,$83.86,Health Technology,Medical Specialties,NYSE,,
-98,BlackBerry,BB,$8.44,Technology Services,Packaged Software,NYSE,,
-99,BBVA Banco Francés,BBAR,$3.02,Finance,Regional Banks,NYSE,,
-100,Banco Bradesco S.A. - Preferred Shares,BBD,$4.71,Finance,Major Banks,NYSE,,
-101,Best Buy,BBY,$120.39,Retail Trade,Electronics/Appliance Stores,NYSE,,
-102,Barclays PLC,BCS,$10.39,Finance,Major Banks,NYSE,,
-103,Belden,BDC,$52.38,Producer Manufacturing,Electrical Products,NYSE,,
-104,Becton Dickinson,BDX,$242.38,Health Technology,Medical Specialties,NYSE,,
-105,Franklin Resources,BEN,$34.54,Finance,Investment Managers,NYSE,,
-106,Brookfield Renewable Partners,BEP,$36.30,Utilities,Electric Utilities,NYSE,,
-107,Brookfield Renewable Corporation,BEPC,$39.40,Utilities,Electric Utilities,NYSE,,
-108,Brown Forman,BF.B,$78.24,Consumer Non-Durables,Beverages: Alcoholic,NYSE,,
-109,Bunge,BG,$90.63,Process Industries,Agricultural Commodities/Milling,NYSE,,
-110,Bausch Health Companies,BHC,$29.07,Health Technology,Pharmaceuticals: Other,NYSE,,
-111,BHP Billiton,BHP,$77.47,Non-Energy Minerals,Other Metals/Minerals,NYSE,,
-112,Baidu,BIDU,$186.21,Technology Services,Internet Software/Services,NASDAQ,,
-113,Biogen,BIIB,$280.21,Health Technology,Biotechnology,NASDAQ,,
-114,Bilibili,BILI,$96.87,Technology Services,Internet Software/Services,NASDAQ,,
-115,Bio-Rad Laboratories,BIO,$600.75,Health Technology,Medical Specialties,NYSE,,
-116,Brookfield Infrastructure Partners,BIP,$52.72,Utilities,Alternative Power Generation,NYSE,,
-117,Brookfield Infrastructure Corp,BIPC,$70.47,Utilities,Gas Distributors,NYSE,,
-118,BJ's Wholesale Club Holdings,BJ,$47.25,Retail Trade,Specialty Stores,NYSE,,
-119,BNY Mellon,BK,$51.78,Finance,Major Banks,NYSE,,
-120,Booking,BKNG,"$2,282.48",Consumer Services,Other Consumer Services,NASDAQ,,
-121,Baker Hughes,BKR,$25.10,Industrial Services,Oilfield Services/Equipment,NYSE,,
-122,Ballard Power Systems,BLDP,$14.64,Producer Manufacturing,Electrical Products,NASDAQ,,
-123,BlackRock,BLK,$856.87,Finance,Investment Managers,NYSE,,
-124,Ball Corporation,BLL,$89.10,Process Industries,Containers/Packaging,NYSE,,
-125,Banco Macro,BMA,$15.30,Finance,Regional Banks,NYSE,,
-126,Bumble Inc.,BMBL,$42.82,Technology Services,Packaged Software,NASDAQ,,
-127,Biomarin Pharmaceutical,BMRN,$76.93,Health Technology,Biotechnology,NASDAQ,,
-128,Bristol-Myers Squibb,BMY,$64.88,Health Technology,Pharmaceuticals: Major,NYSE,,
-129,BioNTech SE,BNTX,$192.77,Health Technology,Biotechnology,NASDAQ,,
-130,Box,BOX,$23.31,Technology Services,Information Technology Services,NYSE,,
-131,BP plc,BP,$26.65,Energy Minerals,Integrated Oil,NYSE,,
-132,BRF,BRFS,$3.99,Consumer Non-Durables,Food: Meat/Fish/Dairy,NYSE,,
-133,Berkshire Hathaway,BRK.B,$290.68,Finance,Multi-Line Insurance,NYSE,,
-134,Brixmor Property Group,BRX,$22.46,Finance,Real Estate Investment Trusts,NYSE,,
-135,Banco Santander (Brasil),BSBR,$7.54,Finance,Regional Banks,NYSE,,
-136,Grupo Financiero Santander Mexico,BSMX,$5.79,Finance,Regional Banks,NYSE,,
-137,Boston Scientific,BSX,$41.55,Health Technology,Medical Specialties,NYSE,,
-138,Burgundy Technology Acquisition Corp,BTAQ,$9.88,Finance,Financial Conglomerates,NASDAQ,,
-139,B2Gold Corporation,BTG,$5.10,Non-Energy Minerals,Precious Metals,NYSE AMERICAN,,
-140,BTWN,BTWN,$10.02,Finance,Financial Conglomerates,NASDAQ,,
-141,Anheuser Busch Inbev NV,BUD,$75.66,Consumer Non-Durables,Beverages: Alcoholic,NYSE,,
-142,Compañía de Minas Buenaventura,BVN,$11.72,Non-Energy Minerals,Precious Metals,NYSE,,
-143,BorgWarner,BWA,$51.43,Producer Manufacturing,Auto Parts: OEM,NYSE,,
-144,Blackstone,BX,$87.48,Finance,Investment Managers,NYSE,,
-145,Beyond Meat,BYND,$104.97,Consumer Non-Durables,Food: Major Diversified,NASDAQ,,
-146,Baozun Inc,BZUN,$32.26,Retail Trade,Internet Retail,NASDAQ,,
-147,Citigroup,C,$76.56,Finance,Financial Conglomerates,NYSE,, 
-148,Cable One,CABO,"$1,740.36",Consumer Services,Cable/Satellite TV,NYSE,,
-149,ConAgra Foods,CAG,$37.56,Consumer Non-Durables,Food: Major Diversified,NYSE,,
-150,Cardinal Health,CAH,$56.34,Distribution Services,Medical Distributors,NYSE,,
-151,Canon,CAJ,$23.34,Electronic Technology,Electronic Equipment/Instruments,NYSE,,
-152,Carrier Global Corp,CARR,$43.64,Producer Manufacturing,Industrial Machinery,NYSE,,
-153,Cars.com,CARS,$13.61,Technology Services,Internet Software/Services,NYSE,,
-154,Caterpillar,CAT,$242.23,Producer Manufacturing,Trucks/Construction/Farm Machinery,NYSE,,
-155,CBOE Holdings,CBOE,$113.83,Finance,Investment Banks/Brokers,NYSE AMERICAN,,
-156,CBRE Group,CBRE,$86.32,Finance,Real Estate Development,NYSE,,
-157,"Chemours Company, The",CC,$33.71,Process Industries,Industrial Specialties,NYSE,,
-158,Crown Castle,CCI,$181.11,Finance,Real Estate Investment Trusts,NYSE,,
-159,Churchill Capital Corp IV,CCIV,$17.94,Finance,Financial Conglomerates,NYSE,,
-160,Carnival,CCL,$27.20,Consumer Services,Hotels/Resorts/Cruise lines,NYSE,,
-161,Churchill Capital Corp II,CCX,$27.67,Finance,Financial Conglomerates,NYSE,,
-162,Coeur Mining,CDE,$9.29,Non-Energy Minerals,Precious Metals,NYSE,,
-163,Cadence Design Systems,CDNS,$124.28,Technology Services,Packaged Software,NASDAQ,,
-164,Cerner,CERN,$76.80,Technology Services,Information Technology Services,NASDAQ,,
-165,CF Industries Holdings,CF,$54.34,Process Industries,Chemicals: Agricultural,NYSE,,
-166,Citizens Financial Group,CFG,$50.47,Finance,Regional Banks,NYSE,,
-167,Carlyle Group,CG,$43.51,Finance,Investment Managers,NASDAQ,,
-168,Cognex Corporation,CGNX,$74.04,Electronic Technology,Electronic Equipment/Instruments,NASDAQ,,
-169,Chegg,CHGG,$77.35,Commercial Services,Miscellaneous Commercial Services,NYSE,,
-170,Check Point Software Technologies,CHKP,$118.95,Technology Services,Internet Software/Services,NASDAQ,,
-171,China Mobile,CHL,$27.67,Communications,Telecommunications Equipment,NYSE,No live pricing update,
-172,ChargePoint Holdings,CHPT,$22.01,Retail Trade,Specialty Stores,NYSE,,
-173,Chico's FAS,CHS,$4.21,Retail Trade,Apparel/Footwear Retail,NYSE,,
-174,Charter Communications,CHTR,$710.40,Consumer Services,Cable/Satellite TV,NASDAQ,,
-175,Chewy,CHWY,$67.75,Retail Trade,Internet Retail,NYSE,,
-176,Cigna,CI,$263.52,Health Services,Managed Health Care,NYSE,,
-177,Ciena Corporation,CIEN,$51.74,Electronic Technology,Telecommunications Equipment,NYSE,,
-178,Companhia Energética de Minas Gerais,CIG,$2.25,Utilities,Electric Utilities,NYSE,,
-179,Chimera Investment,CIM,$13.53,Finance,Real Estate Investment Trusts,NYSE,,
-180,Colgate-Palmolive,CL,$83.56,Consumer Non-Durables,Household/Personal Care,NYSE,,
-181,Cloudera,CLDR,$11.91,Technology Services,Packaged Software,NYSE,,
-182,Cleveland-Cliffs Inc.,CLF,$19.51,Non-Energy Minerals,Steel,NYSE,,
-183,Clean Energy Fuels,CLNE,$8.25,Utilities,Gas Distributors,NASDAQ,,
-184,Colony Capital,CLNY,$6.52,Finance,Real Estate Investment Trusts,NYSE,,
-185,Continental Resources,CLR,$31.48,Energy Minerals,Oil & Gas Production,NYSE,,
-186,Clovis Oncology,CLVS,$5.87,Health Technology,Biotechnology,NASDAQ,,
-187,The Clorox Company,CLX,$181.32,Consumer Non-Durables,Household/Personal Care,NYSE,,
-188,Comerica,CMA,$79.43,Finance,Major Banks,NYSE,,
-189,Comcast,CMCSA,$58.68,Consumer Services,Cable/Satellite TV,NASDAQ,,
-190,CME Group (Class A),CME,$216.99,Finance,Investment Banks/Brokers,NASDAQ,,
-191,Chipotle Mexican Grill,CMG,"$1,356.21",Consumer Services,Restaurants,NYSE,,
-192,CM Life Sciences Inc,CMLF,$11.13,Finance,Financial Conglomerates,NASDAQ,,
-193,Centene,CNC,$69.20,Health Services,Managed Health Care,NYSE,,
-194,Conduent,CNDT,$7.22,Commercial Services,Miscellaneous Commercial Services,NASDAQ,,
-195,CenterPoint Energy,CNP,$25.02,Utilities,Electric Utilities,NYSE,,
-196,CNX Resources,CNX,$13.80,Energy Minerals,Integrated Oil,NYSE,,
-197,Capital One,COF,$158.11,Finance,Major Banks,NYSE,,
-198,Cabot Oil & Gas Corporation,COG,$17.77,Energy Minerals,Integrated Oil,NYSE,,
-199,Coinbase,COIN,$258.37,Technology Services,Packaged Software,NASDAQ,,
-200,Americold Realty Trust,COLD,$38.36,Finance,Real Estate Investment Trusts,NYSE,,
-201,CommScope Holding Company,COMM,$18.16,Electronic Technology,Telecommunications Equipment,NASDAQ,,
-202,Compass,COMP,$14.15,Technology Services,Packaged Software,NYSE,,
-203,Conx Corp,CONX,$9.92,Finance,Financial Conglomerates,NASDAQ,,
-204,ConocoPhillips,COP,$56.52,Energy Minerals,Oil & Gas Production,NYSE,,
-205,Costco Wholesale,COST,$384.42,Retail Trade,Specialty Stores,NASDAQ,,
-206,Coty,COTY,$8.95,Consumer Non-Durables,Household/Personal Care,NYSE,,
-207,Coursera,COUR,$38.12,Technology Services,Internet Software/Services,NYSE,,
-208,Coupang,CPNG,$36.43,Retail Trade,Internet Retail,NYSE,,
-209,Cohn Robbins Holdings Corp,CRHC,$9.81,Finance,Financial Conglomerates,NYSE,,
-210,Salesforce,CRM,$217.66,Technology Services,Packaged Software,NYSE,,
-211,Crocs,CROX,$101.98,Consumer Non-Durables,Apparel/Footwear,NASDAQ,,
-212,CRISPR Therapeutics AG,CRSP,$106.64,Health Technology,Biotechnology,NASDAQ,,
-213,CrowdStrike,CRWD,$190.64,Technology Services,Packaged Software,NASDAQ,,
-214,Cisco,CSCO,$52.90,Technology Services,Information Technology Services,NASDAQ,,
-215,CoStar Group,CSGP,$821.90,Technology Services,Internet Software/Services,NASDAQ,,
-216,Canadian Solar,CSIQ,$36.62,Producer Manufacturing,Electrical Products,NASDAQ,,
-217,CSX,CSX,$101.71,Transportation,Railroads,NASDAQ,,
-218,Cintas,CTAS,$358.08,Consumer Services,Other Consumer Services,NASDAQ,,
-219,Cognizant Technology Solutions,CTSH,$71.01,Technology Services,Information Technology Services,NASDAQ,,
-220,Corteva,CTVA,$46.32,Process Industries,Chemicals: Agricultural,NYSE,,
-221,Citrix Systems,CTXS,$117.71,Technology Services,Packaged Software,NASDAQ,,
-222,Covanta Holding Corp,CVA,$15.14,Industrial Services,Environmental Services,NYSE,,
-223,Cenovus Energy Inc,CVE,$8.04,Energy Minerals,Oil & Gas Production,NYSE,,
-224,Carvana Co.,CVNA,$237.53,Retail Trade,Specialty Stores,NYSE,,
-225,CVS Health,CVS,$84.33,Retail Trade,Drugstore Chains,NYSE,,
-226,Chevron,CVX,$109.47,Energy Minerals,Integrated Oil,NYSE,,
-227,Clearway Energy,CWEN,$26.37,Utilities,Alternative Power Generation,NYSE,,
-228,"CEMEX, S.A.B. de C.V.",CX,$8.34,Non-Energy Minerals,Construction Materials,NYSE,,
-229,Community Health Systems,CYH,$14.14,Health Services,Hospital/Nursing Management,NYSE,,
-230,Caesars Entertainment Inc.,CZR,$98.61,Consumer Services,Casinos/Gaming,NASDAQ,,
-231,Dominion Energy,D,$78.07,Utilities,Electric Utilities,NYSE,,
-232,Delta Air Lines,DAL,$46.31,Transportation,Airlines,NYSE,,
-233,Dana Holding,DAN,$27.37,Producer Manufacturing,Auto Parts: OEM,NYSE,,
-234,Darling Ingredients,DAR,$76.09,Process Industries,Agricultural Commodities/Milling,NYSE,,
-235,DoorDash Inc,DASH,$141.07,Technology Services,Internet Software/Services,NYSE,,
-236,Deutsche Bank AG,DB,$14.40,Finance,Major Banks,NYSE,,
-237,Dropbox,DBX,$25.38,Technology Services,Data Processing Services,NASDAQ,,
-238,Decarbonization Plus Acquisition Corp,DCRB,$9.94,Finance,Financial Conglomerates,NASDAQ,,
-239,DuPont,DD,$83.24,Process Industries,Chemicals: Major Diversified,NYSE,,
-240,Datadog,DDOG,$82.51,Technology Services,Packaged Software,NASDAQ,,
-241,John Deere,DE,$384.00,Producer Manufacturing,Trucks/Construction/Farm Machinery,NYSE,,
-242,Dell Technologies,DELL,$98.43,Electronic Technology,Computer Processing Hardware,NYSE,,
-243,Diageo,DEO,$189.21,Consumer Non-Durables,Beverages: Alcoholic,NYSE,,
-244,Discover Financial Services,DFS,$116.82,Finance,Finance/Rental/Leasing,NYSE,,
-245,Dollar General,DG,$206.20,Retail Trade,Discount Stores,NYSE,,
-246,Dragoneer Growth Opportunities Corp.,DGNR,$9.95,Finance,Financial Conglomerates,NYSE,,
-247,Diversified Healthcare Trust,DHC,$3.64,Finance,Real Estate Investment Trusts,NASDAQ,,
-248,DR Horton,DHI,$96.29,Consumer Durables,Homebuilding,NYSE,,
-249,Danaher,DHR,$253.58,Health Technology,Medical Specialties,NYSE,,
-250,Dine Brands Global Inc,DIN,$97.17,Consumer Services,Restaurants,NYSE,,
-251,Walt Disney,DIS,$173.70,Consumer Services,Cable/Satellite TV,NYSE,,
-252,Discovery Communications,DISCA,$35.65,Consumer Services,Cable/Satellite TV,NASDAQ,,
-253,Discovery Communications,DISCK,$30.74,Consumer Services,Cable/Satellite TV,NASDAQ,,
-254,DISH Network,DISH,$45.82,Consumer Services,Cable/Satellite TV,NASDAQ,,
-255,DraftKings Inc,DKNG,$44.89,Technology Services,Internet Software/Services,NASDAQ,,
-256,Digital Realty Trust,DLR,$148.88,FInance,Real Estate Investment Trusts,NYSE,,
-257,Dollar Tree,DLTR,$111.23,Retail Trade,Discount Stores,NASDAQ,,
-258,DocuSign,DOCU,$187.08,Technology Services,Packaged Software,NASDAQ,,
-259,The Dow Chemical Company,DOW,$69.83,Process Industries,Chemicals: Specialty,NYSE,,
-260,Domino's Pizza,DPZ,$427.29,Consumer Services,Restaurants,NYSE,,
-261,Daqo New Energy Corp,DQ,$71.73,Process Industries,Chemicals: Specialty,NYSE,,
-262,Duke Realty,DRE,$44.95,Finance,Real Estate Investment Trusts,NYSE,,
-263,Darden Restaurants,DRI,$139.52,Consumer Services,Restaurants,NYSE,,
-264,DTE Energy Co,DTE,$141.12,Utilities,Electric Utilities,NYSE,,
-265,Duke Energy,DUK,$103.06,Utilities,Electric Utilities,NYSE,,
-266,DaVita HealthCare Partners,DVA,$125.41,Health Services,Medical/Nursing Services,NYSE,,
-267,Devon Energy,DVN,$26.38,Energy Minerals,Oil & Gas Production,NYSE,,
-268,DXC Technology,DXC,$36.86,Technology Services,Data Processing Services,NYSE,,
-269,DexCom Inc,DXCM,$333.25,Health Technology,Medical Specialties,NASDAQ,,
-270,Electronic Arts,EA,$138.62,Consumer Durables,Recreational Products,NASDAQ,,
-271,Eventbrite,EB,$20.61,Technology Services,Packaged Software,NYSE,,
-272,eBay,EBAY,$60.86,Consumer Services,Other Consumer Services,NASDAQ,,
-273,Ecolab,ECL,$224.06,Process Industries,Chemicals: Specialty,NYSE,,
-274,Consolidated Edison,ED,$78.97,Utilities,Electric Utilities,NYSE,,
-275,New Oriental Education & Tech Group,EDU,$12.20,Consumer Services,Other Consumer Services,NYSE,,
-276,Equifax,EFX,$239.41,Commercial Services,Miscellaneous Commercial Services,NYSE,,
-277,Eldorado Gold Corporation,EGO,$11.12,Non-Energy Minerals,Precious Metals,NYSE,,
-278,Edison International,EIX,$58.39,Utilities,Electric Utilities,NYSE,,
-279,Estee Lauder,EL,$296.48,Consumer Non-Durables,Household/Personal Care,NYSE,,
-280,Elanco Animal Health,ELAN,$34.80,Process Industries,Agricultural Commodities/Milling,NYSE,,
-281,Emerson,EMR,$95.84,Producer Manufacturing,Electrical Products,NYSE,,
-282,Enersis Americas S.A. American,ENIA,$7.38,Utilities,Electric Utilities,NYSE,,
-283,EnLink Midstream LLC,ENLC,$4.76,Industrial Services,Oil & Gas Pipelines,NYSE,,
-284,Enphase Energy Inc,ENPH,$119.78,Electronic Technology,Semiconductors,NASDAQ,,
-285,EOG Resources,EOG,$82.60,Energy Minerals,Oil & Gas Production,NYSE,,
-286,EPAM Systems,EPAM,$451.56,Technology Services,Information Technology Services,NYSE,,
-287,Enterprise Products Partners,EPD,$23.89,Industrial Services,Oil & Gas Pipelines,NYSE,,
-288,Equity Distribution Acquisition Corp,EQD,$9.90,Finance,Financial Conglomerates,NYSE,,
-289,AXA Equitable Holdings,EQH,$34.02,Finance,Financial Conglomerates,NYSE,,
-290,Equinix,EQIX,$722.02,Finance,Real Estate Investment Trusts,NASDAQ,,
-291,Equinor,EQNR,$21.73,Energy Minerals,Integrated Oil,NYSE,,
-292,Equity Residential,EQR,$74.07,Finance,Real Estate Investment Trusts,NYSE,,
-293,EQT Corporation,EQT,$21.39,Energy Minerals,Oil & Gas Production,NYSE,,
-294,Embraer,ERJ,$12.07,Electronic Technology,Aerospace & Defense,NYSE,,
-295,Element Solutions,ESI,$22.62,Process Industries,Chemicals: Major Diversified,NYSE,,
-296,Energy Transfer Equity,ET,$10.11,Industrial Services,Oil & Gas Pipelines,NYSE,,
-297,E.Merge Technology Acquisition Corp,ETAC,$9.75,Finance,Financial Conglomerates,NASDAQ,,
-298,Entergy Corp,ETR,$107.18,Utilities,Electric Utilities,NYSE,,
-299,Equitrans Midstream,ETRN,$8.21,Industrial Services,Oil & Gas Pipelines,NYSE,,
-300,Etsy,ETSY,$163.11,Commercial Services,Miscellaneous Commercial Services,NASDAQ,,
-301,Evercore,EVR,$147.63,Finance,Investment Banks/Brokers,NYSE,,
-302,Edwards Lifesciences,EW,$89.49,Health Technology,Medical Specialties,NYSE,,
-303,Exact Sciences Corporation,EXAS,$96.74,Health Technology,Biotechnology,NASDAQ,,
-304,Exelon,EXC,$45.09,Utilities,Electric Utilities,NASDAQ,,
-305,Exelixis,EXEL,$6.95,Health Technology,Biotechnology,NASDAQ,,
-306,Expedia,EXPE,$171.80,Consumer Services,Other Consumer Services,NASDAQ,,
-307,Ford,F,$11.84,Consumer Durables,Motor Vehicles,NYSE,,
-308,Fortress Value Acquisition Corp II,FAII,$9.95,Finance,Financial Conglomerates,NYSE,,
-309,Diamondback Energy Inc,FANG,$78.70,Energy Minerals,Oil & Gas Production,NASDAQ,,
-310,Fastenal Company,FAST,$53.90,Distribution Services,Wholesale Distributors,NASDAQ,,
-311,Facebook,FB,$315.94,Technology Services,Internet Software/Services,NASDAQ,,
-312,FuelCell Energy,FCEL,$7.75,Electronic Technology,Electronic Equipment/Instruments,NASDAQ,,
-313,Freeport,FCX,$42.29,Non-Energy Minerals,Other Metals/Minerals,NYSE,,
-314,FactSet Research Systems,FDS,$330.91,Technology Services,Data Processing Services,NYSE,,
-315,FedEx,FDX,$309.43,Transportation,Air Freight/Couriers,NYSE,,
-316,FirstEnergy,FE,$37.61,Utilities,Electric Utilities,NYSE,,
-317,FireEye,FEYE,$20.55,Technology Services,Information Technology Services,NASDAQ,,
-318,FutureFuel,FF,$14.91,Process Industries,Chemicals: Specialty,NYSE,,
-319,F5 Networks,FFIV,$181.27,Electronic Technology,Computer Communications,NASDAQ,,
-320,FG New America Acquisition Corp,FGNA,$10.07,Finance,Financial Conglomerates,NYSE,,
-321,First Horizon National Corporation,FHN,$19.14,Finance,Regional Banks,NYSE,,
-322,Forum Merger III Corp,FIII,$9.89,Finance,Financial Conglomerates,NASDAQ,,
-323,FIS,FIS,$150.00,Technology Services,Data Processing Services,NYSE,,
-324,Fiserv,FISV,$114.41,Technology Services,Data Processing Services,NASDAQ,,
-325,Fitbit,FIT,$6.95,Consumer Durables,Other Consumer Specialties,NYSE,No live pricing update,
-326,Fifth Third Bancorp,FITB,$42.64,Finance,Regional Banks,NASDAQ,,
-327,Foot Locker,FL,$64.60,Retail Trade,Apparel/Footwear Retail,NYSE,,
-328,Flextronics International,FLEX,$17.52,Electronic Technology,Electronic Components,NASDAQ,,
-329,Fluor Corporation,FLR,$19.14,Industrial Services,Engineering & Construction,NYSE,,
-330,FleetCor Technologies,FLT,$272.93,Commercial Services,Miscellaneous Commercial Services,NYSE,,
-331,FirstMark Horizon Acquisition Corp,FMAC,$9.88,Finance,Financial Conglomerates,NYSE,,
-332,Amicus Therapeutics,FOLD,$9.49,Health Technology,Biotechnology,NASDAQ,,
-333,21st Century Fox,FOXA,$37.26,Consumer Services,Broadcasting,NASDAQ,,
-334,Frequency Therapeutics,FREQ,$8.66,Health Technology,Biotechnology,NASDAQ,,
-335,JFrog Ltd,FROG,$36.48,Technology Services,Packaged Software,NASDAQ,,
-336,FS KKR Capital,FSK,$21.45,Finance,Investment Managers,NYSE,,
-337,First Solar,FSLR,$72.58,Electronic Technology,Electronic Components,NASDAQ,,
-338,Fastly,FSLY,$42.60,Technology Services,Information Technology Services,NYSE,,
-339,FinServ Acquisition Corp,FSRV,$11.37,Finance,Financial Conglomerates,NASDAQ,,
-340,TechnipFMC plc,FTI,$8.21,Industrial Services,Oilfield Services/Equipment,NYSE,,
-341,Fortinet,FTNT,$205.86,Electronic Technology,Computer Communications,NASDAQ,,
-342,FTAC Olympus Acquisition Corp,FTOC,$9.93,Finance,Financial Conglomerates,NASDAQ,,
-343,Fortive,FTV,$70.61,Electronic Technology,Electronic Equipment/Instruments,NYSE,,
-344,Five Star Senior Living Inc,FVE,$5.95,Health Services,Hospital/Nursing Management,NASDAQ,,
-345,Fiverr,FVRR,$169.70,Technology Services,Data Processing Services,NYSE,,
-346,Liberty Media Group,FWONK,$44.06,Consumer Services,Movies/Entertainment,NASDAQ,,
-347,General Dynamics,GD,$191.94,Electronic Technology,Aerospace & Defense,NYSE,,
-348,GoDaddy,GDDY,$81.61,Technology Services,Internet Software/Services,NYSE,,
-349,GDS Holdings,GDS,$74.53,Technology Services,Data Processing Services,NASDAQ,,
-350,General Electric,GE,$13.26,Electronic Technology,Aerospace & Defense,NYSE,,
-351,The GEO Group,GEO,$6.20,Finance,Real Estate Investment Trusts,NYSE,,
-352,Guess,GES,$29.56,Consumer Non-Durables,Apparel/Footwear,NYSE,,
-353,Gold Fields,GFI,$11.22,Non-Energy Minerals,Precious Metals,NYSE,,
-354,Grupo Financiero Galicia,GGAL,$8.33,Finance,Regional Banks,NASDAQ,,
-355,Gerdau S.A.,GGB,$6.58,Non-Energy Minerals,Steel,NYSE,,
-356,Gilead Sciences,GILD,$68.53,Health Technology,Biotechnology,NASDAQ,,
-357,General Mills,GIS,$63.40,Consumer Non-Durables,Food: Major Diversified,NYSE,,
-358,Corning,GLW,$44.28,Electronic Technology,Electronic Components,NYSE,,
-359,General Motors,GM,$56.00,Consumer Durables,Motor Vehicles,NYSE,,
-360,GameStop,GME,$159.92,Retail Trade,Electronics/Appliance Stores,NYSE,,
-361,Globus Medical Inc,GMED,$72.24,Health Technology,Medical Specialties,NYSE,,
-362,Global Net Lease,GNL,$18.65,Finance,Real Estate Investment Trusts,NYSE,,
-363,Gentex,GNTX,$34.85,Producer Manufacturing,Auto Parts: OEM,NASDAQ,,
-364,Genworth Financial,GNW,$4.10,Finance,Life/Health Insurance,NYSE,,
-365,Grocery Outlet Holding,GO,$34.75,Retail Trade,Food Retail,NASDAQ,,
-366,Canoo,GOEV,$7.30,Consumer Durables,Motor Vehicles,NASDAQ,,
-367,Gol Intelligent Airlines,GOL,$9.66,Transportation,Airlines,NYSE,,
-368,Barrick Gold,GOLD,$24.02,Non-Energy Minerals,Precious Metals,NYSE,,
-369,Alphabet (Class C),GOOG,"$2,316.16",Technology Services,Internet Software/Services,NASDAQ,,
-370,Alphabet (Class A),GOOGL,"$2,278.38",Technology Services,Internet Software/Services,NASDAQ,,
-371,Graphic Packaging Holding,GPK,$19.07,Process Industries,Containers/Packaging,NYSE,,
-372,Green Plains,GPRE,$26.75,Process Industries,Chemicals: Specialty,NASDAQ,,
-373,GoPro,GPRO,$9.86,Consumer Durables,Electronics/Appliances,NASDAQ,,
-374,GAP,GPS,$35.71,Retail Trade,Apparel/Footwear Retail,NYSE,,
-375,Groupon,GRPN,$46.24,Commercial Services,Advertising/Marketing Services,NASDAQ,,
-376,GrubHub,GRUB,$58.55,Retail Trade,Specialty Stores,NYSE,,
-377,Goldman Sachs,GS,$368.77,Finance,Investment Banks/Brokers,NYSE,,
-378,GS Acquisition Holdings Corp II,GSAH,$10.18,Finance,Financial Conglomerates,NYSE,,
-379,GlaxoSmithKline plc,GSK,$39.08,Health Technology,Pharmaceuticals: Major,NYSE,,
-380,Goodyear,GT,$19.96,Consumer Durables,Automotive Aftermarket,NASDAQ,,
-381,GW Pharmaceuticals plc,GWPH,$219.01,Health Technology,Pharmaceuticals: Other,NASDAQ,No live pricing update,
-382,Hyatt Hotels,H,$79.23,Consumer Services,Hotels/Resorts/Cruise lines,NYSE,,
-383,Health Assurance Acquisition Corp,HAAC,$10.05,Finance,Financial Conglomerates,NASDAQ,,
-384,Halliburton,HAL,$23.06,Industrial Services,Oilfield Services/Equipment,NYSE,,
-385,Hasbro,HAS,$96.30,Consumer Durables,Recreational Products,NASDAQ,,
-386,Huntington Bancshares Incorporated,HBAN,$15.85,Finance,Regional Banks,NASDAQ,,
-387,Hanesbrands,HBI,$19.18,Consumer Non-Durables,Apparel/Footwear,NYSE,,
-388,HCA Healthcare,HCA,$211.50,Health Services,Hospital/Nursing Management,NYSE,,
-389,Hutchison China,HCM,$25.81,Health Technology,Pharmaceuticals: Major,NASDAQ,,
-390,Home Depot,HD,$323.63,Retail Trade,Home Improvement Chains,NYSE,,
-391,HDFC Bank.,HDB,$70.08,Finance,Regional Banks,NYSE,,
-392,Hudson Executive Investment Ord Shs Class A,HEC,$9.89,Finance,Financial Conglomerates,NASDAQ,,
-393,Heico,HEI,$136.48,Electronic Technology,Aerospace & Defense,NYSE,,
-394,Hess Corporation,HES,$84.33,Energy Minerals,Oil & Gas Production,NYSE,,
-395,HollyFrontier,HFC,$35.82,Energy Minerals,Oil Refining/Marketing,NYSE,,
-396,Hilton Grand Vacations,HGV,$44.84,Finance,Real Estate Development,NYSE,,
-397,Hartford Financial Services Group,HIG,$66.07,Finance,Multi-Line Insurance,NYSE,,
-398,Himax Technologies,HIMX,$11.07,Electronic Technology,Semiconductors,NASDAQ,,
-399,Hecla Mining Co.,HL,$7.56,Non-Energy Minerals,Precious Metals,NYSE,,
-400,Herbalife,HLF,$49.86,Distribution Services,Medical Distributors,NYSE,,
-401,Hilton,HLT,$123.61,Consumer Services,Hotels/Resorts/Cruise lines,NYSE,,
-402,Honda Motor,HMC,$30.25,Consumer Durables,Motor Vehicles,NYSE,,
-403,Harmony Gold Mining Company Limited,HMY,$4.99,Non-Energy Minerals,Precious Metals,NYSE,,
-404,Harley-Davidson,HOG,$47.69,Consumer Durables,Motor Vehicles,NYSE,,
-405,Hologic,HOLX,$63.74,Health Technology,Medical Specialties,NASDAQ,,
-406,At Home Group,HOME,$36.30,Retail Trade,Specialty Stores,NYSE,,
-407,Honeywell,HON,$230.00,Producer Manufacturing,Industrial Conglomerates,NYSE,No live pricing update,
-408,Hewlett Packard,HPE,$16.26,Electronic Technology,Computer Processing Hardware,NYSE,,
-409,HP,HPQ,$32.92,Electronic Technology,Computer Processing Hardware,NYSE,,
-410,H&R Block,HRB,$24.55,Consumer Services,Other Consumer Services,NYSE,,
-411,Hormel Foods Corporation,HRL,$46.58,Consumer Non-Durables,Food: Meat/Fish/Dairy,NYSE,,
-412,Henry Schein,HSIC,$80.66,Distribution Services,Medical Distributors,NASDAQ,,
-413,Host Hotels & Resorts,HST,$17.33,Finance,Real Estate Investment Trusts,NASDAQ,,
-414,Huazhu Group,HTHT,$56.50,Consumer Services,Hotels/Resorts/Cruise lines,NASDAQ,,
-415,HubSpot,HUBS,$498.05,Technology Services,Information Technology Services,NYSE,,
-416,Humana,HUM,$452.75,Health Services,Managed Health Care,NYSE,,
-417,Huntsman Corporation,HUN,$30.09,Process Industries,Chemicals: Major Diversified,NYSE,,
-418,HUYA,HUYA,$15.58,Technology Services,Packaged Software,NYSE,,
-419,Howmet Aerospace,HWM,$33.25,Non-Energy Minerals,Aluminum,NYSE,,
-420,Iamgold Corp,IAG,$3.35,Non-Energy Minerals,Precious Metals,NYSE,,
-421,Interactive Brokers,IBKR,$69.04,Finance,Investment Banks/Brokers,NASDAQ,,
-422,IBM,IBM,$144.68,Technology Services,Information Technology Services,NYSE,,
-423,ICICI Bank,IBN,$16.54,Finance,Regional Banks,NYSE,,
-424,Intercontinental Exchange,ICE,$113.26,Finance,Investment Banks/Brokers,NYSE,,
-425,Intercept Pharmaceuticals,ICPT,$18.15,Health Technology,Pharmaceuticals: Other,NASDAQ,,
-426,IDEXX Laboratories,IDXX,$530.07,Health Technology,Medical Specialties,NASDAQ,,
-427,IGM Biosciences,IGMS,$68.76,Health Technology,Pharmaceuticals: Major,NASDAQ,,
-428,International Game Technology,IGT,$22.00,Consumer Services,Casinos/Gaming,NYSE,,
-429,Innovative Industrial Properties,IIPR,$175.41,Finance,Real Estate Investment Trusts,NYSE,,
-430,Illumina,ILMN,$381.03,Health Technology,Biotechnology,NASDAQ,,
-431,ImmunoGen,IMGN,$6.75,Health Technology,Biotechnology,NASDAQ,,
-432,Incyte,INCY,$82.62,Health Technology,Biotechnology,NASDAQ,,
-433,Infinera Corporation,INFN,$8.66,Electronic Technology,Telecommunications Equipment,NASDAQ,,
-434,Infosys,INFY,$18.16,Technology Services,Information Technology Services,NYSE,,
-435,Inovio Pharmaceuticals In,INO,$6.55,Health Technology,Medical Specialties,NASDAQ,,
-436,Intel,INTC,$55.35,Electronic Technology,Semiconductors,NASDAQ,,
-437,Intuit,INTU,$417.26,Technology Services,Packaged Software,NASDAQ,,
-438,Invitation Homes,INVH,$35.11,Finance,Real Estate Investment Trusts,NYSE,,
-439,International Paper Company,IP,$62.65,Process Industries,Containers/Packaging,NYSE,,
-440,Interpublic Group of Companies,IPG,$32.52,Commercial Services,Advertising/Marketing Services,NYSE,,
-441,Social Capital Hedosophia Holdings Corp VI,IPOD,$10.27,Finance,Financial Conglomerates,NYSE,,
-442,Social Capital Hedosophia Holdings Corp V,IPOE,$14.94,Finance,Financial Conglomerates,NYSE,,
-443,Social Capital Hedosophia Holdings Corp VI,IPOF,$10.09,Finance,Financial Conglomerates,NYSE,,
-444,iQIYI,IQ,$12.84,Technology Services,Internet Software/Services,NASDAQ,,
-445,iRobot,IRBT,$96.36,Consumer Durables,Electronics/Appliances,NASDAQ,,
-446,Iron Mountain,IRM,$42.50,Finance,Real Estate Investment Trusts,NYSE,,
-447,Investors Bancorp,ISBC,$15.02,Finance,Savings Banks,NASDAQ,,
-448,Intuitive Surgical,ISRG,$833.38,Health Technology,Medical Specialties,NASDAQ,,
-449,Gartner,IT,$231.10,Commercial Services,Miscellaneous Commercial Services,NYSE,,
-450,Itaú Unibanco,ITUB,$5.47,Finance,Major Banks,NYSE,,
-451,Illinois Tool Works,ITW,$238.50,Producer Manufacturing,Industrial Machinery,NYSE,,
-452,Invesco Mortgage Capital,IVR,$3.54,Finance,Real Estate Investment Trusts,NYSE,,
-453,Invesco,IVZ,$27.96,Finance,Investment Managers,NYSE,,
-454,Jazz Pharmaceuticals,JAZZ,$179.17,Health Technology,Pharmaceuticals: Other,NASDAQ,,
-455,J.B. Hunt,JBHT,$176.49,Transportation,Trucking,NASDAQ,,
-456,JetBlue Airways,JBLU,$19.68,Transportation,Airlines,NASDAQ,,
-457,JD.com,JD,$68.15,Retail Trade,Internet Retail,NASDAQ,,
-458,Jefferies Financial Group,JEF,$32.41,Finance,Investment Banks/Brokers,NYSE,,
-459,Juniper Industrial Holdings Inc Class A,JIH,$13.00,Finance,Financial Conglomerates,NYSE,,
-460,Jack Henry & Associates,JKHY,$157.32,Technology Services,Information Technology Services,NASDAQ,,
-461,Jinkosolar Holding,JKS,$31.47,Producer Manufacturing,Electrical Products,NYSE,,
-462,Jumia,JMIA,$25.98,Technology Services,Internet Software/Services,NYSE,,
-463,J&J,JNJ,$170.22,Health Technology,Pharmaceuticals: Major,NYSE,,
-464,Juniper Networks,JNPR,$26.58,Technology Services,Information Technology Services,NYSE,,
-465,JPMorgan,JPM,$164.01,Finance,Major Banks,NYSE,,
-466,Nordstrom,JWN,$40.95,Retail Trade,Apparel/Footwear Retail,NYSE,,
-467,Jaws Acquisition Corp,JWS,$13.25,Finance,Financial Conglomerates,NYSE,,
-468,Kellogg's,K,$66.54,Consumer Non-Durables,Food: Major Diversified,NYSE,,
-469,KAR Auction Services,KAR,$18.50,Commercial Services,Miscellaneous Commercial Services,NYSE,,
-470,Keurig Dr Pepper,KDP,$36.05,Consumer Non-Durables,Beverages: Non-Alcoholic,NASDAQ,,
-471,KeyCorp.,KEY,$23.39,Finance,Major Banks,NYSE,,
-472,Keysight Technologies,KEYS,$139.85,Electronic Technology,Electronic Equipment/Instruments,NYSE,,
-473,Kinross Gold Corporation,KGC,$7.78,Non-Energy Minerals,Precious Metals,NYSE,,
-474,Kraft Heinz,KHC,$43.73,Consumer Non-Durables,Food: Major Diversified,NASDAQ,,
-475,Kimco Realty Corporation,KIM,$21.23,Finance,Real Estate Investment Trusts,NYSE,,
-476,KKR & Co,KKR,$56.14,Finance,Investment Managers,NYSE,,
-477,Kimberly-Clark,KMB,$139.79,Consumer Non-Durables,Household/Personal Care,NYSE,,
-478,Kinder Morgan,KMI,$18.36,Industrial Services,Oil & Gas Pipelines,NYSE,,
-479,Knight-Swift Transportation Holdings,KNX,$48.88,Transportation,Trucking,NYSE,,
-480,Coca-Cola,KO,$54.73,Consumer Non-Durables,Beverages: Non-Alcoholic,NYSE,,
-481,Kroger Co,KR,$37.20,Retail Trade,Food Retail,NYSE,,
-482,Kohl's,KSS,$61.32,Retail Trade,Department Stores,NYSE,,
-483,KT,KT,$13.72,Communications,Major Telecommunications,NYSE,,
-484,Kratos,KTOS,$25.00,Electronic Technology,Aerospace & Defense,NASDAQ,,
-485,L Brands,LB,$69.23,Retail Trade,Apparel/Footwear Retail,NYSE,,
-486,Leidos Holdings,LDOS,$103.38,Technology Services,Information Technology Services,NYSE,,
-487,Lennar,LEN,$99.71,Consumer Durables,Homebuilding,NYSE,,
-488,Leslies Inc,LESL,$27.43,Retail Trade,Specialty Stores,NASDAQ,,
-489,Levi Strauss & Co,LEVI,$29.07,Consumer Non-Durables,Apparel/Footwear,NYSE,,
-490,Li Auto Inc.,LI,$18.35,Producer Manufacturing,Auto Parts: OEM,NASDAQ,,
-491,LKQ,LKQ,$50.68,Consumer Durables,Automotive Aftermarket,NASDAQ,,
-492,Eli Lilly,LLY,$196.21,Health Technology,Pharmaceuticals: Major,NYSE,,
-493,Lemonade,LMND,$69.45,Finance,Property/Casualty Insurance,NYSE,,
-494,Lockheed Martin,LMT,$390.78,Electronic Technology,Aerospace & Defense,NYSE,,
-495,Cheniere Energy,LNG,$83.83,Industrial Services,Oil & Gas Pipelines,NYSE AMERICAN,,
-496,Logitech International SA,LOGI,$105.31,Electronic Technology,Computer Peripherals,NASDAQ,,
-497,Loma Negra Compania Industrial Argentina SA,LOMA,$6.20,Non-Energy Minerals,Construction Materials,NYSE,,
-498,Lowe’s,LOW,$198.91,Retail Trade,Home Improvement Chains,NYSE,,
-499,LG Display,LPL,$9.84,Electronic Technology,Electronic Production Equipment,NYSE,,
-500,Lam Research,LRCX,$602.99,Electronic Technology,Electronic Production Equipment,NASDAQ,,
-501,Lattice Semiconductor Corp,LSCC,$46.37,Electronic Technology,Semiconductors,NASDAQ,,
-502,LTC Properties,LTC,$39.91,Finance,Real Estate Investment Trusts,NYSE,,
-503,Livent,LTHM,$17.73,Process Industries,Chemicals: Specialty,NYSE,,
-504,Lululemon,LULU,$21.97,Retail Trade,Apparel/Footwear Retail,NASDAQ,,
-505,Lumen Technologies,LUMN,$14.43,Communications,Specialty Telecommunications,NYSE,,
-506,Southwest Airlines,LUV,$62.30,Transportation,Airlines,NYSE,,
-507,Livongo Health,LVGO,$139.79,Health Technology,Pharmaceuticals: Major,NASDAQ,No live pricing update,
-508,Las Vegas Sands,LVS,$57.90,Consumer Services,Casinos/Gaming,NYSE,,
-509,LexinFintech Holdings,LX,$8.14,Finance,Finance/Rental/Leasing,NASDAQ,,
-510,Lexicon Pharmaceuticals,LXRX,$4.33,Health Technology,Biotechnology,NASDAQ,,
-511,Lyft,LYFT,$49.65,Technology Services,Packaged Software,NASDAQ,,
-512,Live Nation Entertainment,LYV,$85.80,Consumer Services,Movies/Entertainment,NYSE,,
-513,Macy's,M,$18.08,Retail Trade,Department Stores,NYSE,,
-514,Mastercard,MA,$363.91,Finance,Finance/Rental/Leasing,NYSE,,
-515,Marriott,MAR,$143.29,Consumer Services,Hotels/Resorts/Cruise lines,NASDAQ,,
-516,Masco Corporation,MAS,$64.15,Producer Manufacturing,Building Products,NYSE,,
-517,Mattel,MAT,$20.67,Consumer Durables,Recreational Products,NASDAQ,,
-518,Maxeon Solar Technologies,MAXN,$15.59,Utilities,Alternative Power Generation,NASDAQ,,
-519,Mobile TeleSystems PJSC,MBT,$8.89,Communications,Wireless Telecommunications,NYSE,,
-520,McDonald’s,MCD,$231.72,Consumer Services,Restaurants,NYSE,,
-521,McAfee Corp,MCFE,$23.75,Technology Services,Packaged Software,NASDAQ,,
-522,Microchip Technology,MCHP,$145.47,Electronic Technology,Semiconductors,NASDAQ,,
-523,Moody's,MCO,$334.04,Commercial Services,Financial Publishing/Services,NYSE,,
-524,MongoDB,MDB,$261.19,Technology Services,Packaged Software,NASDAQ,,
-525,Mondelez,MDLZ,$62.37,Consumer Non-Durables,Food: Major Diversified,NASDAQ,,
-526,Allscripts Healthcare Solutions,MDRX,$16.94,Technology Services,Information Technology Services,NASDAQ,,
-527,Medtronic,MDT,$125.27,Health Technology,Medical Specialties,NYSE,,
-528,MercadoLibre,MELI,"$1,323.10",Technology Services,Internet Software/Services,NASDAQ,,
-529,Metlife,MET,$65.90,Finance,Life/Health Insurance,NYSE,,
-530,MFA Financial,MFA,$4.38,Finance,Real Estate Investment Trusts,NYSE,,
-531,Mizuho Financial Group,MFG,$3.07,Finance,Major Banks,NYSE,,
-532,MoneyGram,MGI,$7.73,Commercial Services,Miscellaneous Commercial Services,NASDAQ,,
-533,MGM Resorts,MGM,$39.11,Consumer Services,Casinos/Gaming,NYSE,,
-534,Michaels Companies,MIK,$21.97,Retail Trade,Specialty Stores,NASDAQ,No live pricing update,
-535,Markel Corp.,MKL,"$1,233.32",Finance,Specialty Insurance,NYSE,,
-536,Melco Crown Entertainment Limited,MLCO,$17.64,Consumer Services,Casinos/Gaming,NASDAQ,,
-537,Marsh & McLennan,MMC,$134.56,Finance,Insurance Brokers/Services,NYSE,,
-538,3M,MMM,$204.38,Producer Manufacturing,Industrial Conglomerates,NYSE,,
-539,Monster,MNST,$92.14,Consumer Non-Durables,Beverages: Non-Alcoholic,NASDAQ,,
-540,Altria,MO,$50.28,Consumer Non-Durables,Tobacco,NYSE,,
-541,Momo,MOMO,$13.95,Technology Services,Information Technology Services,NASDAQ,,
-542,Morningstar,MORN,$245.02,Finance,Investment Managers,NASDAQ,,
-543,"Mosaic Company, The",MOS,$36.49,Process Industries,Chemicals: Agricultural,NYSE,,
-544,Marathon Petroleum,MPC,$60.08,Energy Minerals,Oil Refining/Marketing,NYSE,,
-545,MPLX LP,MPLX,$28.69,Industrial Services,Oil & Gas Pipelines,NYSE,,
-546,Medical Properties Trust,MPW,$20.82,Finance,Real Estate Investment Trusts,NYSE,,
-547,Merck,MRK,$78.29,Health Technology,Pharmaceuticals: Major,NYSE,,
-548,Moderna,MRNA,$161.38,Health Technology,Biotechnology,NASDAQ,,
-549,Marathon Oil Corporation,MRO,$11.80,Energy Minerals,Oil & Gas Production,NYSE,,
-550,Marvell Technology,MRVL,$43.36,Electronic Technology,Semiconductors,NASDAQ,,
-551,Morgan Stanley,MS,$87.35,Finance,Investment Banks/Brokers,NYSE,,
-552,Microsoft,MSFT,$248.15,Technology Services,Packaged Software,NASDAQ,,
-553,Madison Square Garden Sports Corp,MSGS,$185.42,Consumer Services,Movies/Entertainment,NYSE,,
-554,Motorola Solutions,MSI,$201.88,Electronic Technology,Aerospace & Defense,NYSE,,
-555,Datto Holding Corp,MSP,$25.41,Technology Services,Packaged Software,NYSE,,
-556,Match Group,MTCH,$142.19,Technology Services,Internet Software/Services,NASDAQ,,
-557,Mettler-Toledo International,MTD,"$1,274.65",Health Technology,Medical Specialties,NYSE,,
-558,Matador Resources,MTDR,$29.92,Energy Minerals,Oil & Gas Production,NYSE,,
-559,MGIC Investment,MTG,$14.26,FInance,Specialty Insurance,NYSE,,
-560,Micron Technology,MU,$79.70,Electronic Technology,Semiconductors,NASDAQ,,
-561,MUFJ Financial Group,MUFG,$5.67,Finance,Major Banks,NYSE,,
-562,Murphy Oil Corporation,MUR,$20.27,Energy Minerals,Oil & Gas Production,NYSE,,
-563,McEwen Mining Inc,MUX,$1.25,Non-Energy Minerals,Precious Metals,NYSE,,
-564,Maxim Integrated,MXIM,$92.85,Electronic Technology,Semiconductors,NASDAQ,,
-565,Navient Corporation,NAVI,$17.34,Finance,Finance/Rental/Leasing,NASDAQ,,
-566,New Age Beverage,NBEV,$2.08,Consumer Non-Durables,Beverages: Alcoholic,NASDAQ,,
-567,Neurocrine Biosciences,NBIX,$94.60,Health Technology,Biotechnology,NASDAQ,,
-568,Norwegian Cruise Line Holdings,NCLH,$28.58,Consumer Services,Hotels/Resorts/Cruise lines,NYSE,,
-569,Nasdaq OMX Group,NDAQ,$164.36,Finance,Investment Banks/Brokers,NASDAQ,,
-570,NextEra Energy,NEE,$73.12,Utilities,Electric Utilities,NYSE,,
-571,Newmont Mining,NEM,$70.75,Non-Energy Minerals,Precious Metals,NYSE,,
-572,Cloudflare,NET,$72.30,Technology Services,Information Technology Services,NYSE,,
-573,Netflix,NFLX,$493.37,Consumer Services,Cable/Satellite TV,NASDAQ,,
-574,NICE Systems,NICE,$228.71,Technology Services,Information Technology Services,NASDAQ,,
-575,NIO,NIO,$33.42,Consumer Durables,Motor Vehicles,NASDAQ,,
-576,Nike,NKE,$135.93,Consumer Non-Durables,Apparel/Footwear,NYSE,,
-577,Nikola Corporation,NKLA,$12.12,Consumer Durables,Motor Vehicles,NASDAQ,,
-578,Nektar Therapeutics,NKTR,$18.98,Health Technology,Pharmaceuticals: Major,NASDAQ,,
-579,NortonLifeLock,NLOK,$26.09,Technology Services,Packaged Software,NASDAQ,,
-580,Annaly Capital Management,NLY,$9.13,Finance,Real Estate Investment Trusts,NYSE,,
-581,Nomura,NMR,$5.37,Finance,Investment Banks/Brokers,NYSE,,
-582,Noah Holdings Limited,NOAH,$43.21,Finance,Investment Banks/Brokers,NYSE,,
-583,Northrop Grumman,NOC,$371.61,Electronic Technology,Aerospace & Defense,NYSE,,
-584,National Oilwell Varco,NOV,$17.51,Industrial Services,Oilfield Services/Equipment,NYSE,,
-585,Sunnova Energy International,NOVA,$28.75,Distribution Services,Wholesale Distributors,NYSE,,
-586,ServiceNow,NOW,$460.33,Technology Services,Information Technology Services,NYSE,,
-587,NeoPhotonics,NPTN,$9.11,Electronic Technology,Electronic Components,NYSE,,
-588,NRG Energy,NRG,$34.33,Utilities,Electric Utilities,NYSE,,
-589,New Residential Investment,NRZ,$10.34,Finance,Real Estate Investment Trusts,NYSE,,
-590,Norfolk Southern Corporation,NSC,$289.83,Transportation,Railroads,NYSE,,
-591,NetApp,NTAP,$78.50,Electronic Technology,Computer Peripherals,NASDAQ,,
-592,Natura Holding S.A.,NTCO,$18.66,Consumer Non-Durables,Household/Personal Care,NYSE,,
-593,NetEase,NTES,$105.34,Technology Services,Internet Software/Services,NASDAQ,,
-594,Nutanix,NTNX,$29.99,Technology Services,Packaged Software,NASDAQ,,
-595,Northern Trust Corporation,NTRS,$120.17,Finance,Regional Banks,NASDAQ,,
-596,Nucor,NUE,$102.51,Non-Energy Minerals,Steel,NYSE,,
-597,NuVasive,NUVA,$69.53,Health Technology,Medical Specialties,NASDAQ,,
-598,Novavax,NVAX,$131.69,Health Technology,Biotechnology,NASDAQ,,
-599,NovoCure,NVCR,$179.27,Health Technology,Medical Specialties,NASDAQ,,
-600,Nvidia,NVDA,$569.72,Electronic Technology,Semiconductors,NASDAQ,,
-601,NVR,NVR,"$4,949.71",Consumer Durables,Homebuilding,NYSE,,
-602,Novartis AG,NVS,$88.96,Health Technology,Pharmaceuticals: Major,NYSE,,
-603,Invitae Corporation,NVTA,$27.74,Health Services,Medical/Nursing Services,NYSE,,
-604,Newell Rubbermaid,NWL,$28.95,Producer Manufacturing,Industrial Conglomerates,NASDAQ,,
-605,News Corporation,NWSA,$26.70,Consumer Services,Publishing: Newspapers,NASDAQ,,
-606,New York Community Bancorp,NYCB,$11.76,Finance,Savings Banks,NYSE,,
-607,New York Mortgage Trust,NYMT,$4.49,Finance,Real Estate Investment Trusts,NASDAQ,,
-608,New York Times,NYT,$42.94,Consumer Services,Publishing: Newspapers,NYSE,,
-609,Realty Income,O,$65.34,Finance,Real Estate Investment Trusts,NYSE,,
-610,Office Depot,ODP,$44.00,Retail Trade,Specialty Stores,NASDAQ,,
-611,Oneok,OKE,$54.35,Industrial Services,Oil & Gas Pipelines,NYSE,,
-612,Okta,OKTA,$229.25,Technology Services,Packaged Software,NASDAQ,,
-613,Olin,OLN,$46.79,Process Industries,Industrial Specialties,NYSE,,
-614,Omnicom Group,OMC,$83.64,Commercial Services,Advertising/Marketing Services,NYSE,,
-615,ON Semiconductor,ON,$37.45,Electronic Technology,Semiconductors,NASDAQ,,
-616,Opko Health,OPK,$3.70,Health Technology,Pharmaceuticals: Major,NASDAQ,,
-617,Ormat Technologies,ORA,$66.21,Utilities,Alternative Power Generation,NYSE,,
-618,Oracle,ORCL,$78.89,Technology Services,Packaged Software,NYSE,,
-619,O'Reilly Auto Parts,ORLY,$553.33,Retail Trade,Specialty Stores,NASDAQ,,
-620,Oscar Health Inc.,OSCR,$22.94,Health Services,Hospital/Nursing Management,NYSE,,
-621,Overstock.com,OSTK,$71.14,Retail Trade,Internet Retail,NASDAQ,,
-622,Otis Worldwide Corp,OTIS,$78.88,Producer Manufacturing,Building Products,NYSE,,
-623,Encana Corporation,OVV,$26.16,Energy Minerals,Oil & Gas Production,NYSE,,
-624,Occidental,OXY,$25.10,Energy Minerals,Oil & Gas Production,NYSE,,
-625,Ozon,OZON,$55.83,Retail Trade,Internet Retail,NASDAQ,,
-626,Plains All American Pipeline,PAA,$10.14,Industrial Services,Oil & Gas Pipelines,NASDAQ,,
-627,Pan American Silver Corp,PAAS,$30.95,Non-Energy Minerals,Precious Metals,NASDAQ,,
-628,Tpg Pace Tech Opportunities Corp,PACE,$10.19,Finance,Financial Conglomerates,NYSE,,
-629,Pampa Energia SA,PAM,$15.67,Utilities,Electric Utilities,NYSE,,
-630,Palo Alto Networks,PANW,$336.82,Electronic Technology,Computer Communications,NYSE,,
-631,UiPath,PATH,$70.48,Technology Services,Packaged Software,NYSE,,
-632,Paychex,PAYX,$100.11,Technology Services,Data Processing Services,NASDAQ,,
-633,People's United Financial,PBCT,$22.45,Finance,Major Banks,NASDAQ,,
-634,PBF Energy,PBF,$15.39,Energy Minerals,Oil Refining/Marketing,NYSE,,
-635,Prestige Brands,PBH,$48.50,Health Technology,Pharmaceuticals: Other,NYSE,,
-636,Pitney Bowes,PBI,$7.82,Producer Manufacturing,Office Equipment/Supplies,NYSE,,
-637,Petroleo Brasileiro S.A.,PBR,$9.68,Energy Minerals,Integrated Oil,NYSE,,
-638,Paccar,PCAR,$94.66,Producer Manufacturing,Trucks/Construction/Farm Machinery,NASDAQ,,
-639,PG&E Corporation,PCG,$10.81,Utilities,Electric Utilities,NYSE,,
-640,Pagerduty,PD,$34.87,Technology Services,Packaged Software,NYSE,,
-641,PDC Energy Inc,PDCE,$41.39,Energy Minerals,Oil & Gas Production,NASDAQ,,
-642,Pinduoduo Inc,PDD,$118.33,Retail Trade,Internet Retail,NASDAQ,,
-643,Public Service Enterprise Group,PEG,$62.52,Utilities,Electric Utilities,NYSE,,
-644,Penn National Gaming Inc,PENN,$80.80,Consumer Services,Casinos/Gaming,NASDAQ,,
-645,PepsiCo,PEP,$146.59,Consumer Non-Durables,Beverages: Non-Alcoholic,NASDAQ,,
-646,Pfizer,PFE,$40.02,Health Technology,Pharmaceuticals: Major,NYSE,,
-647,Proofpoint,PFPT,$171.77,Technology Services,Data Processing Services,NASDAQ,,
-648,P&G,PG,$138.01,Consumer Non-Durables,Household/Personal Care,NYSE,,
-649,Progressive,PGR,$107.10,Finance,Property/Casualty Insurance,NYSE,,
-650,Parker-Hannifin,PH,$321.84,Producer Manufacturing,Industrial Machinery,NYSE,,
-651,PulteGroup,PHM,$58.46,Consumer Durables,Homebuilding,NYSE,,
-652,Pinterest,PINS,$58.05,Technology Services,Internet Software/Services,NYSE,,
-653,Anaplan,PLAN,$53.62,Technology Services,Packaged Software,NYSE,,
-654,Prologis,PLD,$114.65,Finance,Real Estate Investment Trusts,NYSE,,
-655,Planet Fitness,PLNT,$79.06,Consumer Services,Other Consumer Services,NYSE,,
-656,Palantir,PLTR,$20.08,Technology Services,Packaged Software,NYSE,,
-657,Plug Power,PLUG,$24.58,Electronic Technology,Electronic Components,NASDAQ,,
-658,Philip Morris,PM,$97.70,Consumer Non-Durables,Tobacco,NYSE,,
-659,PNC Financial,PNC,$199.38,Finance,Major Banks,NYSE,,
-660,PPG Industries,PPG,$179.10,Process Industries,Industrial Specialties,NYSE,,
-661,PPL Corporation,PPL,$29.26,Utilities,Electric Utilities,NYSE,,
-662,Primerica,PRI,$161.55,Finance,Life/Health Insurance,NYSE,,
-663,CC Neuberger Principal Holdings II,PRPB,$9.92,Finance,Financial Conglomerates,NYSE,,
-664,Prudential Financial,PRU,$107.68,Finance,Financial Conglomerates,NYSE,,
-665,Pluralsight,PS,$22.45,Technology Services,Information Technology Services,NASDAQ,No live pricing update,
-666,Public Storage,PSA,$273.45,Finance,Real Estate Investment Trusts,NYSE,,
-667,Pure Storage,PSTG,$18.03,Electronic Technology,Computer Peripherals,NYSE,,
-668,Pershing Square Tontine Holdings,PSTH,$24.94,Finance,Financial Conglomerates,NYSE,,
-669,Phillips 66,PSX,$87.70,Energy Minerals,Oil Refining/Marketing,NYSE,,
-670,Patterson-UTI Energy,PTEN,$8.52,Industrial Services,Contract Drilling,NASDAQ,,
-671,Peloton Interactive,PTON,$96.58,Consumer Services,Other Consumer Services,NASDAQ,,
-672,Quanta Services,PWR,$97.42,Industrial Services,Engineering & Construction,NYSE,,
-673,Pioneer Natural Resources,PXD,$157.05,Energy Minerals,Oil & Gas Production,NYSE,,
-674,PayPal,PYPL,$246.29,Technology Services,Data Processing Services,NASDAQ,,
-675,Qualcomm,QCOM,$130.15,Electronic Technology,Telecommunications Equipment,NASDAQ,,
-676,Qudian,QD,$1.89,Technology Services,Internet Software/Services,NYSE,,
-677,Qualys,QLYS,$99.83,Technology Services,Packaged Software,NASDAQ,,
-678,Qurate Retail,QRTEA,$13.20,Retail Trade,Internet Retail,NASDAQ,,
-679,Restaurant Brands International,QSR,$67.65,Consumer Services,Restaurants,NYSE,,
-680,Q2 Holdings,QTWO,$93.99,Technology Services,Information Technology Services,NYSE,,
-681,Ferrari,RACE,$198.65,Consumer Durables,Motor Vehicles,NYSE,,
-682,Rite Aid,RAD,$19.13,Retail Trade,Drugstore Chains,NYSE,,
-683,Roblox,RBLX,$70.95,Technology Services,Packaged Software,NYSE,,
-684,Royal Caribbean Cruises,RCL,$84.27,Consumer Services,Hotels/Resorts/Cruise lines,NYSE,,
-685,Redfin Corporation,RDFN,$51.14,Finance,Real Estate Development,NASDAQ,,
-686,RealReal,REAL,$14.46,Retail Trade,Internet Retail,NASDAQ,,
-687,Renewable Energy Group,REGI,$63.17,Process Industries,Chemicals: Specialty,NASDAQ,,
-688,Regeneron Pharmaceuticals,REGN,$516.62,Health Technology,Biotechnology,NASDAQ,,
-689,RPC,RES,$5.81,Industrial Services,Oilfield Services/Equipment,NYSE,,
-690,Regions Financial,RF,$23.25,Finance,Major Banks,NYSE,,
-691,Restoration Hardware Holdings,RH,$649.82,Retail Trade,Specialty Stores,NYSE,,
-692,Rocket Companies,RKT,$17.34,Finance,Finance/Rental/Leasing,NYSE,,
-693,Ralph Lauren,RL,$136.48,Retail Trade,Apparel/Footwear Retail,NYSE,,
-694,Realogy Holdings,RLGY,$17.86,Finance,Real Estate Development,NYSE,,
-695,ResMed,RMD,$195.42,Health Technology,Medical Specialties,NYSE,,
-696,RingCentral,RNG,$239.99,Technology Services,Packaged Software,NYSE,,
-697,Rockwell Automation,ROK,$267.46,Producer Manufacturing,Electrical Products,NYSE,,
-698,Roku,ROKU,$315.95,Consumer Durables,Electronics/Appliances,NASDAQ,,
-699,Root Inc,ROOT,$9.34,Finance,Insurance Brokers/Services,NASDAQ,,
-700,Ross Stores,ROST,$130.50,Retail Trade,Apparel/Footwear Retail,NASDAQ,,
-701,Range Resources Corporation,RRC,$13.04,Energy Minerals,Oil & Gas Production,NYSE,,
-702,Republic Services,RSG,$111.10,Industrial Services,Environmental Services,NYSE,,
-703,Reinvent Technology Partners,RTP,$9.88,Finance,Financial Conglomerates,NYSE,,
-704,Raytheon Technologies Corporation,RTX,$85.88,Electronic Technology,Aerospace & Defense,NYSE,,
-705,Sunrun,RUN,$41.42,Utilities,Alternative Power Generation,NASDAQ,,
-706,Rackspace Technology,RXT,$19.46,Technology Services,Data Processing Services,NASDAQ,,
-707,Royal Bank of Canada,RY,$100.55,Finance,Major Banks,NYSE,,
-708,Spirit Airlines,SAVE,$34.97,Transportation,Airlines,NYSE,,
-709,Sally Beauty,SBH,$22.96,Retail Trade,Specialty Stores,NYSE,,
-710,Companhia de Saneamento Basico,SBS,$8.03,Utilities,Water Utilities,NYSE,,
-711,Sibanye-Stillwater,SBSW,$18.47,Non-Energy Minerals,Precious Metals,NYSE,,
-712,Starbucks,SBUX,$111.20,Consumer Services,Restaurants,NASDAQ,,
-713,Southern Copper,SCCO,$76.30,Non-Energy Minerals,Other Metals/Minerals,NYSE,,
-714,Charles Schwab,SCHW,$73.25,Finance,Investment Banks/Brokers,NYSE,,
-715,Sea Limited,SE,$216.69,Technology Services,Internet Software/Services,NYSE,,
-716,Seaboard Corp.,SEB,"$3,730.00",Consumer Non-Durables,Food: Meat/Fish/Dairy,NYSE AMERICAN,,
-717,SolarEdge Technologies,SEDG,$218.87,Producer Manufacturing,Electrical Products,NASDAQ,,
-718,Stitch Fix,SFIX,$43.06,Retail Trade,Apparel/Footwear Retail,NASDAQ,,
-719,Sprouts Farmers Market,SFM,$26.37,Retail Trade,Food Retail,NASDAQ,,
-720,Sangamo Therapeutics,SGMO,$10.85,Health Technology,Biotechnology,NASDAQ,,
-721,Shake Shack,SHAK,$83.25,Consumer Services,Restaurants,NYSE,,
-722,Shopify,SHOP,"$1,085.01",Retail Trade,Internet Retail,NYSE,,
-723,Sherwin-Williams,SHW,$286.09,Process Industries,Industrial Specialties,NYSE,,
-724,Companhia Siderurgica Nacional,SID,$8.86,Non-Energy Minerals,Steel,NYSE,,
-725,Sirius XM,SIRI,$5.91,Consumer Services,Broadcasting,NASDAQ,,
-726,Tanger Factory Outlet Centers,SKT,$16.57,Finance,Real Estate Investment Trusts,NYSE,,
-727,Skechers,SKX,$48.50,Consumer Non-Durables,Apparel/Footwear,NYSE,,
-728,Schlumberger,SLB,$32.81,Industrial Services,Oilfield Services/Equipment,NYSE,,
-729,US Silica Holdings,SLCA,$11.59,Non-Energy Minerals,Other Metals/Minerals,NYSE,,
-730,SLM Corporation,SLM,$19.82,Finance,Finance/Rental/Leasing,NASDAQ,,
-731,SM Energy Company,SM,$17.64,Energy Minerals,Oil & Gas Production,NYSE,,
-732,Smartsheet,SMAR,$54.59,Technology Services,Packaged Software,NYSE,,
-733,Sumitomo Mitsui Financial Group,SMFG,$7.30,Finance,Major Banks,NYSE,,
-734,The Scotts Miracle-Gro Company,SMG,$229.99,Process Industries,Chemicals: Agricultural,NYSE,,
-735,Snap,SNAP,$52.99,Technology Services,Internet Software/Services,NYSE,,
-736,Snowflake,SNOW,$209.99,Technology Services,Packaged Software,NYSE,,
-737,Synopsys,SNPS,$239.70,Technology Services,Packaged Software,NASDAQ,,
-738,Southern Company,SO,$65.11,Utilities,Electric Utilities,NYSE,,
-739,Sogou,SOGO,$8.24,Technology Services,Internet Software/Services,NYSE,,
-740,Sony,SONY,$94.15,Consumer Durables,Electronics/Appliances,NYSE,,
-741,Virgin Galactic,SPCE,$16.18,Electronic Technology,Aerospace & Defense,NYSE,,
-742,Simon Property,SPG,$122.18,Finance,Real Estate Investment Trusts,NYSE,,
-743,S&P,SPGI,$379.16,Commercial Services,Financial Publishing/Services,NYSE,,
-744,Splunk,SPLK,$116.22,Technology Services,Information Technology Services,NASDAQ,,
-745,Spotify,SPOT,$223.59,Technology Services,Internet Software/Services,NYSE,,
-746,SunPower,SPWR,$22.24,Producer Manufacturing,Electrical Products,NASDAQ,,
-747,Square,SQ,$207.85,Technology Services,Information Technology Services,NYSE,,
-748,Chemical & Mining Co. of Chile,SQM,$52.31,Process Industries,Chemicals: Agricultural,NYSE,,
-749,Stable Road Acquisition Corp Class A,SRAC,$10.87,Finance,Financial Conglomerates,NASDAQ,,
-750,Sempra Energy,SRE,$138.11,Utilities,Gas Distributors,NYSE,,
-751,SS&C Technologies Holdings,SSNC,$74.26,Technology Services,Information Technology Services,NASDAQ,,
-752,Sutter Rock Capital,SSSS,$0.01,Finance,Investment Managers,NASDAQ,No live pricing update,
-753,Extended Stay America,STAY,$19.63,Consumer Services,Hotels/Resorts/Cruise lines,NASDAQ,,
-754,Northern Star Acquisition Corp,STIC,$9.98,Finance,Financial Conglomerates,NYSE,,
-755,Stellantis,STLA,$18.15,Consumer Durables,Motor Vehicles,NYSE,,
-756,Steel Dynamics,STLD,$63.76,Non-Energy Minerals,Steel,NASDAQ,,
-757,StoneCo,STNE,$59.21,Technology Services,Packaged Software,NASDAQ,,
-758,State Street,STT,$86.75,Finance,Regional Banks,NYSE,,
-759,Seagate Technology,STX,$97.97,Electronic Technology,Computer Peripherals,NASDAQ,,
-760,Constellation Brands,STZ,$234.44,Consumer Non-Durables,Beverages: Alcoholic,NYSE,,
-761,Suncor Energy,SU,$23.23,Energy Minerals,Integrated Oil,NYSE,,
-762,Sumo Logic Inc,SUMO,$16.86,Technology Services,Packaged Software,NASDAQ,,
-763,Grupo Supervielle,SUPV,$1.82,Finance,Major Banks,NYSE,,
-764,Starboard Value Acquisition Corp,SVAC,$9.90,Finance,Financial Conglomerates,NASDAQ,,
-765,Stanley Black & Decker,SWK,$216.01,Consumer Durables,Tools & Hardware,NYSE,,
-766,Skyworks Solutions,SWKS,$165.45,Electronic Technology,Semiconductors,NASDAQ,,
-767,Southwestern Energy,SWN,$5.07,Energy Minerals,Oil & Gas Production,NYSE,,
-768,Synchrony Financial,SYF,$46.80,Finance,Finance/Rental/Leasing,NYSE,,
-769,Stryker,SYK,$252.95,Health Technology,Medical Specialties,NYSE,,
-770,Sysco,SYY,$84.00,Distribution Services,Food Distributors,NYSE,,
-771,AT&T,T,$32.24,Communications,Major Telecommunications,NYSE,,
-772,Takeda Pharmaceutical,TAK,$17.12,Health Technology,Pharmaceuticals: Major,NYSE,,
-773,Tal Education Group,TAL,$48.74,Consumer Services,Other Consumer Services,NYSE,,
-774,Thoma Bravo Advantage,TBA,$10.24,Finance,Financial Conglomerates,NYSE,,
-775,Trip.com,TCOM,$37.51,Consumer Services,Other Consumer Services,NASDAQ,,
-776,Toronto-Dominion Bank,TD,$72.41,Finance,Major Banks,NYSE,,
-777,Teladoc,TDOC,$139.68,Health Services,Hospital/Nursing Management,NYSE,,
-778,Atlassian Corporation Plc,TEAM,$214.99,Technology Services,Packaged Software,NASDAQ,,
-779,Teck Resources,TECK,$25.47,Non-Energy Minerals,Other Metals/Minerals,NYSE,,
-780,Teradyne,TER,$122.35,Electronic Technology,Electronic Production Equipment,NASDAQ,,
-781,Teva Pharmaceutical Industries,TEVA,$10.57,Health Technology,Pharmaceuticals: Generic,NYSE,,
-782,Truist Financial Corp,TFC,$61.64,Finance,Regional Banks,NYSE,,
-783,Teleflex,TFX,$393.00,Health Technology,Medical Specialties,NYSE,,
-784,Triumph,TGI,$15.84,Electronic Technology,Aerospace & Defense,NYSE,,
-785,Target,TGT,$211.16,Retail Trade,Specialty Stores,NYSE,,
-786,Thunder Bridge Acquisition II Ltd,THBR,$10.07,Finance,Financial Conglomerates,NASDAQ,,
-787,UP Fintech,TIGR,$16.79,Finance,Investment Banks/Brokers,NASDAQ,,
-788,TIM SA,TIMB,$11.56,Communications,Wireless Telecommunications,NYSE,,
-789,TJX Companies Inc,TJX,$72.43,Retail Trade,Apparel/Footwear Retail,NYSE,,
-790,Tailored Brands,TLRDQ,$0.01,Retail Trade,Apparel/Footwear Retail,NYSE,No live pricing update,
-791,Toyota,TM,$155.85,Consumer Durables,Motor Vehicles,NYSE,,
-792,Tencent Music Entertainment Group,TME,$15.21,Technology Services,Internet Software/Services,NYSE,,
-793,Thermo Fisher Scientific,TMO,$459.07,Health Technology,Medical Specialties,NYSE,,
-794,T-Mobile,TMUS,$141.52,Communications,Wireless Telecommunications,NASDAQ,,
-795,TPG Pace Beneficial Finance Corp.,TPGY,$14.14,Finance,Financial Conglomerates,NYSE,,
-796,TPI Composites,TPIC,$44.48,Producer Manufacturing,Electrical Products,NASDAQ,,
-797,Tapestry,TPR,$46.82,Retail Trade,Apparel/Footwear Retail,NYSE,,
-798,Tempur Sealy,TPX,$37.89,Consumer Durables,Home Furnishings,NYSE,,
-799,Targa Resources,TRGP,$38.52,Energy Minerals,Oil Refining/Marketing,NYSE,,
-800,TripAdvisor,TRIP,$42.17,Consumer Services,Other Consumer Services,NASDAQ,,
-801,T. Rowe Price,TROW,$191.07,Finance,Investment Managers,NASDAQ,,
-802,Travelers,TRV,$160.51,Finance,Multi-Line Insurance,NYSE,,
-803,Tesla,TSLA,$589.74,Consumer Durables,Motor Vehicles,NASDAQ,,
-804,Taiwan Semiconductor,TSM,$112.46,Electronic Technology,Semiconductors,NYSE,,
-805,Tyson Foods,TSN,$80.34,Consumer Non-Durables,Food: Meat/Fish/Dairy,NYSE,,
-806,TuSimple,TSP,$36.77,Consumer Durables,Motor Vehicles,NASDAQ,,
-807,Trade Desk,TTD,$517.49,Commercial Services,Advertising/Marketing Services,NASDAQ,,
-808,Tata Motors,TTM,$21.24,Consumer Durables,Motor Vehicles,NYSE,,
-809,T2 Interactive,TTWO,$166.99,Consumer Durables,Recreational Products,NASDAQ,,
-810,"Grupo Televisa, S.A.B.",TV,$12.65,Consumer Services,Broadcasting,NYSE,,
-811,Tradeweb Markets,TW,$83.88,Technology Services,Internet Software/Services,NASDAQ,,
-812,TWC Tech Holdings II Corp,TWCT,$9.86,Finance,Financial Conglomerates,NASDAQ,,
-813,Twilio,TWLO,$299.40,Technology Services,Packaged Software,NYSE,,
-814,Two Harbors Investment,TWO,$7.18,Finance,Real Estate Investment Trusts,NYSE,,
-815,2U,TWOU,$34.88,Technology Services,Packaged Software,NASDAQ,,
-816,Twitter,TWTR,$51.73,Technology Services,Internet Software/Services,NYSE,,
-817,TherapeuticsMD,TXMD,$1.05,Health Technology,Pharmaceuticals: Generic,NASDAQ,,
-818,Texas Instruments,TXN,$183.27,Electronic Technology,Semiconductors,NASDAQ,,
-819,Unity Software,U,$87.48,Technology Services,Packaged Software,NYSE,,
-820,Under Armour (Class C),UA,$19.01,Consumer Non-Durables,Apparel/Footwear,NYSE,,
-821,Under Armour,UAA,$22.78,Consumer Non-Durables,Apparel/Footwear,NYSE,,
-822,United Continental Holdings,UAL,$55.28,Transportation,Airlines,NASDAQ,,
-823,Uber,UBER,$47.42,Technology Services,Packaged Software,NYSE,,
-824,UBS Group AG,UBS,$15.49,Finance,Major Banks,NYSE,,
-825,Ultra Clean Holdings,UCTT,$48.71,Electronic Technology,Semiconductors,NASDAQ,,
-826,Ultrapar Participações,UGP,$3.80,Energy Minerals,Oil Refining/Marketing,NYSE,,
-827,Ulta Beauty,ULTA,$324.28,Retail Trade,Specialty Stores,NASDAQ,,
-828,United Microelectronics,UMC,$8.57,Electronic Technology,Semiconductors,NYSE,,
-829,UnitedHealth,UNH,$409.80,Health Services,Managed Health Care,NYSE,,
-830,Uniti Group,UNIT,$10.72,Finance,Real Estate Investment Trusts,NASDAQ,,
-831,Unum Group,UNM,$30.74,Finance,Life/Health Insurance,NYSE,,
-832,Union Pacific,UNP,$227.86,Transportation,Railroads,NYSE,,
-833,UPS,UPS,$216.38,Transportation,Air Freight/Couriers,NYSE,,
-834,Urban Outfitters,URBN,$37.36,Retail Trade,Apparel/Footwear Retail,NASDAQ,,
-835,US Bancorp,USB,$61.91,Finance,Major Banks,NYSE,,
-836,Uxin,UXIN,$2.73,Technology Services,Internet Software/Services,NASDAQ,,
-837,Visa,V,$226.94,Finance,Finance/Rental/Leasing,NYSE,,
-838,Vector Acquisition Corp.,VACQ,$9.94,Finance,Financial Conglomerates,NASDAQ,,
-839,Vale,VALE,$21.03,Non-Energy Minerals,Steel,NYSE,,
-840,Veeva Systems,VEEV,$251.70,Technology Services,Packaged Software,NYSE,,
-841,Vereit,VER,$45.07,Finance,Real Estate Investment Trusts,NYSE,,
-842,VF Corporation,VFC,$85.44,Consumer Non-Durables,Apparel/Footwear,NYSE,,
-843,Vonage Holdings,VG,$13.08,Communications,Specialty Telecommunications,NASDAQ,,
-844,VG Acquisition Corp,VGAC,$9.94,Finance,Financial Conglomerates,NYSE,,
-845,Vector Group,VGR,$13.84,Consumer Non-Durables,Tobacco,NYSE,,
-846,ViacomCBS,VIACA,$44.03,Consumer Services,Broadcasting,NASDAQ,,
-847,VICI Properties,VICI,$30.87,Finance,Real Estate Development,NYSE,,
-848,VPC Impact Acquisition Holdings,VIH,$10.26,Finance,Financial Conglomerates,NASDAQ,,
-849,Vipshop Holdings Limited,VIPS,$25.24,Retail Trade,Internet Retail,NYSE,,
-850,Vir Biotechnology Inc,VIR,$42.21,Health Technology,Biotechnology,NASDAQ,,
-851,Telefonica Brasil,VIV,$8.17,Communications,Major Telecommunications,NYSE,,
-852,Valero,VLO,$81.21,Energy Minerals,Oil Refining/Marketing,NYSE,,
-853,VMware,VMW,$164.30,Technology Services,Information Technology Services,NYSE,,
-854,Vroom Inc,VRM,$38.86,Retail Trade,Specialty Stores,NASDAQ,,
-855,Verisk Analytics,VRSK,$175.00,Finance,Insurance Brokers/Services,NASDAQ,,
-856,Verisign,VRSN,$220.92,Technology Services,Internet Software/Services,NASDAQ,,
-857,Vertex Pharmaceuticals,VRTX,$217.09,Health Technology,Biotechnology,NASDAQ,,
-858,Vistra Energy,VST,$16.38,Utilities,Electric Utilities,NYSE,,
-859,Ventas,VTR,$54.64,Finance,Real Estate Investment Trusts,NYSE,,
-860,Viatris,VTRS,$16.00,Health Technology,Pharmaceuticals: Major,NASDAQ,,
-861,Verizon,VZ,$58.69,Communications,Major Telecommunications,NYSE,,
-862,Wayfair,W,$300.00,Retail Trade,Internet Retail,NYSE,,
-863,WABTEC Corporation,WAB,$80.53,Producer Manufacturing,Trucks/Construction/Farm Machinery,NYSE,,
-864,Weibo,WB,$48.91,Technology Services,Internet Software/Services,NASDAQ,,
-865,Walgreens Boots,WBA,$54.71,Retail Trade,Drugstore Chains,NASDAQ,,
-866,Waste Connections,WCN,$121.26,Industrial Services,Environmental Services,NYSE,,
-867,Workday,WDAY,$228.77,Technology Services,Information Technology Services,NASDAQ,,
-868,Western Digital,WDC,$71.87,Electronic Technology,Computer Peripherals,NASDAQ,,
-869,Welltower,WELL,$73.22,Finance,Real Estate Investment Trusts,NYSE,,
-870,Wendy's Company,WEN,$23.40,Consumer Services,Restaurants,NASDAQ,,
-871,WEX,WEX,$191.63,Technology Services,Data Processing Services,NYSE,,
-872,Wells Fargo,WFC,$46.96,Finance,Major Banks,NYSE,,
-873,Wingstop,WING,$136.23,Consumer Services,Restaurants,NASDAQ,,
-874,Wipro,WIT,$7.39,Technology Services,Information Technology Services,NYSE,,
-875,Wix.com Ltd,WIX,$222.64,Technology Services,Information Technology Services,NASDAQ,,
-876,Workhorse Group Inc,WKHS,$8.10,Producer Manufacturing,Auto Parts: OEM,NASDAQ,,
-877,Waste Management,WM,$141.94,Industrial Services,Environmental Services,NYSE,,
-878,Williams Companies,WMB,$25.88,Industrial Services,Oil & Gas Pipelines,NYSE,,
-879,Walmart,WMT,$139.52,Retail Trade,Food Retail,NYSE,,
-880,Slack,WORK,$41.31,Technology Services,Packaged Software,NYSE,,
-881,Foley Trasimene Acquisition Corp.,WPF,$10.08,Finance,Financial Conglomerates,NYSE,,
-882,WestRock,WRK,$60.57,Process Industries,Containers/Packaging,NYSE,,
-883,White Mountains Insurance Group,WTM,"$1,187.31",Finance,Multi-Line Insurance,NYSE,,
-884,Western Union,WU,$24.86,Finance,Finance/Rental/Leasing,NYSE,,
-885,World Wrestling Entertainment,WWE,$53.69,Consumer Services,Movies/Entertainment,NYSE,,
-886,Weyerhaeuser Co.,WY,$38.31,Finance,Real Estate Investment Trusts,NYSE,,
-887,Wynn Resorts,WYNN,$126.67,Consumer Services,Casinos/Gaming,NASDAQ,,
-888,United States Steel,X,$25.50,Non-Energy Minerals,Steel,NYSE,,
-889,Cimarex Energy,XEC,$71.49,Energy Minerals,Oil & Gas Production,NYSE,,
-890,Xcel Energy,XEL,$71.72,Utilities,Electric Utilities,NASDAQ,,
-891,Exagen,XGN,$12.49,Health Services,Medical/Nursing Services,NASDAQ,,
-892,Xilinx,XLNX,$118.00,Electronic Technology,Semiconductors,NASDAQ,,
-893,Exxon Mobil,XOM,$60.77,Energy Minerals,Integrated Oil,NYSE,,
-894,Xpeng,XPEV,$25.70,Consumer Durables,Motor Vehicles,NYSE,,
-895,DPCM Capital Inc.,XPOA,$9.76,Finance,Financial Conglomerates,NYSE,,
-896,Xerox,XRX,$24.21,Electronic Technology,Computer Peripherals,NYSE,,
-897,YETI Holdings Inc,YETI,$88.55,Producer Manufacturing,Miscellaneous Manufacturing,NYSE,,
-898,YPF,YPF,$4.47,Energy Minerals,Integrated Oil,NYSE,,
-899,Yum!,YUM,$119.27,Consumer Services,Restaurants,NYSE,,
-900,Yum!,YUMC,$63.12,Consumer Services,Restaurants,NYSE,,
-901,YY,YY,$87.57,Technology Services,Internet Software/Services,NASDAQ,,
-902,Zillow Group,Z,$111.88,Technology Services,Information Technology Services,NASDAQ,,
-903,Zimmer Biomet,ZBH,$167.27,Health Technology,Medical Specialties,NYSE,,
-904,Zebra Technologies,ZBRA,$486.73,Electronic Technology,Computer Peripherals,NASDAQ,,
-905,Zendesk,ZEN,$135.04,Technology Services,Data Processing Services,NYSE,,
-906,Zions Bancorporation,ZION,$60.20,Finance,Regional Banks,NASDAQ,,
-907,Zoom,ZM,$307.89,Technology Services,Packaged Software,NASDAQ,,
-908,Zynga,ZNGA,$10.25,Technology Services,Internet Software/Services,NASDAQ,,
-909,China Southern Airlines,ZNH,$33.00,Transportation,Airlines,NYSE,,
-910,Zscaler,ZS,$165.34,Technology Services,Packaged Software,NASDAQ,,
-911,ZTO Express,ZTO,$30.83,Transportation,Air Freight/Couriers,NYSE,,
-912,Zoetis,ZTS,$172.29,Health Technology,Pharmaceuticals: Generic,NYSE,,
+#	Company name	Symbol	Price (USD)	Market cap (In millions)	Sector	Industry	Market	Provided by GlobeFunder.com
+1	21st Century Fox	FOXA	$36.75	$20,432.18	Consumer Services	Broadcasting	NASDAQ
+2	23andMe Holding Co	ME	$8.17	$3,323.44	Finance	Financial Conglomerates	NASDAQ
+3	2U	TWOU	$36.33	$2,710.83	Technology Services	Packaged Software	NASDAQ
+4	3M	MMM	$185.58	$107,383.70	Producer Manufacturing	Industrial Conglomerates	NYSE
+5	Abbott Labs	ABT	$128.39	$227,611.97	Health Technology	Medical Specialties	NYSE
+6	AbbVie	ABBV	$109.03	$192,675.09	Health Technology	Pharmaceuticals: Major	NYSE
+7	Abercrombie & Fitch	ANF	$34.43	$2,118.74	Retail Trade	Apparel/Footwear Retail	NYSE
+8	Accenture Plc	ACN	$341.49	$227,579.75	Technology Services	Information Technology Services	NYSE
+9	ACE Convergence Acquisition Corp	ACEV	$9.90	$284.62	Finance	Financial Conglomerates	NASDAQ
+10	Activision Blizzard	ATVI	$78.47	$61,026.78	Consumer Durables	Recreational Products	NASDAQ
+11	Adobe	ADBE	$661.39	$315,086.20	Technology Services	Packaged Software	NASDAQ
+12	Advance Auto Parts	AAP	$199.81	$12,588.18	Retail Trade	Specialty Stores	NYSE
+13	Advanced Micro Devices	AMD	$109.15	$132,395.02	Electronic Technology	Semiconductors	NASDAQ
+14	Affirm Holdings	AFRM	$91.51	$24,258.68	Technology Services	Internet Software/Services	NASDAQ
+15	Aflac	AFL	$55.25	$37,058.46	Finance	Life/Health Insurance	NYSE
+16	Agilent Technologies	A	$177.72	$53,799.86	Health Technology	Medical Specialties	NYSE
+17	Agilon Health	AGL	$35.48	$13,868.51	Health Services	Medical/Nursing Services	NYSE
+18	AGNC Investment	AGNC	$15.98	$8,388.04	Finance	Real Estate Investment Trusts	NASDAQ
+19	AIG	AIG	$54.67	$46,753.91	Finance	Multi-Line Insurance	NYSE
+20	Air Lease Corporation	AL	$39.63	$4,523.41	Finance	Finance/Rental/Leasing	NYSE
+21	Air Products and Chemicals	APD	$267.10	$59,126.49	Process Industries	Chemicals: Specialty	NYSE
+22	Airbnb Inc	ABNB	$165.00	$103,726.05	Technology Services	Internet Software/Services	NASDAQ
+23	Akamai Technologies	AKAM	$112.71	$18,352.55	Technology Services	Internet Software/Services	NASDAQ
+24	Albemarle Corporation	ALB	$238.78	$27,925.27	Process Industries	Chemicals: Specialty	NYSE
+25	Alcoa	AA	$46.77	$8,739.73	Non-Energy Minerals	Aluminum	NYSE
+26	Alibaba	BABA	$175.16	$476,116.24	Retail Trade	Internet Retail	NYSE
+27	Alight	ALIT	$11.81	$5,276.59	Technology Services	Information Technology Services	NYSE
+28	Align Technology	ALGN	$716.21	$56,588.86	Health Technology	Medical Specialties	NASDAQ
+29	Allot Communications	ALLT	$15.58	$555.01	Electronic Technology	Computer Communications	NASDAQ
+30	Allscripts Healthcare Solutions	MDRX	$15.04	$1,880.16	Technology Services	Information Technology Services	NASDAQ
+31	Allstate	ALL	$131.47	$38,873.23	Finance	Property/Casualty Insurance	NYSE
+32	Ally Financial	ALLY	$50.17	$18,088.38	Finance	Regional Banks	NYSE
+33	Alphabet (Class A)	GOOGL	$2,885.61	$1,930,650.05	Technology Services	Internet Software/Services	NASDAQ
+34	Alphabet (Class C)	GOOG	$2,910.38	$1,930,650.05	Technology Services	Internet Software/Services	NASDAQ
+35	Alteryx	AYX	$74.67	$5,023.06	Technology Services	Packaged Software	NYSE
+36	Altice USA	ATUS	$27.14	$12,406.46	Consumer Services	Cable/Satellite TV	NYSE
+37	Altria	MO	$50.79	$93,660.67	Consumer Non-Durables	Tobacco	NYSE
+38	Amazon	AMZN	$3,509.29	$1,777,246.95	Retail Trade	Internet Retail	NASDAQ
+39	Ambev	ABEV	$3.20	$270,595.53	Consumer Non-Durables	Beverages: Alcoholic	NYSE
+40	AMC	AMC	$47.83	$24,552.59	Consumer Services	Movies/Entertainment	NYSE
+41	Ameresco	AMRC	$72.13	$3,706.65	Industrial Services	Engineering & Construction	NYSE
+42	American Airlines	AAL	$19.53	$12,644.85	Transportation	Airlines	NASDAQ
+43	American Axle & Manufacturing	AXL	$8.57	$977.38	Producer Manufacturing	Auto Parts: OEM	NYSE
+44	American Eagle Outfitters	AEO	$26.48	$4,441.14	Retail Trade	Apparel/Footwear Retail	NYSE
+45	American Electric Power	AEP	$88.91	$44,477.34	Utilities	Electric Utilities	NASDAQ
+46	American Express	AXP	$159.72	$126,886.86	Finance	Finance/Rental/Leasing	NYSE
+47	American Homes 4 Rent	AMH	$41.32	$13,339.89	Finance	Real Estate Investment Trusts	NYSE
+48	American Tower	AMT	$299.22	$136,187.35	Finance	Real Estate Investment Trusts	NYSE
+49	Americold Realty Trust	COLD	$37.16	$9,837.45	Finance	Real Estate Investment Trusts	NYSE
+50	Ametek	AME	$133.13	$30,780.40	Producer Manufacturing	Electrical Products	NYSE
+51	Amgen	AMGN	$221.34	$125,688.38	Health Technology	Biotechnology	NASDAQ
+52	Amicus Therapeutics	FOLD	$11.38	$3,033.40	Health Technology	Biotechnology	NASDAQ
+53	Amneal Pharmaceuticals	AMRX	$5.27	$1,588.35	Health Technology	Pharmaceuticals: Major	NYSE
+54	Amphenol	APH	$75.98	$45,450.11	Electronic Technology	Electronic Components	NYSE
+55	Analog Devices	ADI	$163.27	$60,118.35	Electronic Technology	Semiconductors	NASDAQ
+56	Anaplan	PLAN	$65.67	$9,599.81	Technology Services	Packaged Software	NYSE
+57	ANGI Homeservices	ANGI	$10.59	$5,339.42	Technology Services	Internet Software/Services	NASDAQ
+58	AngloGold Ashanti	AU	$16.12	$6,795.29	Non-Energy Minerals	Precious Metals	NYSE
+59	Anheuser Busch Inbev NV	BUD	$59.43	$100,358.97	Consumer Non-Durables	Beverages: Alcoholic	NYSE
+60	Annaly Capital Management	NLY	$8.55	$12,348.53	Finance	Real Estate Investment Trusts	NYSE
+61	Ansys	ANSS	$364.63	$31,814.89	Technology Services	Packaged Software	NASDAQ
+62	Antero Midstream Partners LP	AM	$10.11	$4,827.12	Industrial Services	Oil & Gas Pipelines	NYSE
+63	Antero Resources Corporation	AR	$15.94	$5,003.01	Energy Minerals	Oil & Gas Production	NYSE
+64	Anthem	ANTM	$379.52	$92,532.82	Health Services	Managed Health Care	NYSE
+65	AO Smith	AOS	$71.87	$11,440.14	Producer Manufacturing	Building Products	NYSE
+66	Apache	APA	$19.53	$7,382.76	Energy Minerals	Oil & Gas Production	NASDAQ
+67	Apollo Commercial Real Estate Finance	ARI	$15.41	$2,155.77	Finance	Real Estate Investment Trusts	NYSE
+68	Apollo Strategic Growth Capital	APSG	$9.74	$994.47	Finance	Finance/Rental/Leasing	NYSE
+69	Appian Corporation	APPN	$111.36	$7,915.74	Technology Services	Packaged Software	NASDAQ
+70	Apple	AAPL	$156.69	$2,590,110.81	Electronic Technology	Telecommunications Equipment	NASDAQ
+71	Applied Materials	AMAT	$136.49	$123,240.73	Producer Manufacturing	Industrial Machinery	NASDAQ
+72	AppLovin Corp	APP	$74.04	$27,568.78	Technology Services	Packaged Software	NASDAQ
+73	AptarGroup	ATR	$131.08	$8,645.97	Process Industries	Containers/Packaging	NYSE
+74	Aramark	ARMK	$34.06	$8,693.53	Consumer Services	Restaurants	NYSE
+75	Archer-Daniels-Midland	ADM	$59.35	$33,198.39	Process Industries	Agricultural Commodities/Milling	NYSE
+76	Arconic	ARNC	$35.39	$3,870.85	Non-Energy Minerals	Aluminum	NYSE
+77	Arcturus Therapeutics Holdings Inc	ARCT	$56.50	$1,487.48	Health Technology	Pharmaceuticals: Major	NASDAQ
+78	Ares Capital	ARCC	$20.16	$8,988.65	Finance	Investment Managers	NASDAQ
+79	Arista Networks	ANET	$359.46	$27,576.56	Electronic Technology	Computer Communications	NYSE
+80	ARMOUR Residential	ARR	$10.85	$901.62	Finance	Real Estate Investment Trusts	NYSE
+81	Arrival Group	ARVL	$12.82	$7,953.93	Consumer Durables	Motor Vehicles	NASDAQ
+82	Asana Inc	ASAN	$94.53	$15,468.07	Technology Services	Packaged Software	NYSE
+83	ASML Holding	ASML	$861.77	$355,729.87	Producer Manufacturing	Industrial Machinery	NASDAQ
+84	AstraZeneca PLC	AZN	$58.39	$180,923.52	Health Technology	Pharmaceuticals: Major	NASDAQ
+85	AT&T	T	$27.42	$195,778.77	Communications	Major Telecommunications	NYSE
+86	ATI Physical Therapy	ATIP	$4.30	$845.56	Finance	Financial Conglomerates	NYSE
+87	Atlantica Sustainable Infrastructure	AY	$38.00	$4,211.66	Utilities	Alternative Power Generation	NASDAQ
+88	Atlas Crest Investment Corp	ACIC	$10.00	$625.00	Finance	Financial Conglomerates	NYSE
+89	Atlassian Corporation Plc	TEAM	$381.69	$96,154.35	Technology Services	Packaged Software	NASDAQ
+90	Autodesk	ADSK	$287.46	$63,198.19	Technology Services	Packaged Software	NASDAQ
+91	Autohome	ATHM	$47.67	$6,304.76	Technology Services	Internet Software/Services	NYSE
+92	Automatic Data Processing	ADP	$202.23	$85,559.57	Technology Services	Data Processing Services	NASDAQ
+93	AutoZone	AZO	$1,526.22	$32,882.03	Retail Trade	Specialty Stores	NYSE
+94	Avalara	AVLR	$187.75	$16,205.87	Technology Services	Packaged Software	NYSE
+95	AvalonBay Communities	AVB	$227.59	$31,775.36	Finance	Real Estate Investment Trusts	NYSE
+96	AvePoint	AVPT	$9.39	$1,692.76	Technology Services	Data Processing Services	NASDAQ
+97	AXA Equitable Holdings	EQH	$30.81	$12,703.71	Finance	Financial Conglomerates	NYSE
+98	Axalta Coating Systems	AXTA	$29.31	$6,746.02	Process Industries	Industrial Specialties	NYSE
+99	Axon Enterprise Inc	AXON	$182.67	$28,411.40	Electronic Technology	Aerospace & Defense	NASDAQ
+100	B2Gold Corporation	BTG	$3.65	$4,880.44	Non-Energy Minerals	Precious Metals	NYSE AMERICAN
+101	Baidu	BIDU	$162.21	$56,458.59	Technology Services	Internet Software/Services	NASDAQ
+102	Baker Hughes	BKR	$23.94	$25,426.92	Industrial Services	Oilfield Services/Equipment	NYSE
+103	Ball Corporation	BLL	$92.36	$30,165.73	Process Industries	Containers/Packaging	NYSE
+104	Ballard Power Systems	BLDP	$15.84	$4,712.34	Producer Manufacturing	Electrical Products	NASDAQ
+105	Banco Bradesco S.A. - Preferred Shares	BBD	$3.79	$181,089.65	Finance	Major Banks	NYSE
+106	Banco Macro	BMA	$19.67	$2,288.05	Finance	Regional Banks	NYSE
+107	Banco Santander (Brasil)	BSBR	$6.76	$135,253.46	Finance	Regional Banks	NYSE
+108	Bank of America	BAC	$40.50	$340,803.65	Finance	Major Banks	NYSE
+109	Baozun Inc	BZUN	$20.27	$1,581.54	Retail Trade	Internet Retail	NASDAQ
+110	Barclays PLC	BCS	$10.13	$41,834.97	Finance	Major Banks	NYSE
+111	Barrick Gold	GOLD	$18.36	$32,133.71	Non-Energy Minerals	Precious Metals	NYSE
+112	Bath&Body Works	BBWI	$66.34	$17,538.50	Retail Trade	Apparel/Footwear Retail	NYSE
+113	Bausch Health Companies	BHC	$27.27	$9,777.97	Health Technology	Pharmaceuticals: Other	NYSE
+114	Baxter	BAX	$83.61	$41,797.49	Health Technology	Medical Specialties	NYSE
+115	BBVA Banco Francés	BBAR	$4.22	$1,547.95	Finance	Regional Banks	NYSE
+116	Becton Dickinson	BDX	$261.95	$75,229.45	Health Technology	Medical Specialties	NYSE
+117	Belden	BDC	$57.95	$2,599.26	Producer Manufacturing	Electrical Products	NYSE
+118	Berkshire Hathaway	BRK.B	$276.76	$625,330.37	Finance	Multi-Line Insurance	NYSE
+119	Best Buy	BBY	$109.62	$26,962.60	Retail Trade	Electronics/Appliance Stores	NYSE
+120	Beyond Meat	BYND	$112.95	$7,144.59	Consumer Non-Durables	Food: Major Diversified	NASDAQ
+121	BHP Billiton	BHP	$55.54	$145,475.30	Non-Energy Minerals	Other Metals/Minerals	NYSE
+122	Bilibili	BILI	$74.44	$28,611.92	Technology Services	Internet Software/Services	NASDAQ
+123	Bio-Rad Laboratories	BIO	$788.35	$23,464.46	Health Technology	Medical Specialties	NYSE
+124	Biogen	BIIB	$300.19	$44,738.34	Health Technology	Biotechnology	NASDAQ
+125	Biomarin Pharmaceutical	BMRN	$77.76	$14,257.47	Health Technology	Biotechnology	NASDAQ
+126	BioNTech SE	BNTX	$359.18	$87,107.22	Health Technology	Biotechnology	NASDAQ
+127	BJ's Wholesale Club Holdings	BJ	$58.74	$8,020.59	Retail Trade	Specialty Stores	NYSE
+128	BlackBerry	BB	$10.03	$5,677.90	Technology Services	Packaged Software	NYSE
+129	BlackRock	BLK	$876.63	$133,419.32	Finance	Investment Managers	NYSE
+130	Blackstone	BX	$133.63	$160,704.25	Finance	Investment Managers	NYSE
+131	Blink Charging	BLNK	$30.03	$1,266.04	Consumer Services	Other Consumer Services	NASDAQ
+132	Bloom Energy	BE	$19.57	$3,397.08	Producer Manufacturing	Electrical Products	NYSE
+133	BNY Mellon	BK	$51.15	$44,151.33	Finance	Major Banks	NYSE
+134	Boeing	BA	$213.36	$125,061.39	Electronic Technology	Aerospace & Defense	NYSE
+135	Booking	BKNG	$2,325.37	$95,479.32	Consumer Services	Other Consumer Services	NASDAQ
+136	Booz Allen Hamilton	BAH	$79.93	$10,805.39	Commercial Services	Miscellaneous Commercial Services	NYSE
+137	BorgWarner	BWA	$42.92	$10,291.79	Producer Manufacturing	Auto Parts: OEM	NYSE
+138	Boston Scientific	BSX	$44.37	$63,176.31	Health Technology	Medical Specialties	NYSE
+139	Box	BOX	$22.92	$3,473.45	Technology Services	Information Technology Services	NYSE
+140	BP plc	BP	$25.24	$83,929.71	Energy Minerals	Integrated Oil	NYSE
+141	BRF	BRFS	$4.40	$18,800.63	Consumer Non-Durables	Food: Meat/Fish/Dairy	NYSE
+142	Bristol-Myers Squibb	BMY	$61.31	$136,237.69	Health Technology	Pharmaceuticals: Major	NYSE
+143	Brixmor Property Group	BRX	$23.10	$6,860.19	Finance	Real Estate Investment Trusts	NYSE
+144	Broadcom	AVGO	$506.00	$208,277.85	Electronic Technology	Semiconductors	NASDAQ
+145	Brookfield Asset Management Inc.	BAM	$53.96	$84,621.53	Finance	Investment Managers	NYSE
+146	Brookfield Asset Management Reinsurance Partners	BAMR	$55.74	$606.34	Finance	Financial Conglomerates	NYSE
+147	Brookfield Infrastructure Corp	BIPC	$59.29	$2,665.03	Utilities	Gas Distributors	NYSE
+148	Brookfield Infrastructure Partners	BIP	$55.23	$23,061.80	Utilities	Alternative Power Generation	NYSE
+149	Brookfield Renewable Corporation	BEPC	$41.70	$15,087.34	Utilities	Electric Utilities	NYSE
+150	Brookfield Renewable Partners	BEP	$38.97	$13,648.23	Utilities	Electric Utilities	NYSE
+151	Brown Forman	BF.B	$69.53	$32,555.67	Consumer Non-Durables	Beverages: Alcoholic	NYSE
+152	BTWN	BTWN	$9.81	$729.61	Finance	Financial Conglomerates	NASDAQ
+153	Bumble Inc.	BMBL	$53.97	$10,401.85	Technology Services	Packaged Software	NASDAQ
+154	Bunge	BG	$80.58	$11,419.54	Process Industries	Agricultural Commodities/Milling	NYSE
+155	Burgundy Technology Acquisition Corp	BTAQ	$9.94	$439.22	Finance	Financial Conglomerates	NASDAQ
+156	C3.ai Inc	AI	$50.12	$5,217.92	Technology Services	Packaged Software	NYSE
+157	Cable One	CABO	$1,964.16	$11,859.73	Consumer Services	Cable/Satellite TV	NYSE
+158	Cabot Oil & Gas Corporation	COG	$19.41	$7,757.48	Energy Minerals	Integrated Oil	NYSE
+159	Cadence Design Systems	CDNS	$163.63	$45,289.50	Technology Services	Packaged Software	NASDAQ
+160	Caesars Entertainment Inc.	CZR	$106.07	$22,638.48	Consumer Services	Casinos/Gaming	NASDAQ
+161	Canadian Solar	CSIQ	$36.97	$2,218.11	Producer Manufacturing	Electrical Products	NASDAQ
+162	Cano Health	CANO	$15.36	$7,372.57	Finance	Financial Conglomerates	NYSE
+163	Canon	CAJ	$24.66	$32,666.51	Electronic Technology	Electronic Equipment/Instruments	NYSE
+164	Canoo	GOEV	$6.83	$1,622.06	Consumer Durables	Motor Vehicles	NASDAQ
+165	Canopy Growth Corporation	CGC	$14.71	$7,360.32	Process Industries	Agricultural Commodities/Milling	NASDAQ
+166	Capital One	COF	$159.57	$71,186.37	Finance	Major Banks	NYSE
+167	Cardinal Health	CAH	$52.57	$15,268.50	Distribution Services	Medical Distributors	NYSE
+168	Carlyle Group	CG	$51.07	$18,102.38	Finance	Investment Managers	NASDAQ
+169	Carnival	CCL	$23.55	$26,553.75	Consumer Services	Hotels/Resorts/Cruise lines	NYSE
+170	Carrier Global Corp	CARR	$55.00	$47,723.57	Producer Manufacturing	Industrial Machinery	NYSE
+171	Cars.com	CARS	$12.64	$871.71	Technology Services	Internet Software/Services	NYSE
+172	Carvana Co.	CVNA	$330.10	$56,969.65	Retail Trade	Specialty Stores	NYSE
+173	Caterpillar	CAT	$199.75	$109,357.41	Producer Manufacturing	Trucks/Construction/Farm Machinery	NYSE
+174	Cazoo	CZOO	$9.39	-	Finance	Financial Conglomerates	NYSE	No live pricing
+175	CBOE Holdings	CBOE	$123.61	$13,179.68	Finance	Investment Banks/Brokers	NYSE AMERICAN
+176	CBRE Group	CBRE	$95.78	$32,156.82	Finance	Real Estate Development	NYSE
+177	CC Neuberger Principal Holdings II	PRPB	$9.82	$1,065.47	Finance	Financial Conglomerates	NYSE
+178	CCC Intelligent Solutions	CCCS	$11.43	$6,894.24	Finance	Financial Conglomerates	NYSE
+179	Cellebrite	CLBT	$11.22	$2,100.03	Finance	Financial Conglomerates	NASDAQ
+180	CEMEX, S.A.B. de C.V.	CX	$7.24	$11,011.10	Non-Energy Minerals	Construction Materials	NYSE
+181	Cenovus Energy Inc	CVE	$8.67	$17,472.23	Energy Minerals	Oil & Gas Production	NYSE
+182	Centene	CNC	$64.64	$37,687.94	Health Services	Managed Health Care	NYSE
+183	CenterPoint Energy	CNP	$24.43	$14,484.31	Utilities	Electric Utilities	NYSE
+184	Cerner	CERN	$75.04	$22,180.75	Technology Services	Information Technology Services	NASDAQ
+185	CF Industries Holdings	CF	$49.10	$10,561.40	Process Industries	Chemicals: Agricultural	NYSE
+186	ChargePoint Holdings	CHPT	$21.31	$6,874.65	Retail Trade	Specialty Stores	NYSE
+187	Charles Schwab	SCHW	$70.43	$132,971.98	Finance	Investment Banks/Brokers	NYSE
+188	Charter Communications	CHTR	$763.48	$140,344.57	Consumer Services	Cable/Satellite TV	NASDAQ
+189	Check Point Software Technologies	CHKP	$117.35	$15,583.86	Technology Services	Internet Software/Services	NASDAQ
+190	Chegg	CHGG	$78.25	$11,321.04	Commercial Services	Miscellaneous Commercial Services	NYSE
+191	Chemical & Mining Co. of Chile	SQM	$55.36	$15,169.81	Process Industries	Chemicals: Agricultural	NYSE
+192	Chemours Company, The	CC	$29.75	$4,913.62	Process Industries	Industrial Specialties	NYSE
+193	Cheniere Energy	LNG	$86.93	$22,046.05	Industrial Services	Oil & Gas Pipelines	NYSE AMERICAN
+194	Chevron	CVX	$96.76	$187,125.23	Energy Minerals	Integrated Oil	NYSE
+195	Chewy	CHWY	$75.62	$31,591.26	Retail Trade	Internet Retail	NYSE
+196	Chico's FAS	CHS	$4.71	$576.82	Retail Trade	Apparel/Footwear Retail	NYSE
+197	Chimera Investment	CIM	$15.15	$3,574.73	Finance	Real Estate Investment Trusts	NYSE
+198	China Mobile	CHL	$27.67	$71.51	Communications	Telecommunications Equipment	NYSE	No live pricing
+199	China Southern Airlines	ZNH	$27.18	$13,518.06	Transportation	Airlines	NYSE
+200	Chipotle Mexican Grill	CMG	$1,909.02	$53,633.65	Consumer Services	Restaurants	NYSE
+201	Ciena Corporation	CIEN	$53.14	$8,232.94	Electronic Technology	Telecommunications Equipment	NYSE
+202	Cigna	CI	$205.62	$69,932.90	Health Services	Managed Health Care	NYSE
+203	Cimarex Energy	XEC	$77.76	$7,995.77	Energy Minerals	Oil & Gas Production	NYSE
+204	Cintas	CTAS	$392.86	$40,451.69	Consumer Services	Other Consumer Services	NASDAQ
+205	Cisco	CSCO	$56.85	$239,778.29	Technology Services	Information Technology Services	NASDAQ
+206	Citigroup	C	$69.96	$141,793.81	Finance	Financial Conglomerates	NYSE
+207	Citizens Financial Group	CFG	$43.68	$18,611.31	Finance	Regional Banks	NYSE
+208	Citrix Systems	CTXS	$111.57	$13,860.56	Technology Services	Packaged Software	NASDAQ
+209	Clean Energy Fuels	CLNE	$8.08	$1,801.78	Utilities	Gas Distributors	NASDAQ
+210	Clearway Energy	CWEN	$31.70	$6,183.12	Utilities	Alternative Power Generation	NYSE
+211	Cleveland-Cliffs Inc.	CLF	$21.86	$10,924.21	Non-Energy Minerals	Steel	NYSE
+212	Cloudera	CLDR	$15.94	$4,721.70	Technology Services	Packaged Software	NYSE
+213	Cloudflare	NET	$131.41	$41,056.45	Technology Services	Information Technology Services	NYSE
+214	Clovis Oncology	CLVS	$4.84	$573.10	Health Technology	Biotechnology	NASDAQ
+215	CME Group (Class A)	CME	$188.65	$67,750.83	Finance	Investment Banks/Brokers	NASDAQ
+216	CNX Resources	CNX	$11.76	$2,562.75	Energy Minerals	Integrated Oil	NYSE
+217	Coca-Cola	KO	$54.44	$234,996.73	Consumer Non-Durables	Beverages: Non-Alcoholic	NYSE
+218	Coeur Mining	CDE	$6.23	$1,601.27	Non-Energy Minerals	Precious Metals	NYSE
+219	Cognex Corporation	CGNX	$88.84	$15,698.66	Electronic Technology	Electronic Equipment/Instruments	NASDAQ
+220	Cognizant Technology Solutions	CTSH	$75.48	$39,672.08	Technology Services	Information Technology Services	NASDAQ
+221	Cohn Robbins Holdings Corp	CRHC	$9.80	$1,014.30	Finance	Financial Conglomerates	NYSE
+222	Coinbase	COIN	$245.19	$51,717.66	Technology Services	Packaged Software	NASDAQ
+223	Colgate-Palmolive	CL	$76.23	$64,301.04	Consumer Non-Durables	Household/Personal Care	NYSE
+224	Comcast	CMCSA	$57.11	$262,119.83	Consumer Services	Cable/Satellite TV	NASDAQ
+225	Comerica	CMA	$74.07	$9,919.72	Finance	Major Banks	NYSE
+226	CommScope Holding Company	COMM	$14.29	$2,918.04	Electronic Technology	Telecommunications Equipment	NASDAQ
+227	Community Health Systems	CYH	$11.23	$1,483.24	Health Services	Hospital/Nursing Management	NYSE
+228	Companhia de Saneamento Basico	SBS	$6.64	$24,107.39	Utilities	Water Utilities	NYSE
+229	Companhia Energética de Minas Gerais	CIG	$2.55	$24,920.70	Utilities	Electric Utilities	NYSE
+230	Companhia Siderurgica Nacional	SID	$5.64	$41,348.18	Non-Energy Minerals	Steel	NYSE
+231	Compañía de Minas Buenaventura	BVN	$7.21	$2,032.11	Non-Energy Minerals	Precious Metals	NYSE
+232	Compass	COMP	$13.88	$5,475.92	Technology Services	Packaged Software	NYSE
+233	ConAgra Foods	CAG	$33.47	$16,076.76	Consumer Non-Durables	Food: Major Diversified	NYSE
+234	Conduent	CNDT	$6.47	$1,375.85	Commercial Services	Miscellaneous Commercial Services	NASDAQ
+235	ConocoPhillips	COP	$58.92	$78,898.71	Energy Minerals	Oil & Gas Production	NYSE
+236	Consolidated Edison	ED	$73.07	$25,821.61	Utilities	Electric Utilities	NYSE
+237	Constellation Brands	STZ	$214.85	$41,077.24	Consumer Non-Durables	Beverages: Alcoholic	NYSE
+238	ContextLogic	WISH	$6.54	$4,107.12	Retail Trade	Internet Retail	NASDAQ
+239	Continental Resources	CLR	$41.97	$15,426.18	Energy Minerals	Oil & Gas Production	NYSE
+240	Conx Corp	CONX	$9.80	$918.95	Finance	Financial Conglomerates	NASDAQ
+241	Corning	GLW	$38.39	$32,786.29	Electronic Technology	Electronic Components	NYSE
+242	Corsair Gaming	CRSR	$28.96	$2,716.64	Technology Services	Packaged Software	NASDAQ
+243	Corteva	CTVA	$41.87	-	Process Industries	Chemicals: Agricultural	NYSE
+244	CoStar Group	CSGP	$89.38	$35,301.09	Technology Services	Internet Software/Services	NASDAQ
+245	Costco Wholesale	COST	$459.51	$203,135.18	Retail Trade	Specialty Stores	NASDAQ
+246	Coty	COTY	$8.35	$6,396.65	Consumer Non-Durables	Household/Personal Care	NYSE	No live pricing
+247	Coupang	CPNG	$29.72	$51,581.59	Retail Trade	Internet Retail	NYSE
+248	Coursera	COUR	$37.34	$5,143.33	Technology Services	Internet Software/Services	NYSE
+249	Covanta Holding Corp	CVA	$20.11	$2,674.82	Industrial Services	Environmental Services	NYSE
+250	Credicorp	BAP	$107.25	$10,122.50	Finance	Regional Banks	NYSE
+251	CRISPR Therapeutics AG	CRSP	$124.52	$9,488.57	Health Technology	Biotechnology	NASDAQ
+252	Crocs	CROX	$155.18	$9,680.99	Consumer Non-Durables	Apparel/Footwear	NASDAQ
+253	CrowdStrike	CRWD	$263.09	$60,035.16	Technology Services	Packaged Software	NASDAQ
+254	Crown Castle	CCI	$188.54	$81,486.29	Finance	Real Estate Investment Trusts	NYSE
+255	CSX	CSX	$30.31	$68,333.74	Transportation	Railroads	NASDAQ
+256	CVS Health	CVS	$85.51	$112,836.78	Retail Trade	Drugstore Chains	NYSE
+257	Cyxtera Technologies	CYXT	$9.35	$1,551.90	Technology Services	Data Processing Services	NASDAQ
+258	Dana Holding	DAN	$22.01	$3,196.49	Producer Manufacturing	Auto Parts: OEM	NYSE
+259	Danaher	DHR	$324.53	$231,681.84	Health Technology	Medical Specialties	NYSE
+260	Daqo New Energy Corp	DQ	$61.93	$4,552.70	Process Industries	Chemicals: Specialty	NYSE
+261	Darden Restaurants	DRI	$149.43	$19,473.78	Consumer Services	Restaurants	NYSE
+262	Darling Ingredients	DAR	$75.46	$12,229.79	Process Industries	Agricultural Commodities/Milling	NYSE
+263	Datadog	DDOG	$143.13	$44,372.56	Technology Services	Packaged Software	NASDAQ
+264	Datto Holding Corp	MSP	$23.79	$3,860.57	Technology Services	Packaged Software	NYSE
+265	DaVita HealthCare Partners	DVA	$121.55	$12,738.43	Health Services	Medical/Nursing Services	NYSE
+266	Dell Technologies	DELL	$100.53	$76,917.12	Electronic Technology	Computer Processing Hardware	NYSE
+267	Delta Air Lines	DAL	$40.11	$25,666.99	Transportation	Airlines	NYSE
+268	Deutsche Bank AG	DB	$12.91	$26,588.04	Finance	Major Banks	NYSE
+269	Devon Energy	DVN	$29.79	$20,167.83	Energy Minerals	Oil & Gas Production	NYSE
+270	DexCom Inc	DXCM	$563.14	$54,483.17	Health Technology	Medical Specialties	NASDAQ
+271	Diageo	DEO	$190.01	$110,213.21	Consumer Non-Durables	Beverages: Alcoholic	NYSE
+272	Diamondback Energy Inc	FANG	$82.62	$14,958.65	Energy Minerals	Oil & Gas Production	NASDAQ
+273	DiDi Global	DIDI	$8.30	$40,032.90	Technology Services	Packaged Software	NYSE
+274	Digital Realty Trust	DLR	$156.80	$45,467.92	FInance	Real Estate Investment Trusts	NYSE
+275	Digital Turbine	APPS	$66.86	$6,425.00	Technology Services	Internet Software/Services	NASDAQ
+276	DigitalBridge Group	DBRG	$6.59	$3,249.54	Finance	Real Estate Investment Trusts	NYSE
+277	Dine Brands Global Inc	DIN	$81.17	$1,394.18	Consumer Services	Restaurants	NYSE
+278	Discover Financial Services	DFS	$123.64	$37,026.27	Finance	Finance/Rental/Leasing	NYSE
+279	Discovery Communications	DISCA	$26.88	$13,334.64	Consumer Services	Cable/Satellite TV	NASDAQ
+280	Discovery Communications	DISCK	$25.98	$13,334.64	Consumer Services	Cable/Satellite TV	NASDAQ
+281	DISH Network	DISH	$42.48	$22,424.73	Consumer Services	Cable/Satellite TV	NASDAQ
+282	Diversified Healthcare Trust	DHC	$3.39	$808.09	Finance	Real Estate Investment Trusts	NASDAQ
+283	DocuSign	DOCU	$277.74	$54,636.51	Technology Services	Packaged Software	NASDAQ
+284	Dollar General	DG	$222.11	$51,820.53	Retail Trade	Discount Stores	NYSE
+285	Dollar Tree	DLTR	$89.31	$20,086.88	Retail Trade	Discount Stores	NASDAQ
+286	Dominion Energy	D	$74.12	$59,925.08	Utilities	Electric Utilities	NYSE
+287	Domino's Pizza	DPZ	$503.54	$18,557.57	Consumer Services	Restaurants	NYSE
+288	DoorDash Inc	DASH	$222.91	$75,329.40	Technology Services	Internet Software/Services	NYSE
+289	DPCM Capital Inc.	XPOA	$9.77	$366.38	Finance	Financial Conglomerates	NYSE
+290	DR Horton	DHI	$90.80	$32,524.05	Consumer Durables	Homebuilding	NYSE
+291	DraftKings Inc	DKNG	$60.42	$24,367.28	Technology Services	Internet Software/Services	NASDAQ
+292	Dropbox	DBX	$30.70	$12,232.89	Technology Services	Data Processing Services	NASDAQ
+293	DT Midstream	DTM	$44.86	$4,345.30	Industrial Services	Oil & Gas Pipelines	NYSE
+294	DTE Energy Co	DTE	$114.00	$22,087.67	Utilities	Electric Utilities	NYSE
+295	Duke Energy	DUK	$99.67	$76,679.88	Utilities	Electric Utilities	NYSE
+296	Duke Realty	DRE	$49.43	$18,701.36	Finance	Real Estate Investment Trusts	NYSE
+297	Duolingo	DUOL	$184.98	$6,921.65	Technology Services	Packaged Software	NASDAQ
+298	DuPont	DD	$68.91	$36,043.84	Process Industries	Chemicals: Major Diversified	NYSE
+299	DXC Technology	DXC	$35.96	$9,058.47	Technology Services	Data Processing Services	NYSE
+300	E.Merge Technology Acquisition Corp	ETAC	$9.79	$746.00	Finance	Financial Conglomerates	NASDAQ
+301	eBay	EBAY	$74.11	$48,175.64	Consumer Services	Other Consumer Services	NASDAQ
+302	Ecolab	ECL	$218.34	$62,464.28	Process Industries	Chemicals: Specialty	NYSE
+303	Edison International	EIX	$57.75	$21,927.95	Utilities	Electric Utilities	NYSE
+304	Edwards Lifesciences	EW	$119.42	$74,437.79	Health Technology	Medical Specialties	NYSE
+305	Elanco Animal Health	ELAN	$32.40	$15,325.82	Process Industries	Agricultural Commodities/Milling	NYSE
+306	Eldorado Gold Corporation	EGO	$8.25	$1,509.85	Non-Energy Minerals	Precious Metals	NYSE
+307	Electric Last Mile Solutions	ELMS	$7.45	$924.00	Producer Manufacturing	Electrical Products	NASDAQ
+308	Electronic Arts	EA	$133.88	$38,099.81	Consumer Durables	Recreational Products	NASDAQ
+309	Element Solutions	ESI	$20.93	$5,181.60	Process Industries	Chemicals: Major Diversified	NYSE
+310	Eli Lilly	LLY	$230.10	$220,109.29	Health Technology	Pharmaceuticals: Major	NYSE
+311	Embraer	ERJ	$15.89	$15,460.91	Electronic Technology	Aerospace & Defense	NYSE
+312	Emerson	EMR	$96.46	$57,663.78	Producer Manufacturing	Electrical Products	NYSE
+313	Encana Corporation	OVV	$29.37	$7,668.05	Energy Minerals	Oil & Gas Production	NYSE
+314	Energy Transfer Equity	ET	$9.10	$24,614.32	Industrial Services	Oil & Gas Pipelines	NYSE
+315	Enersis Americas S.A. American	ENIA	$6.11	$13,228.57	Utilities	Electric Utilities	NYSE
+316	EnLink Midstream LLC	ENLC	$6.71	$3,278.65	Industrial Services	Oil & Gas Pipelines	NYSE
+317	Enphase Energy Inc	ENPH	$160.89	$21,659.19	Electronic Technology	Semiconductors	NASDAQ
+318	Entergy Corp	ETR	$111.04	$22,313.99	Utilities	Electric Utilities	NYSE
+319	Enterprise Products Partners	EPD	$22.00	$48,078.38	Industrial Services	Oil & Gas Pipelines	NYSE
+320	EOG Resources	EOG	$74.25	$43,351.61	Energy Minerals	Oil & Gas Production	NYSE
+321	EPAM Systems	EPAM	$613.95	$34,768.27	Technology Services	Information Technology Services	NYSE
+322	EQT Corporation	EQT	$18.83	$7,118.04	Energy Minerals	Oil & Gas Production	NYSE
+323	Equifax	EFX	$268.49	$32,712.07	Commercial Services	Miscellaneous Commercial Services	NYSE
+324	Equinix	EQIX	$872.58	$78,314.23	Finance	Real Estate Investment Trusts	NASDAQ
+325	Equinor	EQNR	$23.25	$75,007.59	Energy Minerals	Integrated Oil	NYSE
+326	Equitrans Midstream	ETRN	$9.60	$4,152.21	Industrial Services	Oil & Gas Pipelines	NYSE
+327	Equity Distribution Acquisition Corp	EQD	$9.81	$507.67	Finance	Financial Conglomerates	NYSE
+328	Equity Residential	EQR	$80.26	$30,053.94	Finance	Real Estate Investment Trusts	NYSE
+329	Estee Lauder	EL	$319.88	$115,568.58	Consumer Non-Durables	Household/Personal Care	NYSE
+330	Etsy	ETSY	$226.98	$28,730.40	Commercial Services	Miscellaneous Commercial Services	NASDAQ
+331	Eventbrite	EB	$17.82	$1,680.56	Technology Services	Packaged Software	NYSE
+332	Evercore	EVR	$138.15	$6,244.49	Finance	Investment Banks/Brokers	NYSE
+333	Exact Sciences Corporation	EXAS	$108.15	$18,596.25	Health Technology	Biotechnology	NASDAQ
+334	Exagen	XGN	$14.44	$232.87	Health Services	Medical/Nursing Services	NASDAQ
+335	Exelixis	EXEL	$20.72	$6,527.81	Health Technology	Biotechnology	NASDAQ
+336	Exelon	EXC	$49.86	$48,754.73	Utilities	Electric Utilities	NASDAQ
+337	Expedia	EXPE	$152.28	$22,966.82	Consumer Services	Other Consumer Services	NASDAQ
+338	Exxon Mobil	XOM	$55.16	$233,523.28	Energy Minerals	Integrated Oil	NYSE
+339	F5 Networks	FFIV	$204.58	$12,338.68	Electronic Technology	Computer Communications	NASDAQ
+340	Facebook	FB	$364.72	$1,028,307.98	Technology Services	Internet Software/Services	NASDAQ
+341	FactSet Research Systems	FDS	$378.25	$14,290.15	Technology Services	Data Processing Services	NYSE
+342	Fastenal Company	FAST	$52.96	$30,438.19	Distribution Services	Wholesale Distributors	NASDAQ
+343	Fastly	FSLY	$44.87	$5,231.84	Technology Services	Information Technology Services	NYSE
+344	FedEx	FDX	$255.22	$67,937.24	Transportation	Air Freight/Couriers	NYSE
+345	Ferrari	RACE	$216.39	$40,750.76	Consumer Durables	Motor Vehicles	NYSE
+346	Fifth Third Bancorp	FITB	$40.12	$27,711.61	Finance	Regional Banks	NASDAQ
+347	FireEye	FEYE	$18.27	$4,370.03	Technology Services	Information Technology Services	NASDAQ
+348	First Horizon National Corporation	FHN	$15.22	$8,360.85	Finance	Regional Banks	NYSE
+349	First Majestic Silver Corp	AG	$12.31	$4,006.23	Non-Energy Minerals	Precious Metals	NYSE
+350	First Solar	FSLR	$104.02	$11,059.32	Electronic Technology	Electronic Components	NASDAQ
+351	FirstEnergy	FE	$36.73	$19,988.23	Utilities	Electric Utilities	NYSE
+352	FirstMark Horizon Acquisition Corp	FMAC	$9.87	$937.79	Finance	Financial Conglomerates	NYSE
+353	FIS	FIS	$123.73	$76,426.87	Technology Services	Data Processing Services	NYSE
+354	Fiserv	FISV	$108.62	$71,928.67	Technology Services	Data Processing Services	NASDAQ
+355	Five Star Senior Living Inc	FVE	$3.90	$123.86	Health Services	Hospital/Nursing Management	NASDAQ
+356	Fiverr	FVRR	$200.31	$7,320.60	Technology Services	Data Processing Services	NYSE
+357	FleetCor Technologies	FLT	$258.24	$21,331.69	Commercial Services	Miscellaneous Commercial Services	NYSE
+358	Flextronics International	FLEX	$18.36	$8,963.82	Electronic Technology	Electronic Components	NASDAQ
+359	Fluor Corporation	FLR	$15.53	$2,196.19	Industrial Services	Engineering & Construction	NYSE
+360	Foot Locker	FL	$49.63	$5,151.97	Retail Trade	Apparel/Footwear Retail	NYSE
+361	Ford	F	$13.55	$53,169.01	Consumer Durables	Motor Vehicles	NYSE
+362	Fortinet	FTNT	$299.49	$48,912.77	Electronic Technology	Computer Communications	NASDAQ
+363	Fortive	FTV	$72.74	$26,069.35	Electronic Technology	Electronic Equipment/Instruments	NYSE
+364	Franklin Resources	BEN	$31.33	$15,754.42	Finance	Investment Managers	NYSE
+365	Freeport	FCX	$33.05	$48,519.51	Non-Energy Minerals	Other Metals/Minerals	NYSE
+366	Frequency Therapeutics	FREQ	$7.18	$247.11	Health Technology	Biotechnology	NASDAQ
+367	FS KKR Capital	FSK	$22.48	$6,409.72	Finance	Investment Managers	NYSE
+368	fuboTV	FUBO	$28.28	$4,006.33	Technology Services	Internet Software/Services	NYSE
+369	FuelCell Energy	FCEL	$6.55	$2,401.32	Electronic Technology	Electronic Equipment/Instruments	NASDAQ
+370	FutureFuel	FF	$7.50	$328.22	Process Industries	Chemicals: Specialty	NYSE
+371	GameStop	GME	$204.97	$15,678.46	Retail Trade	Electronics/Appliance Stores	NYSE
+372	GAP	GPS	$24.35	$9,158.16	Retail Trade	Apparel/Footwear Retail	NYSE
+373	Gartner	IT	$310.33	$25,958.71	Commercial Services	Miscellaneous Commercial Services	NYSE
+374	GDS Holdings	GDS	$59.28	$11,372.47	Technology Services	Data Processing Services	NASDAQ
+375	General Dynamics	GD	$195.12	$54,544.12	Electronic Technology	Aerospace & Defense	NYSE
+376	General Electric	GE	$100.47	$111,237.20	Electronic Technology	Aerospace & Defense	NYSE
+377	General Mills	GIS	$58.92	$35,721.85	Consumer Non-Durables	Food: Major Diversified	NYSE
+378	General Motors	GM	$51.33	$74,516.94	Consumer Durables	Motor Vehicles	NYSE
+379	Gentex	GNTX	$32.24	$7,703.88	Producer Manufacturing	Auto Parts: OEM	NASDAQ
+380	Genworth Financial	GNW	$3.52	$1,786.00	Finance	Life/Health Insurance	NYSE
+381	Gerdau S.A.	GGB	$4.63	$39,763.27	Non-Energy Minerals	Steel	NYSE
+382	Gilead Sciences	GILD	$71.61	$89,785.26	Health Technology	Biotechnology	NASDAQ
+383	GlaxoSmithKline plc	GSK	$38.93	$96,371.06	Health Technology	Pharmaceuticals: Major	NYSE
+384	Global Net Lease	GNL	$16.28	$1,632.75	Finance	Real Estate Investment Trusts	NYSE
+385	Globus Medical Inc	GMED	$80.72	$8,143.89	Health Technology	Medical Specialties	NYSE
+386	GoDaddy	GDDY	$72.41	$12,252.44	Technology Services	Internet Software/Services	NYSE
+387	Gol Intelligent Airlines	GOL	$7.32	$6,013.69	Transportation	Airlines	NYSE
+388	Gold Fields	GFI	$8.13	$7,317.82	Non-Energy Minerals	Precious Metals	NYSE
+389	Goldman Sachs	GS	$391.46	$131,960.15	Finance	Investment Banks/Brokers	NYSE
+390	Goodyear	GT	$16.98	$4,774.66	Consumer Durables	Automotive Aftermarket	NASDAQ
+391	GoPro	GPRO	$9.57	$1,474.49	Consumer Durables	Electronics/Appliances	NASDAQ
+392	Graphic Packaging Holding	GPK	$19.14	$5,876.91	Process Industries	Containers/Packaging	NYSE
+393	Green Plains	GPRE	$34.78	$1,865.98	Process Industries	Chemicals: Specialty	NASDAQ
+394	Grocery Outlet Holding	GO	$23.83	$2,285.78	Retail Trade	Food Retail	NASDAQ
+395	Groupon	GRPN	$22.04	$650.72	Commercial Services	Advertising/Marketing Services	NASDAQ
+396	GrowGeneration	GRWG	$26.97	$1,607.61	Distribution Services	Wholesale Distributors	NASDAQ
+397	Grupo Financiero Galicia	GGAL	$10.98	$2,387.04	Finance	Regional Banks	NASDAQ
+398	Grupo Financiero Santander Mexico	BSMX	$5.84	$7,886.46	Finance	Regional Banks	NYSE
+399	Grupo Supervielle	SUPV	$2.41	$349.24	Finance	Major Banks	NYSE
+400	Grupo Televisa, S.A.B.	TV	$12.48	$6,937.05	Consumer Services	Broadcasting	NYSE
+401	GS Acquisition Holdings Corp II	GSAH	$10.05	$942.19	Finance	Financial Conglomerates	NYSE
+402	Guess	GES	$21.76	$1,413.46	Consumer Non-Durables	Apparel/Footwear	NYSE
+403	H&R Block	HRB	$25.05	$4,460.28	Consumer Services	Other Consumer Services	NYSE
+404	Halliburton	HAL	$20.27	$18,050.43	Industrial Services	Oilfield Services/Equipment	NYSE
+405	Hanesbrands	HBI	$19.00	$6,633.88	Consumer Non-Durables	Apparel/Footwear	NYSE
+406	Harley-Davidson	HOG	$37.83	$5,819.99	Consumer Durables	Motor Vehicles	NYSE
+407	Harmony Gold Mining Company Limited	HMY	$3.23	$1,974.02	Non-Energy Minerals	Precious Metals	NYSE
+408	Hartford Financial Services Group	HIG	$69.56	$24,150.23	Finance	Multi-Line Insurance	NYSE
+409	Hasbro	HAS	$97.53	$13,428.22	Consumer Durables	Recreational Products	NASDAQ
+410	HCA Healthcare	HCA	$258.74	$82,833.49	Health Services	Hospital/Nursing Management	NYSE
+411	HDFC Bank.	HDB	$74.20	$117,146.58	Finance	Regional Banks	NYSE
+412	Health Assurance Acquisition Corp	HAAC	$9.74	$536.92	Finance	Financial Conglomerates	NASDAQ
+413	Hecla Mining Co.	HL	$5.58	$2,996.33	Non-Energy Minerals	Precious Metals	NYSE
+414	Heico	HEI	$127.25	$16,130.06	Electronic Technology	Aerospace & Defense	NYSE
+415	Hello Group	MOMO	$11.35	$2,336.01	Technology Services	Information Technology Services	NASDAQ
+416	Henry Schein	HSIC	$77.47	$10,822.02	Distribution Services	Medical Distributors	NASDAQ
+417	Herbalife	HLF	$44.39	$5,131.28	Distribution Services	Medical Distributors	NYSE
+418	Hess Corporation	HES	$71.34	$22,092.06	Energy Minerals	Oil & Gas Production	NYSE
+419	Hewlett Packard	HPE	$13.55	$17,724.08	Electronic Technology	Computer Processing Hardware	NYSE
+420	Hilton	HLT	$131.21	$36,566.38	Consumer Services	Hotels/Resorts/Cruise lines	NYSE
+421	Hilton Grand Vacations	HGV	$46.00	$5,505.21	Finance	Real Estate Development	NYSE
+422	Himax Technologies	HIMX	$10.79	$1,880.70	Electronic Technology	Semiconductors	NASDAQ
+423	HollyFrontier	HFC	$30.69	$4,986.82	Energy Minerals	Oil Refining/Marketing	NYSE
+424	Hologic	HOLX	$77.63	$19,678.22	Health Technology	Medical Specialties	NASDAQ
+425	Home Depot	HD	$335.67	$354,252.03	Retail Trade	Home Improvement Chains	NYSE
+426	Honda Motor	HMC	$30.98	$55,538.06	Consumer Durables	Motor Vehicles	NYSE
+427	Honeywell	HON	$218.49	$150,845.33	Producer Manufacturing	Industrial Conglomerates	NYSE
+428	Hormel Foods Corporation	HRL	$42.02	$22,798.24	Consumer Non-Durables	Food: Meat/Fish/Dairy	NYSE
+429	Host Hotels & Resorts	HST	$16.26	$11,609.21	Finance	Real Estate Investment Trusts	NASDAQ
+430	Howmet Aerospace	HWM	$30.99	$13,291.99	Non-Energy Minerals	Aluminum	NYSE
+431	HP	HPQ	$27.68	$31,901.70	Electronic Technology	Computer Processing Hardware	NYSE
+432	HSBC	HSBC	$25.75	$105,033.48	Finance	Major Banks	NYSE
+433	Huazhu Group	HTHT	$46.95	$15,194.00	Consumer Services	Hotels/Resorts/Cruise lines	NASDAQ
+434	HubSpot	HUBS	$696.68	$32,747.69	Technology Services	Information Technology Services	NYSE
+435	Humana	HUM	$407.79	$52,402.89	Health Services	Managed Health Care	NYSE
+436	Huntington Bancshares Incorporated	HBAN	$14.95	$22,074.53	Finance	Regional Banks	NASDAQ
+437	Huntsman Corporation	HUN	$26.71	$5,927.75	Process Industries	Chemicals: Major Diversified	NYSE
+438	Hutchison China	HCM	$38.93	$4,795.13	Health Technology	Pharmaceuticals: Major	NASDAQ
+439	HUYA	HUYA	$9.21	$2,183.69	Technology Services	Packaged Software	NYSE
+440	Hyatt Hotels	H	$75.38	$7,673.41	Consumer Services	Hotels/Resorts/Cruise lines	NYSE
+441	Hyzon Motors	HYZN	$9.99	$2,469.68	Distribution Services	Wholesale Distributors	NASDAQ
+442	Iamgold Corp	IAG	$2.33	$1,106.61	Non-Energy Minerals	Precious Metals	NYSE
+443	IBM	IBM	$135.23	$121,209.34	Technology Services	Information Technology Services	NYSE
+444	ICICI Bank	IBN	$19.53	$67,496.07	Finance	Regional Banks	NYSE
+445	IDEXX Laboratories	IDXX	$661.71	$56,295.60	Health Technology	Medical Specialties	NASDAQ
+446	IGM Biosciences	IGMS	$74.82	$2,398.89	Health Technology	Pharmaceuticals: Major	NASDAQ
+447	Illinois Tool Works	ITW	$215.89	$67,998.40	Producer Manufacturing	Industrial Machinery	NYSE
+448	Illumina	ILMN	$447.01	$65,576.37	Health Technology	Biotechnology	NASDAQ
+449	ImmunoGen	IMGN	$5.80	$1,205.47	Health Technology	Biotechnology	NASDAQ
+450	Incyte	INCY	$75.99	$16,781.27	Health Technology	Biotechnology	NASDAQ
+451	indie Semiconductor	INDI	$10.22	$1,329.30	Finance	Financial Conglomerates	NASDAQ
+452	Infinera Corporation	INFN	$8.37	$1,745.92	Electronic Technology	Telecommunications Equipment	NASDAQ
+453	Infosys	INFY	$22.85	$95,629.67	Technology Services	Information Technology Services	NYSE
+454	Innovative Industrial Properties	IIPR	$232.74	$5,569.07	Finance	Real Estate Investment Trusts	NYSE
+455	Inovio Pharmaceuticals In	INO	$8.14	$1,712.31	Health Technology	Medical Specialties	NASDAQ
+456	Intel	INTC	$54.26	$220,132.76	Electronic Technology	Semiconductors	NASDAQ
+457	Interactive Brokers	IBKR	$61.54	$26,099.31	Finance	Investment Banks/Brokers	NASDAQ
+458	Intercept Pharmaceuticals	ICPT	$15.93	$528.89	Health Technology	Pharmaceuticals: Other	NASDAQ
+459	Intercontinental Exchange	ICE	$117.70	$66,283.35	Finance	Investment Banks/Brokers	NYSE
+460	Intercontinental Hotels Group	IHG	$64.36	$11,557.90	Consumer Services	Hotels/Resorts/Cruise lines	NYSE
+461	International Game Technology	IGT	$22.29	$4,566.25	Consumer Services	Casinos/Gaming	NYSE
+462	International Paper Company	IP	$56.60	$22,121.24	Process Industries	Containers/Packaging	NYSE
+463	Interpublic Group of Companies	IPG	$36.99	$14,560.01	Commercial Services	Advertising/Marketing Services	NYSE
+464	Intuit	INTU	$561.85	$153,436.62	Technology Services	Packaged Software	NASDAQ
+465	Intuitive Surgical	ISRG	$1,037.27	$123,425.49	Health Technology	Medical Specialties	NASDAQ
+466	Invesco	IVZ	$26.25	$12,111.53	Finance	Investment Managers	NYSE
+467	Invesco Mortgage Capital	IVR	$3.12	$903.80	Finance	Real Estate Investment Trusts	NYSE
+468	Investors Bancorp	ISBC	$14.07	$3,483.95	Finance	Savings Banks	NASDAQ
+469	Invitae Corporation	NVTA	$31.54	$6,854.89	Health Services	Medical/Nursing Services	NYSE
+470	Invitation Homes	INVH	$39.89	$22,996.00	Finance	Real Estate Investment Trusts	NYSE
+471	iQIYI	IQ	$8.70	$6,818.56	Technology Services	Internet Software/Services	NASDAQ
+472	iRobot	IRBT	$82.91	$2,325.71	Consumer Durables	Electronics/Appliances	NASDAQ
+473	Iron Mountain	IRM	$44.90	$12,996.77	Finance	Real Estate Investment Trusts	NYSE
+474	ironSource	IS	$12.40	$12,560.77	Technology Services	Packaged Software	NYSE
+475	Itaú Unibanco	ITUB	$5.24	$263,271.31	Finance	Major Banks	NYSE
+476	J.B. Hunt	JBHT	$168.72	$17,748.67	Transportation	Trucking	NASDAQ
+477	J&J	JNJ	$164.75	$433,701.41	Health Technology	Pharmaceuticals: Major	NYSE
+478	Jack Henry & Associates	JKHY	$168.76	$12,490.60	Technology Services	Information Technology Services	NASDAQ
+479	Janus International Group	JBI	$13.14	$1,818.37	Finance	Financial Conglomerates	NYSE
+480	Jazz Pharmaceuticals	JAZZ	$133.22	$8,174.91	Health Technology	Pharmaceuticals: Other	NASDAQ
+481	JD.com	JD	$77.69	$120,348.73	Retail Trade	Internet Retail	NASDAQ
+482	Jefferies Financial Group	JEF	$36.54	$9,026.75	Finance	Investment Banks/Brokers	NYSE
+483	JetBlue Airways	JBLU	$15.22	$4,840.30	Transportation	Airlines	NASDAQ
+484	JFrog Ltd	FROG	$36.78	$3,526.74	Technology Services	Packaged Software	NASDAQ
+485	Jinkosolar Holding	JKS	$48.08	$2,292.40	Producer Manufacturing	Electrical Products	NYSE
+486	Joby Aviation	JOBY	$9.26	$5,592.00	Finance	Financial Conglomerates	NYSE
+487	John Deere	DE	$349.09	$108,239.33	Producer Manufacturing	Trucks/Construction/Farm Machinery	NYSE
+488	JPMorgan	JPM	$157.68	$471,172.26	Finance	Major Banks	NYSE
+489	Jumia	JMIA	$19.99	$1,791.70	Technology Services	Internet Software/Services	NYSE
+490	Juniper Networks	JNPR	$27.90	$9,071.74	Technology Services	Information Technology Services	NYSE
+491	Just Eat Takeaway	GRUB	$17.05	$15,880.29	Retail Trade	Specialty Stores	NASDAQ
+492	KAR Auction Services	KAR	$16.12	$1,921.25	Commercial Services	Miscellaneous Commercial Services	NYSE
+493	Katapult Holdings	KPLT	$6.43	$622.56	Finance	Financial Conglomerates	NASDAQ
+494	Kellogg's	K	$63.56	$21,666.26	Consumer Non-Durables	Food: Major Diversified	NYSE
+495	Keurig Dr Pepper	KDP	$34.91	$49,484.12	Consumer Non-Durables	Beverages: Non-Alcoholic	NASDAQ
+496	KeyCorp.	KEY	$20.76	$19,854.24	Finance	Major Banks	NYSE
+497	Keysight Technologies	KEYS	$177.45	$32,685.54	Electronic Technology	Electronic Equipment/Instruments	NYSE
+498	Kimberly-Clark	KMB	$135.18	$45,523.48	Consumer Non-Durables	Household/Personal Care	NYSE
+499	Kimco Realty Corporation	KIM	$21.72	$13,311.98	Finance	Real Estate Investment Trusts	NYSE
+500	Kinder Morgan	KMI	$15.96	$39,042.02	Industrial Services	Oil & Gas Pipelines	NYSE
+501	Kinross Gold Corporation	KGC	$5.48	$6,900.87	Non-Energy Minerals	Precious Metals	NYSE
+502	KKR & Co	KKR	$66.48	$57,083.55	Finance	Investment Managers	NYSE
+503	Knight-Swift Transportation Holdings	KNX	$51.87	$8,609.17	Transportation	Trucking	NYSE
+504	Kohl's	KSS	$53.26	$8,017.45	Retail Trade	Department Stores	NYSE
+505	Kraft Heinz	KHC	$36.55	$44,714.79	Consumer Non-Durables	Food: Major Diversified	NASDAQ
+506	Kratos	KTOS	$22.61	$2,802.68	Electronic Technology	Aerospace & Defense	NASDAQ
+507	Kroger Co	KR	$40.94	$30,591.92	Retail Trade	Food Retail	NYSE
+508	KT	KT	$13.81	$7,203.50	Communications	Major Telecommunications	NYSE
+509	Lam Research	LRCX	$608.98	$86,446.90	Electronic Technology	Electronic Production Equipment	NASDAQ
+510	Las Vegas Sands	LVS	$38.17	$29,161.49	Consumer Services	Casinos/Gaming	NYSE
+511	Lattice Semiconductor Corp	LSCC	$65.59	$8,945.47	Electronic Technology	Semiconductors	NASDAQ
+512	Leidos Holdings	LDOS	$91.81	$12,997.10	Technology Services	Information Technology Services	NYSE
+513	Lemonade	LMND	$73.24	$4,508.42	Finance	Property/Casualty Insurance	NYSE
+514	Lennar	LEN	$101.28	$30,979.61	Consumer Durables	Homebuilding	NYSE
+515	Leslies Inc	LESL	$22.54	$4,267.34	Retail Trade	Specialty Stores	NASDAQ
+516	Levi Strauss & Co	LEVI	$25.39	$10,200.98	Consumer Non-Durables	Apparel/Footwear	NYSE
+517	Lexicon Pharmaceuticals	LXRX	$4.86	$702.15	Health Technology	Biotechnology	NASDAQ
+518	LexinFintech Holdings	LX	$6.16	$1,121.38	Finance	Finance/Rental/Leasing	NASDAQ
+519	LG Display	LPL	$8.25	$5,895.35	Electronic Technology	Electronic Production Equipment	NYSE
+520	Li Auto Inc.	LI	$29.09	$29,875.05	Producer Manufacturing	Auto Parts: OEM	NASDAQ
+521	Liberty Media Group	FWONK	$49.52	$28,739.05	Consumer Services	Movies/Entertainment	NASDAQ
+522	Linde	LIN	$309.32	$159,736.38	Process Industries	Chemicals: Specialty	NYSE
+523	Live Nation Entertainment	LYV	$86.83	$19,014.90	Consumer Services	Movies/Entertainment	NYSE
+524	Livent	LTHM	$24.86	$4,015.92	Process Industries	Chemicals: Specialty	NYSE
+525	LKQ	LKQ	$50.91	$14,961.20	Consumer Durables	Automotive Aftermarket	NASDAQ
+526	Lockheed Martin	LMT	$340.98	$94,422.96	Electronic Technology	Aerospace & Defense	NYSE
+527	Logitech International SA	LOGI	$95.76	$16,419.98	Electronic Technology	Computer Peripherals	NASDAQ
+528	Loma Negra Compania Industrial Argentina SA	LOMA	$7.27	$1,580.26	Non-Energy Minerals	Construction Materials	NYSE
+529	Lowe’s	LOW	$209.03	$147,152.50	Retail Trade	Home Improvement Chains	NYSE
+530	LTC Properties	LTC	$33.36	$1,313.52	Finance	Real Estate Investment Trusts	NYSE
+531	Lucid Group	LCID	$22.96	$37,163.54	Finance	Financial Conglomerates	NASDAQ
+532	Lululemon	LULU	$426.55	$53,152.61	Retail Trade	Apparel/Footwear Retail	NASDAQ
+533	Lumen Technologies	LUMN	$12.94	$14,301.69	Communications	Specialty Telecommunications	NYSE
+534	Luminar Technologies	LAZR	$17.09	-	Producer Manufacturing	Auto Parts: OEM	NASDAQ
+535	Lyft	LYFT	$52.18	$17,494.61	Technology Services	Packaged Software	NASDAQ
+536	Macy's	M	$21.93	$6,791.83	Retail Trade	Department Stores	NYSE
+537	Madison Square Garden Sports Corp	MSGS	$185.48	$4,353.29	Consumer Services	Movies/Entertainment	NYSE
+538	Manchester United	MANU	$17.99	$2,931.28	Consumer Services	Movies/Entertainment	NYSE
+539	Marathon Digital Holdings	MARA	$35.84	$3,570.89	Technology Services	Data Processing Services	NASDAQ
+540	Marathon Oil Corporation	MRO	$12.00	$9,460.79	Energy Minerals	Oil & Gas Production	NYSE
+541	Marathon Petroleum	MPC	$58.86	$37,564.58	Energy Minerals	Oil Refining/Marketing	NYSE
+542	Markel Corp.	MKL	$1,209.53	$16,600.61	Finance	Specialty Insurance	NYSE
+543	Marqeta	MQ	$28.20	$15,211.04	Finance	Regional Banks	NASDAQ
+544	Marriott	MAR	$143.90	$46,861.94	Consumer Services	Hotels/Resorts/Cruise lines	NASDAQ
+545	Marsh & McLennan	MMC	$155.83	$78,947.51	Finance	Insurance Brokers/Services	NYSE
+546	Marvell Technology	MRVL	$62.10	$51,145.55	Electronic Technology	Semiconductors	NASDAQ
+547	Masco Corporation	MAS	$57.23	$14,145.13	Producer Manufacturing	Building Products	NYSE
+548	Mastercard	MA	$343.04	$338,503.30	Finance	Finance/Rental/Leasing	NYSE
+549	Matador Resources	MTDR	$30.84	$3,607.75	Energy Minerals	Oil & Gas Production	NYSE
+550	Match Group	MTCH	$157.14	$43,498.03	Technology Services	Internet Software/Services	NASDAQ
+551	Mattel	MAT	$20.38	$7,112.01	Consumer Durables	Recreational Products	NASDAQ
+552	Maxeon Solar Technologies	MAXN	$19.11	$844.60	Utilities	Alternative Power Generation	NASDAQ
+553	McAfee Corp	MCFE	$21.81	$9,473.06	Technology Services	Packaged Software	NASDAQ
+554	McDonald’s	MCD	$242.49	$181,091.27	Consumer Services	Restaurants	NYSE
+555	McEwen Mining Inc	MUX	$1.11	$509.70	Non-Energy Minerals	Precious Metals	NYSE
+556	Medical Properties Trust	MPW	$20.07	$11,955.70	Finance	Real Estate Investment Trusts	NYSE
+557	Medtronic	MDT	$129.70	$174,551.55	Health Technology	Medical Specialties	NYSE
+558	Melco Crown Entertainment Limited	MLCO	$10.29	$4,932.17	Consumer Services	Casinos/Gaming	NASDAQ
+559	MercadoLibre	MELI	$1,878.23	$93,369.89	Technology Services	Internet Software/Services	NASDAQ
+560	Merck	MRK	$71.68	$181,448.89	Health Technology	Pharmaceuticals: Major	NYSE
+561	Metlife	MET	$61.72	$52,887.71	Finance	Life/Health Insurance	NYSE
+562	Mettler-Toledo International	MTD	$1,545.18	$35,719.82	Health Technology	Medical Specialties	NYSE
+563	MFA Financial	MFA	$4.64	$2,045.37	Finance	Real Estate Investment Trusts	NYSE
+564	MGIC Investment	MTG	$14.92	$5,062.69	FInance	Specialty Insurance	NYSE
+565	MGM Resorts	MGM	$41.54	$20,017.31	Consumer Services	Casinos/Gaming	NYSE
+566	Microchip Technology	MCHP	$161.10	$44,147.86	Electronic Technology	Semiconductors	NASDAQ
+567	Micron Technology	MU	$74.30	$83,643.45	Electronic Technology	Semiconductors	NASDAQ
+568	Microsoft	MSFT	$299.87	$2,253,490.03	Technology Services	Packaged Software	NASDAQ
+569	Microvision	MVIS	$12.83	$2,103.60	Electronic Technology	Electronic Production Equipment	NASDAQ
+570	Mizuho Financial Group	MFG	$2.95	$36,959.22	Finance	Major Banks	NYSE
+571	Mobile TeleSystems PJSC	MBT	$9.69	$660,265.60	Communications	Wireless Telecommunications	NYSE
+572	Moderna	MRNA	$430.05	$173,588.09	Health Technology	Biotechnology	NASDAQ
+573	Momentus	MNTS	$11.05	$244.07	FInance	Financial Conglomerates	NASDAQ
+574	Mondelez	MDLZ	$60.94	$85,182.97	Consumer Non-Durables	Food: Major Diversified	NASDAQ
+575	MoneyGram	MGI	$9.05	$828.13	Commercial Services	Miscellaneous Commercial Services	NASDAQ
+576	MongoDB	MDB	$506.99	$33,551.64	Technology Services	Packaged Software	NASDAQ
+577	Monster	MNST	$94.64	$50,053.75	Consumer Non-Durables	Beverages: Non-Alcoholic	NASDAQ
+578	Moody's	MCO	$370.00	$68,894.00	Commercial Services	Financial Publishing/Services	NYSE
+579	Morgan Stanley	MS	$101.75	$185,649.08	Finance	Investment Banks/Brokers	NYSE
+580	Morningstar	MORN	$275.87	$11,880.77	Finance	Investment Managers	NASDAQ
+581	Mosaic Company, The	MOS	$33.61	$12,768.33	Process Industries	Chemicals: Agricultural	NYSE
+582	Motorola Solutions	MSI	$237.42	$40,201.02	Electronic Technology	Aerospace & Defense	NYSE
+583	MP Materials	MP	$34.11	$6,062.97	Non-Energy Minerals	Other Metals/Minerals	NYSE
+584	MPLX LP	MPLX	$28.64	$29,373.87	Industrial Services	Oil & Gas Pipelines	NYSE
+585	MUFJ Financial Group	MUFG	$5.84	$78,392.95	Finance	Major Banks	NYSE
+586	Murphy Oil Corporation	MUR	$21.13	$3,263.21	Energy Minerals	Oil & Gas Production	NYSE
+587	Nasdaq OMX Group	NDAQ	$192.90	$32,253.61	Finance	Investment Banks/Brokers	NASDAQ
+588	National Oilwell Varco	NOV	$13.39	$5,231.53	Industrial Services	Oilfield Services/Equipment	NYSE
+589	Natura Holding S.A.	NTCO	$18.16	$66,331.58	Consumer Non-Durables	Household/Personal Care	NYSE
+590	Navient Corporation	NAVI	$23.49	$3,942.56	Finance	Finance/Rental/Leasing	NASDAQ
+591	Nektar Therapeutics	NKTR	$16.51	$3,034.56	Health Technology	Pharmaceuticals: Major	NASDAQ
+592	NeoPhotonics	NPTN	$8.83	$460.80	Electronic Technology	Electronic Components	NYSE
+593	NetApp	NTAP	$90.01	$20,128.88	Electronic Technology	Computer Peripherals	NASDAQ
+594	NetEase	NTES	$82.88	$55,610.87	Technology Services	Internet Software/Services	NASDAQ
+595	Netflix	NFLX	$589.35	$260,843.88	Consumer Services	Cable/Satellite TV	NASDAQ
+596	Neurocrine Biosciences	NBIX	$96.50	$9,133.38	Health Technology	Biotechnology	NASDAQ
+597	New Age Beverage	NBEV	$1.39	$190.14	Consumer Non-Durables	Beverages: Alcoholic	NASDAQ
+598	New Oriental Education & Tech Group	EDU	$1.90	$3,257.01	Consumer Services	Other Consumer Services	NYSE
+599	New Residential Investment	NRZ	$10.99	$5,127.71	Finance	Real Estate Investment Trusts	NYSE
+600	New York Community Bancorp	NYCB	$12.72	$5,915.22	Finance	Savings Banks	NYSE
+601	New York Mortgage Trust	NYMT	$4.37	$1,657.97	Finance	Real Estate Investment Trusts	NASDAQ
+602	New York Times	NYT	$48.67	$8,170.41	Consumer Services	Publishing: Newspapers	NYSE
+603	Newell Rubbermaid	NWL	$24.81	$10,554.17	Producer Manufacturing	Industrial Conglomerates	NASDAQ
+604	Newmont Mining	NEM	$55.22	$44,127.74	Non-Energy Minerals	Precious Metals	NYSE
+605	News Corporation	NWSA	$22.35	$13,128.08	Consumer Services	Publishing: Newspapers	NASDAQ
+606	NextEra Energy	NEE	$81.64	$160,157.84	Utilities	Electric Utilities	NYSE
+607	NICE Systems	NICE	$285.49	$18,311.27	Technology Services	Information Technology Services	NASDAQ
+608	Nike	NKE	$156.42	$247,628.03	Consumer Non-Durables	Apparel/Footwear	NYSE
+609	Nikola Corporation	NKLA	$10.69	$4,257.33	Consumer Durables	Motor Vehicles	NASDAQ
+610	NIO	NIO	$37.51	$61,460.81	Consumer Durables	Motor Vehicles	NYSE
+611	Noah Holdings Limited	NOAH	$37.30	$2,240.99	Finance	Investment Banks/Brokers	NYSE
+612	Nomura	NMR	$5.13	$16,556.80	Finance	Investment Banks/Brokers	NYSE
+613	Nordstrom	JWN	$28.12	$4,468.91	Retail Trade	Apparel/Footwear Retail	NYSE
+614	Norfolk Southern Corporation	NSC	$246.04	$60,765.04	Transportation	Railroads	NYSE
+615	Northern Trust Corporation	NTRS	$108.20	$22,548.31	Finance	Regional Banks	NASDAQ
+616	Northrop Grumman	NOC	$350.24	$56,076.57	Electronic Technology	Aerospace & Defense	NYSE
+617	NortonLifeLock	NLOK	$25.69	$14,944.81	Technology Services	Packaged Software	NASDAQ
+618	Norwegian Cruise Line Holdings	NCLH	$25.59	$9,469.07	Consumer Services	Hotels/Resorts/Cruise lines	NYSE
+619	Novartis AG	NVS	$83.48	$205,843.41	Health Technology	Pharmaceuticals: Major	NYSE
+620	Novavax	NVAX	$237.54	$17,692.96	Health Technology	Biotechnology	NASDAQ
+621	Novo Nordisk	NVO	$101.41	$179,324.53	Health Technology	Pharmaceuticals: Major	NYSE
+622	NovoCure	NVCR	$131.03	$13,580.97	Health Technology	Medical Specialties	NASDAQ
+623	NRG Energy	NRG	$42.08	$10,300.21	Utilities	Electric Utilities	NYSE
+624	Nucor	NUE	$104.89	$30,805.62	Non-Energy Minerals	Steel	NYSE
+625	Nutanix	NTNX	$41.18	$8,712.23	Technology Services	Packaged Software	NASDAQ
+626	NuVasive	NUVA	$59.15	$3,055.97	Health Technology	Medical Specialties	NASDAQ
+627	Nvidia	NVDA	$219.00	$547,500.00	Electronic Technology	Semiconductors	NASDAQ
+628	NVR	NVR	$5,070.74	$18,071.01	Consumer Durables	Homebuilding	NYSE
+629	O'Reilly Auto Parts	ORLY	$599.34	$41,325.54	Retail Trade	Specialty Stores	NASDAQ
+630	Oatly	OTLY	$16.27	$9,628.22	Consumer Non-Durables	Food: Major Diversified	NASDAQ
+631	Occidental	OXY	$26.94	$25,154.81	Energy Minerals	Oil & Gas Production	NYSE
+632	Office Depot	ODP	$43.12	$2,299.51	Retail Trade	Specialty Stores	NASDAQ
+633	Okta	OKTA	$258.15	$39,926.18	Technology Services	Packaged Software	NASDAQ
+634	Olin	OLN	$48.49	$7,780.80	Process Industries	Industrial Specialties	NYSE
+635	Omnicom Group	OMC	$73.09	$15,671.06	Commercial Services	Advertising/Marketing Services	NYSE
+636	ON Semiconductor	ON	$48.89	$21,048.72	Electronic Technology	Semiconductors	NASDAQ
+637	Oneok	OKE	$55.17	$24,587.11	Industrial Services	Oil & Gas Pipelines	NYSE
+638	Opendoor Technologies	OPEN	$18.33	$11,083.07	Technology Services	Internet Software/Services	NASDAQ
+639	Opko Health	OPK	$3.94	$2,683.78	Health Technology	Pharmaceuticals: Major	NASDAQ
+640	OppFi	OPFI	$7.56	$831.33	Technology Services	Internet Software/Services	NYSE
+641	Oracle	ORCL	$86.39	$236,551.20	Technology Services	Packaged Software	NYSE
+642	Organon & Co.	OGN	$34.03	$8,628.14	Health Technology	Pharmaceuticals: Major	NYSE
+643	Origin Materials	ORGN	$7.41	$1,046.65	Process Industries	Chemicals: Specialty	NASDAQ
+644	Ormat Technologies	ORA	$68.43	$3,831.90	Utilities	Alternative Power Generation	NYSE
+645	Oscar Health Inc.	OSCR	$17.50	$3,634.25	Health Services	Hospital/Nursing Management	NYSE
+646	Otis Worldwide Corp	OTIS	$85.02	$36,284.72	Producer Manufacturing	Building Products	NYSE
+647	Overstock.com	OSTK	$73.75	$3,172.22	Retail Trade	Internet Retail	NASDAQ
+648	Ozon	OZON	$51.18	$10,881.56	Retail Trade	Internet Retail	NASDAQ
+649	P&G	PG	$144.34	$350,502.98	Consumer Non-Durables	Household/Personal Care	NYSE
+650	Paccar	PCAR	$81.55	$28,311.99	Producer Manufacturing	Trucks/Construction/Farm Machinery	NASDAQ
+651	Pacific Biosciences of California	PACB	$29.44	$5,858.52	Health Technology	Biotechnology	NASDAQ
+652	Pagerduty	PD	$47.49	$4,035.34	Technology Services	Packaged Software	NYSE
+653	Palantir	PLTR	$28.71	$56,045.28	Technology Services	Packaged Software	NYSE
+654	Palo Alto Networks	PANW	$476.37	$46,401.35	Electronic Technology	Computer Communications	NYSE
+655	Pampa Energia SA	PAM	$17.65	$1,819.92	Utilities	Electric Utilities	NYSE
+656	Pan American Silver Corp	PAAS	$24.39	$5,131.35	Non-Energy Minerals	Precious Metals	NASDAQ
+657	Parker-Hannifin	PH	$287.63	$37,133.44	Producer Manufacturing	Industrial Machinery	NYSE
+658	Patterson-UTI Energy	PTEN	$7.88	$1,489.63	Industrial Services	Contract Drilling	NASDAQ
+659	Paychex	PAYX	$108.78	$39,228.29	Technology Services	Data Processing Services	NASDAQ
+660	Payoneer Global	PAYO	$9.87	$3,339.53	Commercial Services	Miscellaneous Commercial Services	NASDAQ
+661	PayPal	PYPL	$276.34	$324,708.34	Technology Services	Data Processing Services	NASDAQ
+662	PBF Energy	PBF	$10.46	$1,257.79	Energy Minerals	Oil Refining/Marketing	NYSE
+663	PDC Energy Inc	PDCE	$44.05	$4,345.95	Energy Minerals	Oil & Gas Production	NASDAQ
+664	Peloton Interactive	PTON	$103.42	$31,077.43	Consumer Services	Other Consumer Services	NASDAQ
+665	Penn National Gaming Inc	PENN	$74.59	$11,694.91	Consumer Services	Casinos/Gaming	NASDAQ
+666	People's United Financial	PBCT	$16.02	$6,855.83	Finance	Major Banks	NASDAQ
+667	PepsiCo	PEP	$154.13	$213,025.39	Consumer Non-Durables	Beverages: Non-Alcoholic	NASDAQ
+668	Pershing Square Tontine Holdings, Ltd.	PSTH	$19.70	$3,940.00	Finance	Financial Conglomerates	NYSE
+669	Petroleo Brasileiro S.A.	PBR	$9.71	$329,709.23	Energy Minerals	Integrated Oil	NYSE
+670	Pfizer	PFE	$43.89	$246,077.49	Health Technology	Pharmaceuticals: Major	NYSE
+671	PG&E Corporation	PCG	$9.84	$19,535.08	Utilities	Electric Utilities	NYSE
+672	Philip Morris	PM	$101.86	$158,752.99	Consumer Non-Durables	Tobacco	NYSE
+673	Phillips 66	PSX	$66.02	$28,916.05	Energy Minerals	Oil Refining/Marketing	NYSE
+674	Pinduoduo Inc	PDD	$100.73	$126,243.81	Retail Trade	Internet Retail	NASDAQ
+675	Pinterest	PINS	$54.77	$35,306.32	Technology Services	Internet Software/Services	NYSE
+676	Pioneer Natural Resources	PXD	$157.05	$38,313.76	Energy Minerals	Oil & Gas Production	NYSE
+677	Pitney Bowes	PBI	$6.98	$1,227.89	Producer Manufacturing	Office Equipment/Supplies	NYSE
+678	Plains All American Pipeline	PAA	$9.47	$6,793.51	Industrial Services	Oil & Gas Pipelines	NASDAQ
+679	Planet Fitness	PLNT	$78.41	$6,790.03	Consumer Services	Other Consumer Services	NYSE
+680	Plug Power	PLUG	$26.47	$15,203.19	Electronic Technology	Electronic Components	NASDAQ
+681	PNC Financial	PNC	$188.92	$80,289.71	Finance	Major Banks	NYSE
+682	Poshmark	POSH	$25.22	$1,923.00	Retail Trade	Apparel/Footwear Retail	NASDAQ
+683	PPG Industries	PPG	$146.74	$34,829.69	Process Industries	Industrial Specialties	NYSE
+684	PPL Corporation	PPL	$28.68	$22,072.30	Utilities	Electric Utilities	NYSE
+685	Prestige Brands	PBH	$52.90	$2,648.17	Health Technology	Pharmaceuticals: Other	NYSE
+686	Primerica	PRI	$149.25	$5,890.88	Finance	Life/Health Insurance	NYSE
+687	Progressive	PGR	$92.61	$54,192.06	Finance	Property/Casualty Insurance	NYSE
+688	Prologis	PLD	$130.11	$96,183.95	Finance	Real Estate Investment Trusts	NYSE
+689	Proofpoint	PFPT	$175.93	-	Technology Services	Data Processing Services	NASDAQ	No live pricing
+690	Proterra	PTRA	$10.32	$2,190.94	Finance	Financial Conglomerates	NASDAQ
+691	Prudential Financial	PRU	$103.14	$39,812.04	Finance	Financial Conglomerates	NYSE
+692	Public Service Enterprise Group	PEG	$61.91	$31,300.27	Utilities	Electric Utilities	NYSE
+693	Public Storage	PSA	$311.04	$54,502.98	Finance	Real Estate Investment Trusts	NYSE
+694	PulteGroup	PHM	$48.64	$12,623.26	Consumer Durables	Homebuilding	NYSE
+695	Pure Storage	PSTG	$26.27	$7,488.89	Electronic Technology	Computer Peripherals	NYSE
+696	Q2 Holdings	QTWO	$87.12	$4,919.14	Technology Services	Information Technology Services	NYSE
+697	Qualcomm	QCOM	$133.60	$150,700.67	Electronic Technology	Telecommunications Equipment	NASDAQ
+698	Qualtrics International	XM	$46.59	$23,976.17	Technology Services	Packaged Software	NASDAQ
+699	Qualys	QLYS	$119.30	$4,646.13	Technology Services	Packaged Software	NASDAQ
+700	Quanta Services	PWR	$118.42	$16,478.42	Industrial Services	Engineering & Construction	NYSE
+701	QuantumScape	QS	$21.80	$9,039.31	Producer Manufacturing	Electrical Products	NYSE
+702	Qudian	QD	$1.65	$417.60	Technology Services	Internet Software/Services	NYSE
+703	Qurate Retail	QRTEA	$10.37	$4,225.22	Retail Trade	Internet Retail	NASDAQ
+704	Rackspace Technology	RXT	$14.85	$3,105.65	Technology Services	Data Processing Services	NASDAQ
+705	Ralph Lauren	RL	$113.04	$8,309.50	Retail Trade	Apparel/Footwear Retail	NYSE
+706	Range Resources Corporation	RRC	$18.95	$4,922.80	Energy Minerals	Oil & Gas Production	NYSE
+707	Raytheon Technologies Corporation	RTX	$83.39	$125,741.86	Electronic Technology	Aerospace & Defense	NYSE
+708	Realogy Holdings	RLGY	$17.14	$1,998.25	Finance	Real Estate Development	NYSE
+709	RealReal	REAL	$13.84	$1,267.29	Retail Trade	Internet Retail	NASDAQ
+710	Realty Income	O	$67.68	$26,353.79	Finance	Real Estate Investment Trusts	NYSE
+711	Redfin Corporation	RDFN	$51.19	$5,370.47	Finance	Real Estate Development	NASDAQ
+712	Regeneron Pharmaceuticals	REGN	$651.88	$69,722.02	Health Technology	Biotechnology	NASDAQ
+713	Regions Financial	RF	$19.83	$18,928.51	Finance	Major Banks	NYSE
+714	Renewable Energy Group	REGI	$48.23	$2,422.84	Process Industries	Chemicals: Specialty	NASDAQ
+715	Republic Services	RSG	$123.44	$39,298.95	Industrial Services	Environmental Services	NYSE
+716	ResMed	RMD	$285.95	$41,657.51	Health Technology	Medical Specialties	NYSE
+717	Restaurant Brands International	QSR	$62.92	$29,131.73	Consumer Services	Restaurants	NYSE
+718	Restoration Hardware Holdings	RH	$672.15	$14,393.12	Retail Trade	Specialty Stores	NYSE
+719	RingCentral	RNG	$232.81	$21,304.44	Technology Services	Packaged Software	NYSE
+720	Rio Tinto	RIO	$68.04	$109,458.19	Non-Energy Minerals	Other Metals/Minerals	NYSE
+721	Riot Blockchain	RIOT	$29.30	$2,811.28	Finance	Financial Conglomerates	NASDAQ
+722	Rite Aid	RAD	$17.40	$958.51	Retail Trade	Drugstore Chains	NYSE
+723	Robinhood	HOOD	$42.38	$36,253.68	Technology Services	Packaged Software	NASDAQ
+724	Roblox	RBLX	$80.81	$46,478.04	Technology Services	Packaged Software	NYSE
+725	Rocket Companies	RKT	$16.78	$33,346.64	Finance	Finance/Rental/Leasing	NYSE
+726	Rocket Lab	RKLB	$15.41	$6,902.44	Finance	Financial Conglomerates	NASDAQ
+727	Rockwell Automation	ROK	$311.55	$36,147.81	Producer Manufacturing	Electrical Products	NYSE
+728	Roku	ROKU	$324.10	$43,251.60	Consumer Durables	Electronics/Appliances	NASDAQ
+729	Root Inc	ROOT	$6.10	$1,547.54	Finance	Insurance Brokers/Services	NASDAQ
+730	Ross Stores	ROST	$114.62	$40,732.04	Retail Trade	Apparel/Footwear Retail	NASDAQ
+731	Royal Bank of Canada	RY	$100.12	$142,620.54	Finance	Major Banks	NYSE
+732	Royal Caribbean Cruises	RCL	$83.79	$21,340.83	Consumer Services	Hotels/Resorts/Cruise lines	NYSE
+733	Royal Dutch Shell - Class A Shares	RDS.A	$40.36	$154,838.88	Energy Minerals	Integrated Oil	NYSE
+734	RPC	RES	$3.99	$860.74	Industrial Services	Oilfield Services/Equipment	NYSE
+735	S&P	SPGI	$446.42	$107,587.13	Commercial Services	Financial Publishing/Services	NYSE
+736	Salesforce	CRM	$260.53	$255,058.82	Technology Services	Packaged Software	NYSE
+737	Sally Beauty	SBH	$16.91	$1,911.39	Retail Trade	Specialty Stores	NYSE
+738	Sangamo Therapeutics	SGMO	$9.55	$1,387.97	Health Technology	Biotechnology	NASDAQ
+739	Sanofi	SNY	$48.38	$122,373.97	Health Technology	Pharmaceuticals: Major	NASDAQ
+740	Schlumberger	SLB	$28.31	$39,589.61	Industrial Services	Oilfield Services/Equipment	NYSE
+741	Sea Limited	SE	$339.81	$187,067.00	Technology Services	Internet Software/Services	NYSE
+742	Seaboard Corp.	SEB	$4,078.99	$4,734.80	Consumer Non-Durables	Food: Meat/Fish/Dairy	NYSE AMERICAN
+743	Seagate Technology	STX	$83.74	$18,922.93	Electronic Technology	Computer Peripherals	NASDAQ
+744	Sema4	SMFR	$9.39	$2,255.39	Technology Services	Internet Software/Services	NASDAQ
+745	Sempra Energy	SRE	$133.38	$42,592.01	Utilities	Gas Distributors	NYSE
+746	ServiceNow	NOW	$651.03	$128,968.98	Technology Services	Information Technology Services	NYSE
+747	Shake Shack	SHAK	$83.97	$3,531.56	Consumer Services	Restaurants	NYSE
+748	Sherwin-Williams	SHW	$293.74	$77,342.44	Process Industries	Industrial Specialties	NYSE
+749	Shopify	SHOP	$1,486.29	$185,434.60	Retail Trade	Internet Retail	NYSE
+750	Sibanye-Stillwater	SBSW	$13.23	$9,068.10	Non-Energy Minerals	Precious Metals	NYSE
+751	Simon Property	SPG	$131.27	$43,136.79	Finance	Real Estate Investment Trusts	NYSE
+752	Sirius XM	SIRI	$6.08	$24,626.64	Consumer Services	Broadcasting	NASDAQ
+753	Skechers	SKX	$45.22	$7,046.73	Consumer Non-Durables	Apparel/Footwear	NYSE
+754	Skillsoft Corp	SKIL	$10.66	$1,418.41	Technology Services	Packaged Software	NYSE
+755	Skyworks Solutions	SWKS	$175.26	$28,943.29	Electronic Technology	Semiconductors	NASDAQ
+756	SLM Corporation	SLM	$18.10	$5,535.11	Finance	Finance/Rental/Leasing	NASDAQ
+757	SM Energy Company	SM	$22.38	$2,712.92	Energy Minerals	Oil & Gas Production	NYSE
+758	Smartsheet	SMAR	$74.25	$9,353.04	Technology Services	Packaged Software	NYSE
+759	Snap	SNAP	$74.76	$118,203.41	Technology Services	Internet Software/Services	NYSE
+760	Snowflake	SNOW	$322.80	$97,130.48	Technology Services	Packaged Software	NYSE
+761	Social Capital Hedosophia Holdings Corp IV	IPOD	$10.05	$577.88	Finance	Financial Conglomerates	NYSE
+762	Social Capital Hedosophia Holdings Corp VI	IPOF	$10.07	$1,447.56	Finance	Financial Conglomerates	NYSE
+763	SoFi Technologies	SOFI	$15.09	$11,991.91	Finance	Finance/Rental/Leasing	NASDAQ
+764	Sogou	SOGO	$8.74	$3,389.70	Technology Services	Internet Software/Services	NYSE
+765	SolarEdge Technologies	SEDG	$281.45	$14,711.47	Producer Manufacturing	Electrical Products	NASDAQ
+766	Sonos	SONO	$37.28	$4,688.75	Electronic Technology	Electronic Production Equipment	NASDAQ
+767	Sony	SONY	$110.70	$15,529,941.59	Consumer Durables	Electronics/Appliances	NYSE
+768	Southern Company	SO	$64.14	$67,913.03	Utilities	Electric Utilities	NYSE
+769	Southern Copper	SCCO	$58.51	$45,232.99	Non-Energy Minerals	Other Metals/Minerals	NYSE
+770	Southwest Airlines	LUV	$49.08	$29,037.92	Transportation	Airlines	NYSE
+771	Southwestern Energy	SWN	$4.97	$5,044.45	Energy Minerals	Oil & Gas Production	NYSE
+772	Spirit Airlines	SAVE	$25.01	$2,711.13	Transportation	Airlines	NYSE
+773	Splunk	SPLK	$151.78	$24,519.42	Technology Services	Information Technology Services	NASDAQ
+774	Spotify	SPOT	$248.10	$47,191.80	Technology Services	Internet Software/Services	NYSE
+775	Sprouts Farmers Market	SFM	$22.75	$2,597.85	Retail Trade	Food Retail	NASDAQ
+776	Square	SQ	$255.79	$117,586.17	Technology Services	Information Technology Services	NYSE
+777	Squarespace	SQSP	$44.82	$6,207.33	Technology Services	Information Technology Services	NYSE
+778	SS&C Technologies Holdings	SSNC	$70.35	$17,957.32	Technology Services	Information Technology Services	NASDAQ
+779	Stanley Black & Decker	SWK	$186.24	$30,350.04	Consumer Durables	Tools & Hardware	NYSE
+780	Starbucks	SBUX	$113.41	$133,721.62	Consumer Services	Restaurants	NASDAQ
+781	State Street	STT	$84.82	$31,012.47	Finance	Regional Banks	NYSE
+782	Steel Dynamics	STLD	$61.95	$12,644.86	Non-Energy Minerals	Steel	NASDAQ
+783	Stellantis	STLA	$19.78	$52,448.96	Consumer Durables	Motor Vehicles	NYSE
+784	Stitch Fix	SFIX	$35.51	$3,804.14	Retail Trade	Apparel/Footwear Retail	NASDAQ
+785	StoneCo	STNE	$41.74	$12,942.72	Technology Services	Packaged Software	NASDAQ
+786	STORE Capital Corporation	STOR	$34.12	$9,270.00	Finance	Real Estate Investment Trusts	NYSE
+787	Stryker	SYK	$273.03	$102,958.60	Health Technology	Medical Specialties	NYSE
+788	Sumitomo Mitsui Financial Group	SMFG	$7.20	$49,274.13	Finance	Major Banks	NYSE
+789	Sumo Logic Inc	SUMO	$18.54	$2,046.25	Technology Services	Packaged Software	NASDAQ
+790	Suncor Energy	SU	$19.36	$28,733.09	Energy Minerals	Integrated Oil	NYSE
+791	Sunnova Energy International	NOVA	$35.32	$3,955.33	Distribution Services	Wholesale Distributors	NYSE
+792	SunPower	SPWR	$22.48	$3,885.78	Producer Manufacturing	Electrical Products	NASDAQ
+793	Sunrun	RUN	$44.91	$9,248.44	Utilities	Alternative Power Generation	NASDAQ
+794	Sutter Rock Capital	SSSS	$12.70	$337.26	Finance	Investment Managers	NASDAQ
+795	Synchrony Financial	SYF	$48.44	$27,596.23	Finance	Finance/Rental/Leasing	NYSE
+796	Synopsys	SNPS	$325.54	$49,645.73	Technology Services	Packaged Software	NASDAQ
+797	Sysco	SYY	$76.09	$38,964.30	Distribution Services	Food Distributors	NYSE
+798	T-Mobile	TMUS	$128.00	$159,739.65	Communications	Wireless Telecommunications	NASDAQ
+799	T. Rowe Price	TROW	$213.51	$48,453.27	Finance	Investment Managers	NASDAQ
+800	T2 Interactive	TTWO	$151.66	$17,671.17	Consumer Durables	Recreational Products	NASDAQ
+801	Taiwan Semiconductor	TSM	$117.75	$550,803.18	Electronic Technology	Semiconductors	NYSE
+802	Takeda Pharmaceutical	TAK	$17.15	$54,187.14	Health Technology	Pharmaceuticals: Major	NYSE
+803	Tal Education Group	TAL	$4.62	$2,979.05	Consumer Services	Other Consumer Services	NYSE
+804	Talkspace	TALK	$4.64	$706.47	Technology Services	Internet Software/Services	NASDAQ
+805	Tanger Factory Outlet Centers	SKT	$17.50	$1,819.25	Finance	Real Estate Investment Trusts	NYSE
+806	Tapestry	TPR	$40.40	$11,294.83	Retail Trade	Apparel/Footwear Retail	NYSE
+807	Targa Resources	TRGP	$45.04	$10,298.63	Energy Minerals	Oil Refining/Marketing	NYSE
+808	Target	TGT	$246.67	$120,384.63	Retail Trade	Specialty Stores	NYSE
+809	Tata Motors	TTM	$20.68	$14,871.30	Consumer Durables	Motor Vehicles	NYSE
+810	TechnipFMC plc	FTI	$7.05	$3,177.44	Industrial Services	Oilfield Services/Equipment	NYSE
+811	Teck Resources	TECK	$24.66	$13,154.43	Non-Energy Minerals	Other Metals/Minerals	NYSE
+812	Teladoc	TDOC	$143.16	$22,797.97	Health Services	Hospital/Nursing Management	NYSE
+813	Teleflex	TFX	$385.57	$18,045.12	Health Technology	Medical Specialties	NYSE
+814	Telefonica Brasil	VIV	$7.80	$71,207.34	Communications	Major Telecommunications	NYSE
+815	Tempur Sealy	TPX	$47.58	$9,349.32	Consumer Durables	Home Furnishings	NYSE
+816	Tencent Music Entertainment Group	TME	$7.87	$13,320.53	Technology Services	Internet Software/Services	NYSE
+817	Teradyne	TER	$121.35	$20,019.49	Electronic Technology	Electronic Production Equipment	NASDAQ
+818	Tesla	TSLA	$759.49	$751,906.63	Consumer Durables	Motor Vehicles	NASDAQ
+819	Teva Pharmaceutical Industries	TEVA	$8.99	$10,298.83	Health Technology	Pharmaceuticals: Generic	NYSE
+820	Texas Instruments	TXN	$196.25	$181,179.98	Electronic Technology	Semiconductors	NASDAQ
+821	The AES Corporation	AES	$24.60	$16,392.45	Utilities	Electric Utilities	NYSE
+822	The Clorox Company	CLX	$166.09	$20,398.01	Consumer Non-Durables	Household/Personal Care	NYSE
+823	The Dow Chemical Company	DOW	$57.75	$43,068.32	Process Industries	Chemicals: Specialty	NYSE
+824	The GEO Group	GEO	$7.01	$859.10	Finance	Real Estate Investment Trusts	NYSE
+825	The Original BARK Company	BARK	$8.00	$1,346.52	Finance	Financial Conglomerates	NYSE
+826	The Scotts Miracle-Gro Company	SMG	$142.31	$7,941.08	Process Industries	Chemicals: Agricultural	NYSE
+827	Thermo Fisher Scientific	TMO	$596.80	$234,792.34	Health Technology	Medical Specialties	NYSE
+828	Tilray	TLRY	$12.17	$5,467.02	Process Industries	Agricultural Commodities/Milling	NASDAQ
+829	TIM SA	TIMB	$11.43	$29,535.01	Communications	Wireless Telecommunications	NYSE
+830	TJX Companies Inc	TJX	$70.41	$84,670.78	Retail Trade	Apparel/Footwear Retail	NYSE
+831	Toronto-Dominion Bank	TD	$64.65	$117,707.68	Finance	Major Banks	NYSE
+832	TotalEnergies SE	TTE	$44.57	$101,082.63	Energy Minerals	Integrated Oil	NYSE
+833	Toyota	TM	$180.95	$292,610.26	Consumer Durables	Motor Vehicles	NYSE
+834	TPG Pace Beneficial Finance Corp.	TPGY	$10.75	$470.31	Finance	Financial Conglomerates	NYSE
+835	Tpg Pace Tech Opportunities Corp	PACE	$11.16	$1,148.01	Finance	Financial Conglomerates	NYSE
+836	TPI Composites	TPIC	$36.73	$1,368.12	Producer Manufacturing	Electrical Products	NASDAQ
+837	Trade Desk	TTD	$72.58	$34,742.28	Commercial Services	Advertising/Marketing Services	NASDAQ
+838	Tradeweb Markets	TW	$84.21	$19,601.99	Technology Services	Internet Software/Services	NASDAQ
+839	TransEnterix	TRXC	$3.85	-	Commercial Services	Miscellaneous Commercial Services	NYSE AMERICAN	No live pricing
+840	Travelers	TRV	$156.29	$38,993.23	Finance	Multi-Line Insurance	NYSE
+841	Trip.com	TCOM	$28.82	$36,547.16	Consumer Services	Other Consumer Services	NASDAQ
+842	TripAdvisor	TRIP	$35.79	$4,917.77	Consumer Services	Other Consumer Services	NASDAQ
+843	Triumph	TGI	$17.60	$1,136.97	Electronic Technology	Aerospace & Defense	NYSE
+844	Truist Financial Corp	TFC	$55.33	$73,856.15	Finance	Regional Banks	NYSE
+845	TuSimple	TSP	$40.42	$8,449.41	Consumer Durables	Motor Vehicles	NASDAQ
+846	Twilio	TWLO	$352.87	$62,510.81	Technology Services	Packaged Software	NYSE
+847	Twitter	TWTR	$62.47	$49,848.97	Technology Services	Internet Software/Services	NYSE
+848	Two Harbors Investment	TWO	$6.52	$2,046.52	Finance	Real Estate Investment Trusts	NYSE
+849	Tyson Foods	TSN	$75.81	$27,657.47	Consumer Non-Durables	Food: Meat/Fish/Dairy	NYSE
+850	Uber	UBER	$39.75	$74,902.75	Technology Services	Packaged Software	NYSE
+851	UBS Group AG	UBS	$16.39	$60,637.23	Finance	Major Banks	NYSE
+852	UiPath	PATH	$54.28	$27,874.69	Technology Services	Packaged Software	NYSE
+853	Ulta Beauty	ULTA	$379.05	$20,604.23	Retail Trade	Specialty Stores	NASDAQ
+854	Ultra Clean Holdings	UCTT	$46.60	$2,083.02	Electronic Technology	Semiconductors	NASDAQ
+855	Ultrapar Participações	UGP	$2.66	$15,488.84	Energy Minerals	Oil Refining/Marketing	NYSE
+856	Under Armour	UAA	$21.07	$9,230.38	Consumer Non-Durables	Apparel/Footwear	NYSE
+857	Under Armour (Class C)	UA	$18.42	$9,230.38	Consumer Non-Durables	Apparel/Footwear	NYSE
+858	Union Pacific	UNP	$201.47	$131,383.18	Transportation	Railroads	NYSE
+859	United Airlines	UAL	$44.54	$14,413.71	Transportation	Airlines	NASDAQ
+860	United Microelectronics	UMC	$11.73	$28,837.51	Electronic Technology	Semiconductors	NYSE
+861	United States Steel	X	$23.36	$6,310.20	Non-Energy Minerals	Steel	NYSE
+862	UnitedHealth	UNH	$420.16	$396,176.09	Health Services	Managed Health Care	NYSE
+863	Uniti Group	UNIT	$12.81	$2,989.95	Finance	Real Estate Investment Trusts	NASDAQ
+864	Unity Software	U	$136.69	$38,617.45	Technology Services	Packaged Software	NYSE
+865	Unum Group	UNM	$24.27	$4,960.63	Finance	Life/Health Insurance	NYSE
+866	UP Fintech	TIGR	$12.90	$1,950.68	Finance	Investment Banks/Brokers	NASDAQ
+867	UPS	UPS	$190.03	$165,524.13	Transportation	Air Freight/Couriers	NYSE
+868	Urban Outfitters	URBN	$32.52	$3,198.79	Retail Trade	Apparel/Footwear Retail	NASDAQ
+869	US Bancorp	USB	$57.01	$84,524.28	Finance	Major Banks	NYSE
+870	US Silica Holdings	SLCA	$8.02	$599.53	Non-Energy Minerals	Other Metals/Minerals	NYSE
+871	Vale	VALE	$16.31	$455,257.44	Non-Energy Minerals	Steel	NYSE
+872	Valero	VLO	$65.60	$26,818.81	Energy Minerals	Oil Refining/Marketing	NYSE
+873	Vector Group	VGR	$12.37	$1,904.48	Consumer Non-Durables	Tobacco	NYSE
+874	Veeva Systems	VEEV	$302.14	$46,353.60	Technology Services	Packaged Software	NYSE
+875	Ventas	VTR	$57.10	$21,718.13	Finance	Real Estate Investment Trusts	NYSE
+876	Vereit	VER	$47.43	$10,868.56	Finance	Real Estate Investment Trusts	NYSE
+877	Verisign	VRSN	$218.77	$24,474.76	Technology Services	Internet Software/Services	NASDAQ
+878	Verisk Analytics	VRSK	$201.10	$32,447.57	Finance	Insurance Brokers/Services	NASDAQ
+879	Verizon	VZ	$54.28	$224,725.44	Communications	Major Telecommunications	NYSE
+880	Vertex Pharmaceuticals	VRTX	$188.30	$48,850.37	Health Technology	Biotechnology	NASDAQ
+881	VF Corporation	VFC	$69.55	$27,308.01	Consumer Non-Durables	Apparel/Footwear	NYSE
+882	ViacomCBS	VIACA	$44.34	$26,020.51	Consumer Services	Broadcasting	NASDAQ
+883	Viatris	VTRS	$14.90	-	Health Technology	Pharmaceuticals: Major	NASDAQ	No live pricing
+884	VICI Properties	VICI	$29.57	$20,638.23	Finance	Real Estate Development	NYSE
+885	Victoria's Secret	VSCO	$66.12	-	Retail Trade	Apparel/Footwear Retail	NYSE	No live pricing
+886	Vipshop Holdings Limited	VIPS	$12.86	$8,696.05	Retail Trade	Internet Retail	NYSE
+887	Vir Biotechnology Inc	VIR	$54.54	$7,123.56	Health Technology	Biotechnology	NASDAQ
+888	Virgin Galactic	SPCE	$26.42	$6,796.83	Electronic Technology	Aerospace & Defense	NYSE
+889	Visa	V	$221.75	$471,621.45	Finance	Finance/Rental/Leasing	NYSE
+890	Vistra Energy	VST	$17.79	$8,584.01	Utilities	Electric Utilities	NYSE
+891	VMware	VMW	$139.67	$58,487.08	Technology Services	Information Technology Services	NYSE
+892	Vonage Holdings	VG	$16.46	$4,145.52	Communications	Specialty Telecommunications	NASDAQ
+893	VPC Impact Acquisition Holdings	VIH	$10.08	$261.29	Finance	Financial Conglomerates	NASDAQ
+894	Vroom Inc	VRM	$24.24	$3,313.96	Retail Trade	Specialty Stores	NASDAQ
+895	WABTEC Corporation	WAB	$87.48	$16,536.71	Producer Manufacturing	Trucks/Construction/Farm Machinery	NYSE
+896	Walgreens Boots	WBA	$49.62	$42,920.66	Retail Trade	Drugstore Chains	NASDAQ
+897	Walmart	WMT	$144.73	$403,579.16	Retail Trade	Food Retail	NYSE
+898	Walt Disney	DIS	$183.47	$333,388.11	Consumer Services	Cable/Satellite TV	NYSE
+899	Waste Connections	WCN	$127.71	$33,260.83	Industrial Services	Environmental Services	NYSE
+900	Waste Management	WM	$152.68	$64,293.38	Industrial Services	Environmental Services	NYSE
+901	Wayfair	W	$286.26	$29,742.50	Retail Trade	Internet Retail	NYSE
+902	Weibo	WB	$50.86	$11,588.34	Technology Services	Internet Software/Services	NASDAQ
+903	Wells Fargo	WFC	$46.47	$190,824.88	Finance	Major Banks	NYSE
+904	Welltower	WELL	$85.83	$36,268.57	Finance	Real Estate Investment Trusts	NYSE
+905	Wendy's Company	WEN	$22.39	$4,988.22	Consumer Services	Restaurants	NASDAQ
+906	Western Digital	WDC	$57.92	$17,882.68	Electronic Technology	Computer Peripherals	NASDAQ
+907	Western Union	WU	$20.80	$8,452.04	Finance	Finance/Rental/Leasing	NYSE
+908	WestRock	WRK	$49.71	$13,272.87	Process Industries	Containers/Packaging	NYSE
+909	WEX	WEX	$168.88	$7,565.46	Technology Services	Data Processing Services	NYSE
+910	Weyerhaeuser Co.	WY	$36.17	$27,119.68	Finance	Real Estate Investment Trusts	NYSE
+911	White Mountains Insurance Group	WTM	$1,072.14	$3,330.21	Finance	Multi-Line Insurance	NYSE
+912	Williams Companies	WMB	$25.28	$30,714.14	Industrial Services	Oil & Gas Pipelines	NYSE
+913	Wingstop	WING	$183.24	$5,450.56	Consumer Services	Restaurants	NASDAQ
+914	Wipro	WIT	$9.34	$48,431.10	Technology Services	Information Technology Services	NYSE
+915	Wix.com Ltd	WIX	$211.68	$11,940.30	Technology Services	Information Technology Services	NASDAQ
+916	Workday	WDAY	$268.51	$66,590.46	Technology Services	Information Technology Services	NASDAQ
+917	Workhorse Group Inc	WKHS	$8.56	$1,061.00	Producer Manufacturing	Auto Parts: OEM	NASDAQ
+918	World Wrestling Entertainment	WWE	$55.09	$4,200.26	Consumer Services	Movies/Entertainment	NYSE
+919	Wynn Resorts	WYNN	$83.29	$9,634.29	Consumer Services	Casinos/Gaming	NASDAQ
+920	Xcel Energy	XEL	$64.00	$34,459.94	Utilities	Electric Utilities	NASDAQ
+921	Xerox	XRX	$20.98	$3,744.63	Electronic Technology	Computer Peripherals	NYSE
+922	Xilinx	XLNX	$153.78	$38,055.64	Electronic Technology	Semiconductors	NASDAQ
+923	Xpeng	XPEV	$39.01	$33,382.45	Consumer Durables	Motor Vehicles	NYSE
+924	Yamana Gold	AUY	$4.05	$3,924.00	Non-Energy Minerals	Precious Metals	NYSE
+925	YETI Holdings Inc	YETI	$99.03	$8,662.34	Producer Manufacturing	Miscellaneous Manufacturing	NYSE
+926	YPF	YPF	$5.18	$3,699.49	Energy Minerals	Integrated Oil	NYSE
+927	Yum!	YUM	$127.09	$37,573.71	Consumer Services	Restaurants	NYSE
+928	Yum!	YUMC	$54.85	$23,085.51	Consumer Services	Restaurants	NYSE
+929	YY	YY	$54.74	$4,291.88	Technology Services	Internet Software/Services	NASDAQ
+930	Zebra Technologies	ZBRA	$569.15	$30,394.30	Electronic Technology	Computer Peripherals	NASDAQ
+931	Zendesk	ZEN	$124.61	$14,955.70	Technology Services	Data Processing Services	NYSE
+932	Zillow Group	Z	$96.03	$24,171.13	Technology Services	Information Technology Services	NASDAQ
+933	Zimmer Biomet	ZBH	$146.72	$30,641.06	Health Technology	Medical Specialties	NYSE
+934	Zions Bancorporation	ZION	$57.09	$9,252.60	Finance	Regional Banks	NASDAQ
+935	ZipRecruiter	ZIP	$26.99	$3,106.77	Technology Services	Internet Software/Services	NYSE
+936	Zoetis	ZTS	$198.49	$94,073.19	Health Technology	Pharmaceuticals: Generic	NYSE
+937	Zoom	ZM	$287.68	$85,477.75	Technology Services	Packaged Software	NASDAQ
+938	Zscaler	ZS	$275.66	$37,761.84	Technology Services	Packaged Software	NASDAQ
+939	ZTO Express	ZTO	$30.83	$26,333.68	Transportation	Air Freight/Couriers	NYSE
+940	Zynga	ZNGA	$8.01	$8,746.04	Technology Services	Internet Software/Services	NASDAQ
